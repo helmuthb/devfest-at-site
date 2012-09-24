@@ -1,0 +1,99 @@
+{% set area = 'location' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% trans %}DevFest Vienna - the locations{% endtrans %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<img class="visible-phone" src="/img/banner-small.png"><br>
+<h2>{% trans %}The Locations{% endtrans %}</h2>
+<p>
+{% trans %}
+DevFest Vienna takes place in two different different locations,
+each of them with its unique advantage and atmosphere.
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+On day 1, the <a href="#tu-wien">University of Technology</a>
+is host for sessions and workshops around mobile &amp; web,
+cloud &amp; social.
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+On day 2, it is the <a href="#metalab">Metalab</a> where we are celebrating five
+years of Android with a birthday hackathon.
+{% endtrans %}
+</p>
+</div>
+<div class="span3">
+<img class="hidden-phone" src="/img/banner-small.png"><br>
+</div>
+</div>
+</div>
+<a name="tu-wien">&nbsp;</a>
+<br>
+<br>
+<br>
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<h3>{% trans %}TU Vienna{% endtrans %}</h3>
+<p>
+{% trans %}
+The first day takes place on the University of Technology in Vienna
+at
+{% endtrans %}
+<a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;{% trans %}hl=en{% endtrans %}&amp;geocode=&amp;q=Gu%C3%9Fhausstra%C3%9Fe+27-29,+Wieden+1040+Wien,+Austria&amp;aq=&amp;sll=48.197351,16.371794&amp;sspn=0.008467,0.016329&amp;ie=UTF8&amp;hq=&amp;hnear=Gu%C3%9Fhausstra%C3%9Fe+27,+Wieden+1040+Wien,+Austria&amp;t=m&amp;ll=48.197333,16.371775&amp;spn=0.027462,0.054932&amp;z=14&amp;iwloc=A" target="_blank">{% trans %}Gußhausstraße 27-29, 1040 Vienna{% endtrans %}.</a>
+<br>
+</p>
+<p>
+<center>
+<img src="/img/image-ei9-small.jpeg">
+<img src="/img/image-ei10-small.jpeg">
+</center>
+</p>
+</div>
+<div class="span3">
+<a target="_blank" href="https://maps.google.com/maps?f=q&amp;source=embed&amp;{% trans %}hl=en{% endtrans %}&amp;geocode=&amp;q=Gu%C3%9Fhausstra%C3%9Fe+27-29,+Wieden+1040+Wien,+Austria&amp;aq=&amp;sll=48.197351,16.371794&amp;sspn=0.008467,0.016329&amp;ie=UTF8&amp;hq=&amp;hnear=Gu%C3%9Fhausstra%C3%9Fe+27,+Wieden+1040+Wien,+Austria&amp;t=m&amp;ll=48.197333,16.371775&amp;spn=0.027462,0.054932&amp;z=14&amp;iwloc=A">{% trans %}TU Vienna (10. November 2012){% endtrans %}</a>
+<br>
+<iframe width="320" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?{% trans %}hl=en{% endtrans %}&amp;q=Gu%C3%9Fhausstra%C3%9Fe+27-29,+Wieden+1040+Wien,+Austria&amp;sll=48.197351,16.371794&amp;sspn=0.008467,0.016329&amp;ie=UTF8&amp;hnear=Gu%C3%9Fhausstra%C3%9Fe+27,+Wieden+1040+Wien,+Austria&amp;ll=48.197333,16.371775&amp;spn=0.027462,0.054932&amp;z=14&amp;iwloc=near&amp;output=embed"></iframe>
+</div>
+</div>
+</div>
+<a name="metalab">&nbsp;</a>
+<br>
+<br>
+<br>
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<h3>{% trans %}Metalab Vienna{% endtrans %}</h3>
+<p>
+{% trans %}
+The second day takes place in the Metalab at
+{% endtrans %}
+<a href="https://maps.google.com/maps?q=Metalab,+Rathausstra%C3%9Fe+6,+1010+Wien,+%C3%96sterreich&{% trans %}hl=en{% endtrans %}&ie=UTF8&sll=48.209512,16.356146&sspn=0.016931,0.034933&hq=Metalab,+Rathausstra%C3%9Fe+6,+1010+Wien,+%C3%96sterreich&t=m&z=15" target="_blank">{% trans %}Rathausstraße 6, 1010 Vienna{% endtrans %}.</a>
+<br>
+</p>
+<p>
+<center>
+<img src="/img/image-metalab-hackathon-small.jpeg">
+<img src="/img/image-metalab-hackathon2-small.jpeg">
+</center>
+</p>
+</div>
+<div class="span3">
+<a href="https://maps.google.com/maps?q=Metalab,+Rathausstra%C3%9Fe+6,+1010+Wien,+%C3%96sterreich&{% trans %}hl=en{% endtrans %}&ie=UTF8&sll=48.209512,16.356146&sspn=0.016931,0.034933&hq=Metalab,+Rathausstra%C3%9Fe+6,+1010+Wien,+%C3%96sterreich&t=m&z=15" target="_blank">{% trans %}Metalab (11. November 2012){% endtrans %}.</a>
+<br>
+<iframe width="320" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?{% trans %}hl=en{% endtrans %}&amp;q=Metalab,+Rathausstra%C3%9Fe+6,+1010+Wien,+%C3%96sterreich&amp;sll=48.209512,16.356146&amp;sspn=0.016931,0.034933&amp;ie=UTF8&amp;hnear=Metalab,+Rathausstra%C3%9Fe+6,+1010+Wien,+%C3%96sterreich&amp;ll=48.209512,16.356146&amp;spn=0.014871,0.032015&amp;z=14&amp;iwloc=near&amp;output=embed"></iframe>
+</div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% set area = 'agenda' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% trans %}DevFest Vienna - Agenda{% endtrans %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<img class="visible-phone" src="/img/banner-small.png"><br>
+<h2>{% trans %}Agenda{% endtrans %}</h2>
+<h3>{% trans %}Day 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>{% endtrans %}</h3>
+<p>
+<table border="0" class="table table-hover">
+  <tr class="slot-nosession">
+    <td class="slot-time">09:00 - 09:30</td>
+    <td class="slot-content">{% trans %}Registration{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">09:30 - 09:45</td>
+    <td class="slot-content">{% trans %}Welcome &amp; Introduction{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">09:45 - 12:30</td>
+    <td class="slot-content">{% trans %}Talks &amp; Workshops, in parallel in two rooms{% endtrans %}</td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">12:30 - 13:30</td>
+    <td class="slot-content">{% trans %}Lunch{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">13:30 - 16:30</td>
+    <td class="slot-content">{% trans %}Talks &amp; Workshops, in parallel in two rooms{% endtrans %}</td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">16:30 - 17:00</td>
+    <td class="slot-content">{% trans %}Coffee break{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">17:00 - 19:00</td>
+    <td class="slot-content">{% trans %}Drinks, Challenges, Games &amp; time for chatting{% endtrans %}</td>
+  </tr>
+</table>
+</p>
+<h3>{% trans %}Day 2: <em>Happy Birthday Android!</em>{% endtrans %}</h3>
+<p>
+<table border="0" class="table table-hover">
+  <tr class="slot-nosession">
+    <td class="slot-time">10:00</td>
+    <td class="slot-content">{% trans %}Start of Android Birthday Hackathon{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">10:00 - 12:30</td>
+    <td class="slot-content">{% trans %}Time for developing{% endtrans %}</td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">12:30 - 13:30</td>
+    <td class="slot-content">{% trans %}Lunch{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">13:30 - 17:30</td>
+    <td class="slot-content">{% trans %}Time for developing{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">17:30 - 18:30</td>
+    <td class="slot-content">{% trans %}Presentation of results{% endtrans %}</td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">18:30 - 19:00</td>
+    <td class="slot-content">{% trans %}Award ceremony{% endtrans %}</td>
+  </tr>
+</table>
+</p>
+</div>
+<div class="span3">
+<img class="hidden-phone" src="/img/banner-small.png"><br>
+</div>
+</div>
+</div>
+{% endblock %}

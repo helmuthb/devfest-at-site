@@ -1,0 +1,193 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>{% block title %} {%endblock%}</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <!--[if IE 7]><link rel="stylesheet" href="/css/font-awesome-ie7.css"><![endif]-->
+
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  {% block styles %} {% endblock %}
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="/js/libs/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>{% trans %}Your browser is <em>ancient!</em>{% endtrans %} {% trans %}<a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.{% endtrans %}</p><![endif]-->
+   
+    <header class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <span class="brand">DevFest Vienna</span>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li{% if area == 'home' %} class="active"{% endif %}><a href="/">{% trans %}Home{% endtrans %}</a></li>
+              <li{% if area == 'location' %} class="active"{% endif %}><a href="/location">{% trans %}Location{% endtrans %}</a></li>
+              <li{% if area == 'agenda' %} class="active"{% endif %}><a href="/agenda">{% trans %}Agenda{% endtrans %}</a></li>
+              <li{% if area == 'call' %} class="active"{% endif %}><a href="/call">{% trans %}Call for Speakers{% endtrans %}</a></li>
+              <li{% if area == 'sponsor' %} class="active"{% endif %}><a href="/sponsor">{% trans %}Sponsorship{% endtrans %}</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans %}Language{% endtrans %} <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li {% trans %}class-active-if-english{% endtrans %}><a href="/locale/en_US">{% trans %}English{% endtrans %}</a></li>
+                  <li {% trans %}class-active-if-german{% endtrans %}><a href="/locale/de_DE">{% trans %}German{% endtrans %}</a></li>
+                </ul>
+              </li>
+<!--
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user" style="font-size:140%;"></i> <b class="caret"></b></a>
+                <p class="dropdown-menu" style="padding: 5px;">
+                  {% trans %}Sign in via:{% endtrans %}<br>
+                  <a href="/auth/google"><img src="/img/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;padding-right:4px;"/> Google+</a>
+                  <a href="/auth/twitter"><img src="/img/twitter-bird-light-bgs.png" style="border:0;"/> Twitter</a>
+                  <a href="#signin" data-toggle="modal"><img src="/img/email-16.png" style="border:0; width:16px;padding-right:4px;"/> {% trans %}Email and password{% endtrans %}</a>
+                  <a href="#signup" data-toggle="modal"><img src="/img/email-16.png" style="border:0; width:16px;padding-right:4px;"/> {% trans %}New users{% endtrans %}</a>
+                </p>
+              </li>
+-->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </header>
+
+    <div role="main">
+      <div class="container">
+      {% block content %} {% endblock %}
+<!-- modal popups for email signin/signup !-->
+<div class="tri-state modal hide" id="signup">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h4>{% trans %}Sign up with your email address{% endtrans %}</h4>
+
+  </div>
+
+  <div class="modal-body">
+    <form id="signup_form" class="form-horizontal" name="email-signup">
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label" for="username">{% trans %}Username{% endtrans %}</label>
+          <div class="controls">
+            <input type="text" class="input-xlarge required" id="username" val="None">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="email_signup">{% trans %}Email address{% endtrans %}</label>
+          <div class="controls">
+            <input type="text" class="input-xlarge required email" id="email_signup" val="None">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="password_raw">{% trans %}Password{% endtrans %}</label>
+          <div class="controls">
+            <input type="password" class="input-xlarge required" id="password_raw" val="None">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <div class="form_result"></div>
+  </div>
+
+  <div class="modal-footer">
+    <div class="btn_container offset2">
+      <button id="signup_btn" type="submit" class="btn btn-primary">{% trans %}Sign Up{% endtrans %}</button>
+    </div>
+  </div>
+</div>
+
+<div class="tri-state modal hide" id="signin">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h4>{% trans %}Sign in{% endtrans %}</h4>
+  </div>
+
+  <div class="modal-body">
+     <form class="form-horizontal" name="email-signin">
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label" for="email_signin">{% trans %}Email address{% endtrans %}</label>
+          <div class="controls">
+            <input type="text" class="input-xlarge required email" id="email_signin">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="password">{% trans %}Password{% endtrans %}</label>
+          <div class="controls">
+            <input type="password" class="input-xlarge required" id="password">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <div class="form_result"></div>
+  </div>
+
+  <div class="modal-footer">
+    <div class="btn_container offset2">
+      <button id="signin_btn" type="submit" class="btn btn-primary">{% trans %}Sign In{% endtrans %}</button>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer class="footer container">
+
+    <div class="row">
+      <div class="span10" style="font-style:italic;">
+        {% trans %}DevFest Vienna is jointly organized by <a href="http://jsug.at">JSUG@TU-Wien</a> and <a href="http://gdg-vienna.at">GDG Vienna</a> as part of the global <a href="http://devfest.info">GDG DevFest Season.</a>{% endtrans %}<br>
+<a href="https://plus.google.com/101425359997480386030" rel="publisher">{% trans %}Find us on Google+{% endtrans %}</a>
+      </div>
+      <div class="span2">
+
+          <img style="padding-top:12px;" src="https://developers.google.com/appengine/images/appengine-noborder-120x30.gif" alt="Powered by Google App Engine" />
+        </div>
+    </div> 
+  </footer>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.8.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="/js/min.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-21611117-4'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>

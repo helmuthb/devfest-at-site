@@ -1,0 +1,95 @@
+{% set area = 'call' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% trans %}DevFest Vienna - Call for Speakers{% endtrans %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<img class="visible-phone" src="/img/banner-small.png"><br>
+<h2>{% trans %}Call for Speakers{% endtrans %}</h2>
+<p>
+{% trans %}
+Interested in being part of the event as a speaker?
+Great! Please <a target="_blank" href="https://docs.google.com/a/devfest.at/spreadsheet/viewform?pli=1&formkey=dHFDcmdUTnk4bHJvb2dHVmZSZ0Z0ZVE6MA#gid=0">let us know a bit</a> about your proposed workshop or talk.
+{% endtrans %}
+<h3>{% trans %}Type of Sessions{% endtrans %}</h3>
+<p>
+{% trans %}
+We are planning three type of sessions: talks, workshops, and lightning talks.
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+A regular <em>talk</em> (e.g. presentation, tech talk, etc) is supposed to
+take about 50 minutes with some minutes afterwards for questions and answers.
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+A <em>workshop</em> can either take about 50 minutes, and it can take a
+total of 110 minutes, ideally for more in-depth hands-on sessions.
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+In addition, there is the opportunity for <em>lightning talks</em> of much
+shorter duration (five minutes and some minutes for questions &amp; answers).
+They are ideal for presenting an idea without going too much into technical
+details.
+{% endtrans %}
+</p>
+<h3>{% trans %}Language of the sessions{% endtrans %}</h3>
+<p>
+{% trans %}
+DevFest Vienna will have sessions in both German and English.
+Please let us know your preference and the sessions will be annouced
+accordingly.
+{% endtrans %}
+</p>
+<h3>{% trans %}Equipment{% endtrans %}</h3>
+<p>
+{% trans %}
+Each room is equiped with a beamer and network connecivity for your
+notebook PC.
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+Please let us know in advance if you need additional equipment.
+{% endtrans %}
+</p>
+<h3>{% trans %}Participant requirements{% endtrans %}</h3>
+<p>
+{% trans %}
+Let us know what requirements participants should satisfy to fully make
+use of your talk or workshop.
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+General coding knowledge and developing experience can be assumed.
+Special language knowledge, experience with specific APIs or
+frameworks should however be announced in advance.
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+For workshops, make sure to let us know what the participants should
+have installed on their notebook PCs before attending.
+At the same time, expect some time at the beginning of the workshop
+to accomodate participants not fully prepared.
+{% endtrans %}
+</p>
+</div>
+<div class="span3">
+<img class="hidden-phone" src="/img/banner-small.png"><br>
+<a target="_blank" href="https://docs.google.com/a/devfest.at/spreadsheet/viewform?pli=1&formkey=dHFDcmdUTnk4bHJvb2dHVmZSZ0Z0ZVE6MA#gid=0">{% trans %}Submit your session proposal{% endtrans %}</a><br>
+</div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+
+{% endblock %}
+
+{% block title %}
+{% trans %}Page Not Found{% endtrans %}
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+
+{% block content %}
+	<hr class="soften">
+    
+    <p>{% trans %}Sorry. A serious error has occured.{% endtrans %}</p>
+   	<p><a href="/">{% trans %}Return home.{% endtrans %}</a></p>
+
+   	<p>{% trans %}Code: {{code}}{% endtrans %}</p>
+{% endblock %}

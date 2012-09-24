@@ -1,0 +1,132 @@
+{% set area = 'home' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% trans %}DevFest Vienna{% endtrans %}
+{% endblock %}
+
+{% block content %}
+
+<div class="hero-unit hidden-phone">
+<div style="float:left; width:510px;">
+<img src="/img/banner.png">
+</div>
+<div style="float:left; width:300px;">
+<p><b>{% trans %}10. November, <a href="/location#tu-wien">TU Vienna</a>{% endtrans %}</b><br>
+  <em>{% trans %}Mobile &amp; Web, Cloud &amp; Social{% endtrans %}</em><br>
+  {% trans %}One day of sessions &amp; workshops{% endtrans %}</p>
+<p><b>{% trans %}11. November, <a href="/location#metalab">Metalab Vienna</a>{% endtrans %}</b><br>
+  <em>{% trans %}Happy Birthday, Android!{% endtrans %}</em><br>
+  {% trans %}A hackathon celebrating Android{% endtrans %}</p>
+</div>
+<div style="clear:both;">
+</div>
+</div>
+
+<div class="hero-unit visible-phone">
+<img src="/img/banner-small.png">
+<p><b>{% trans %}10. November, <a href="/location#tu-wien">TU Vienna</a>{% endtrans %}</b><br>
+  <em>{% trans %}Mobile &amp; Web, Cloud &amp; Social{% endtrans %}</em><br>
+  {% trans %}One day of sessions &amp; workshops{% endtrans %}</p>
+<p><b>{% trans %}11. November, <a href="/location#metalab">Metalab Vienna</a>{% endtrans %}</b><br>
+  <em>{% trans %}Happy Birthday, Android!{% endtrans %}</em><br>
+  {% trans %}A hackathon celebrating Android{% endtrans %}</p>
+</div>
+
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<p>
+{% trans %}
+DevFests are large-scale community events throughout the world, following
+the tradition of Google DevFests and organized by local user groups.
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+This year there is for the first time a DevFest in Vienna, jointly
+organized by the <a href="http://jsug.at" target="_blank">Java Student
+User Group</a> and the <a href="http://gdg-vienna.at" target="_blank">Google
+Developer Group Vienna.</a>
+{% endtrans %}
+</p>
+<center>
+<img src="/img/image-devfest.jpeg" style="margin:10px; width:320px;">
+<img src="/img/image-group-tables.jpeg" style="margin:10px; width:320px;">
+</center>
+<p>
+{% trans %}
+DevFest Vienna takes place on two days, 10. + 11. November 2012.
+{% endtrans %}
+<h3>{% trans %}Day 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>{% endtrans %}</h3>
+{% trans %}
+The first day is full of workshops and sessions given
+by members of the local developer community.
+{% endtrans %}
+{% trans %}
+In two rooms at the <a href="/location#tu-wien">University of Technology
+in Vienna</a> sessions will be held in parallel.
+Some of the sessions which have been announced are:
+{% endtrans %}
+<br>
+<em>{% trans %}
+Google+ API family, mobile payment APIs, Go web frameworks,
+GWT, Play! framework, Chrome extensions, Android Accessory Development Kit,
+Bitcoin Java API, Google App Scripts, ...
+{% endtrans %}
+</em>
+<a href="/call">
+<em>{% trans %}and maybe your talk or workshop?{% endtrans %}</em>
+</a>
+<br>
+{% trans %}
+Additionally there is enough time to meet and exchange with fellow developers;
+and when developers come together amazing things can happen.
+{% endtrans %}
+</p>
+<p>
+<h3>{% trans %}Day 2: <em>Happy Birthday, Android!</em>{% endtrans %}</h3>
+{% trans %}
+It was on 5. November 2007 that Google launched Android as part of the
+Open Handset Alliance.
+Now, five years later, we are celebrating its success with a
+special birthday hackathon!
+{% endtrans %}
+<br>
+{% trans %}
+In teams we are developing applications for Android and
+the winners will take home valuable prizes.
+The hackathon takes place in the <a href="/location/#metalab">Metalab</a>,
+a hacker space in Vienna.
+{% endtrans %}
+</p>
+</div>
+<div class="span3">
+<p><em>{% trans %}DevFest Vienna is part of{% endtrans %}</em><br>
+<a href="http://www.devfest.info" target="_blank"><img src="/img/gdg-devfest-small.png" style="border:0;"></a>
+</p>
+<p><em>{% trans %}Organized by{% endtrans %}</em><br>
+<a href="http://jsug.at" target="_blank"><img src="/img/jsug-logo.png" style="border:0;"></a><br>
+<a href="http://gdg-vienna.at" target="_blank"><img src="/img/gdg-vienna.png" style="border:0;"></a><br>
+</p>
+<!-- Place this tag where you want the badge to render. -->
+<div class="g-plus" data-href="//plus.google.com/101425359997480386030" data-rel="publisher" data-width="253" data-height="69"></div>
+<a class="twitter-timeline" data-dnt=true href="https://twitter.com/DevFestVienna" data-widget-id="249973795690004480">Tweets by @DevFestVienna</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!--
+<a class="twitter-timeline" data-dnt=true href="https://twitter.com/search?q=%23devfest+%23vienna" data-widget-id="248567902658240513">Tweets about "#devfest #vienna"</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+-->
+</div>
+</div>
+
+<!-- Place this tag after the last badge tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+{% endblock %}
