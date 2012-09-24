@@ -25,8 +25,8 @@ class I18NTest(unittest2.TestCase):
 	hdr_german_prefer  = {'Accept-Language': 'de, en'}
 
 	# text to check if english response
-	txt_in_english = r'was created by'
-	txt_in_german  = r'ist ein Werk von'
+	txt_in_english = r'jointly organized'
+	txt_in_german  = r'gemeinsam veranstaltet'
 
 	def setUp(self):
 		# Create a WSGI application.

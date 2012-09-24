@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import optparse
 import sys
+import os
 # Install the Python unittest2 package before you run this script.
 import unittest2
 
@@ -12,6 +13,11 @@ TEST_PATH   Path to package containing test modules"""
 
 
 def main(sdk_path, test_path):
+    # set environment if needed
+    if 'SERVER_SOFTWARE' not in os.environ:
+        os.environ['SERVER_SOFTWARE'] = 'Dev'
+    if 'APPLICATION_ID' not in os.environ:
+        os.environ['APPLICATION_ID'] = 'green-algae'
     sys.path.insert(0, sdk_path)
     import dev_appserver
     dev_appserver.fix_sys_path()

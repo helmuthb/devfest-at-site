@@ -4,7 +4,7 @@ from google.appengine.api.app_identity import get_default_version_hostname, get_
 from secrets import SESSION_KEY
 
 # trigger pybabel extraction of strings
-dev _(arg):
+def _(arg):
   return arg
 
 if 'SERVER_SOFTWARE' in os.environ and os.environ['SERVER_SOFTWARE'].startswith('Dev'):

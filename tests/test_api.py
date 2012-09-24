@@ -16,7 +16,7 @@ import handlers
 from core import model
 
 class RESTTest(unittest2.TestCase):
-	str_widget = '{"int_field":1,"email_field":"i@co.co","boolean_field":true,"date_field":"12-02-2012","text_field":"daf","id":2,"string_field":"dfa","link_field":"http://i.co"}'
+	str_widget = '{"int_field":1,"email_field":"i@co.co","boolean_field":true,"date_field":"2012-02-12","text_field":"daf","id":2,"string_field":"dfa","link_field":"http://i.co"}'
 	json_widget = json.decode(str_widget)
 
 	faux_db_user = {'email' : 'ibagrak@hotmail.com', 
@@ -153,7 +153,7 @@ class RESTTest(unittest2.TestCase):
 		self.assertEqual(json.decode(response.body)['code'], 200)
 
 class RPCTest(unittest2.TestCase):
-	str_widget = '{"int_field":1,"email_field":"i@co.co","boolean_field":true,"date_field":"12-02-2012","text_field":"daf","id":2,"string_field":"dfa","link_field":"http://i.co"}'
+	str_widget = '{"int_field":1,"email_field":"i@co.co","boolean_field":true,"date_field":"2012-02-12","text_field":"daf","id":2,"string_field":"dfa","link_field":"http://i.co"}'
 	json_widget = json.decode(str_widget)
 
 	faux_db_user = {'email' : 'ibagrak@hotmail.com', 

@@ -8,7 +8,7 @@ from core import model
 
 class ModelTestCase(unittest2.TestCase):
 
-	fixture_widget = json.decode('{"int_field":1,"email_field":"i@co.co","boolean_field":true,"date_field":"12-02-2012","text_field":"daf","id":2,"string_field":"dfa","link_field":"http://i.co"}')
+	fixture_widget = json.decode('{"int_field":1,"email_field":"i@co.co","boolean_field":true,"date_field":"2012-02-12","text_field":"daf","id":2,"string_field":"dfa","link_field":"http://i.co"}')
 
 	def setUp(self):
 		# First, create an instance of the Testbed class.
