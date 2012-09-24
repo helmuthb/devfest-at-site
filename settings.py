@@ -54,6 +54,8 @@ API_CODES  = { 200 : _('Success'),
 
 # URLs
 APP_ID = get_application_id()
+APP_NAME = "DevFest Vienna"
+APP_URL = "http://www.devfest.at"
 
 COOKIE_TEMPLATE = { 'id'        : 0,     #session id
                     'pageviews' : 0, 
