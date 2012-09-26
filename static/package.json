@@ -20,5 +20,7 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/ibagrak/algae.git"
-  }
+  },
+  "main": "index.js",
+  "license": "BSD"
 }

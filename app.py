@@ -15,7 +15,7 @@ routes = [webapp2.Route('/',                  handler = index.Index),
           webapp2.Route('/email-signup',      handler = email_auth.EmailAuthHandler, handler_method="signup_email"),
           
           # oauth authentication routes
-          webapp2.Route('/auth/<provider>',   handler='handlers.oauth.AuthHandler:_simple_auth', name='auth_login'),
+          webapp2.Route('/auth/<provider>',   handler='handlers.oauth.AuthHandler:simple_auth', name='auth_login'),
           webapp2.Route('/auth/<provider>/callback', handler='handlers.oauth.AuthHandler:_auth_callback', name='auth_callback'),
           
           # common logout

@@ -126,7 +126,7 @@ def generate_model_form(cls, with_key = False):
         form.append(d)
         
     return form
-        
+
 class Widget(RESTModel):
     int_field = ndb.IntegerProperty(required = True)
     boolean_field = ndb.BooleanProperty(required = True)

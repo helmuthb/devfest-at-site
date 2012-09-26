@@ -108,8 +108,8 @@ class EmailAuthHandler(common.BaseAPIHandler):
                 user.put()
                 
                 link = "%s/email-confirm?token=%s&email=%s" % (settings.APP_URL, token, kwargs['email']) 
-                mail.send_mail(sender = "%s Notifier <%s>" % (settings.APP_NAME, settings.EMAIL_SENDER), 
-                               to = kwargs['email'],
+                mail.send_mail(sender = settings.EMAIL_SENDER,
+                               to = "%s <%s>" % (kwargs['username'], kwargs['email']),
                                subject = "%s Email Confirmation" % settings.APP_NAME, 
                                body = settings.EMAIL_CONFIRM_BODY % (kwargs['username'], link))
                 logging.info("sending out confirm link: %s", link)

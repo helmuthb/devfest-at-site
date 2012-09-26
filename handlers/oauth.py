@@ -8,6 +8,7 @@ import logging
 from libs import simpleauth
 import secrets
 import common
+import os
 
 class AuthHandler(common.BaseHandler, simpleauth.SimpleAuthHandler):
     """Authentication handler for OAuth 2.0, 1.0(a) and OpenID."""
@@ -16,7 +17,8 @@ class AuthHandler(common.BaseHandler, simpleauth.SimpleAuthHandler):
        'google'   : {
          'picture': 'pic',
          'name'   : 'username',
-         'link'   : 'profile'
+         'link'   : 'profile',
+         'email'  : 'email'
        },
       'facebook' : {
         'id'     : lambda id: ('pic', 'http://graph.facebook.com/{0}/picture?type=large'.format(id)),
@@ -30,8 +32,9 @@ class AuthHandler(common.BaseHandler, simpleauth.SimpleAuthHandler):
 #      },
       'twitter'  : {
                     'profile_image_url': 'pic',
-                    'screen_name'      : 'username',
-                    'link'             : 'profile'
+                    'name'             : 'username',
+                    'link'             : 'profile',
+                    'description'      : 'tagline'
                     },
 #      'linkedin' : {
 #        'picture-url'       : 'avatar_url',
@@ -44,6 +47,12 @@ class AuthHandler(common.BaseHandler, simpleauth.SimpleAuthHandler):
 #        'email'   : 'link'
 #      }
     }
+
+    def simple_auth(self, provider=None):
+        """Store the referer in the session and call login"""
+        if 'HTTP_REFERER' in os.environ:
+            self.session['referer'] = os.environ['HTTP_REFERER']
+        self._simple_auth(provider)
 
     def _on_signin(self, data, auth_info, provider):
         """Callback whenever a new or existing user is logging in.
@@ -87,11 +96,18 @@ class AuthHandler(common.BaseHandler, simpleauth.SimpleAuthHandler):
                       self.auth.store.user_to_dict(user)
                     )
 
-        self.redirect('/')
+        if self.session['referer']:
+            self.redirect(str(self.session['referer']))
+            del self.session['referer']
+        else:
+            self.redirect('/')
 
     def logout(self):
         self.auth.unset_session()
-        self.redirect('/')
+        if 'HTTP_REFERER' in os.environ:
+            self.redirect(str(os.environ['HTTP_REFERER']))
+        else:
+            self.redirect('/')
 
     def _callback_uri_for(self, provider):
         return self.uri_for('auth_callback', provider=provider, _full=True)

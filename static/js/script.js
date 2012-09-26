@@ -98,10 +98,14 @@ $(document).ready( function() {
                     if (!$(this).hasClass('dp') && !$(this).hasClass('checkbox') && !frm.validate().element($(this)))
                         invalid_fields = true;
 
+                    var name = $(this).attr('name');
+                    if (!name) {
+                      name = $(this).attr('id');
+                    }
                     if ($(this).attr('type') == 'password') {
-                        kvs[$(this).attr('id')] = MD5($(this).val());
+                        kvs[name] = MD5($(this).val());
                     } else {
-                        kvs[$(this).attr('id')] = $(this).val();
+                        kvs[name] = $(this).val();
                     }
                 });
                 

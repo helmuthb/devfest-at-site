@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-24 19:51+0200\n"
+"POT-Creation-Date: 2012-09-26 17:22+0200\n"
 "PO-Revision-Date: 2012-09-03 10:59+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
@@ -70,16 +70,16 @@ msgstr ""
 msgid "Please contact application administrator for support"
 msgstr ""
 
-#: settings.py:63
+#: settings.py:65
 msgid "yyyy-mm-dd"
 msgstr ""
 
-#: settings.py:64
+#: settings.py:66
 #, python-format
 msgid "%Y-%m-%d"
 msgstr ""
 
-#: settings.py:67
+#: settings.py:69
 #, python-format
 msgid ""
 "\n"
@@ -90,6 +90,14 @@ msgid ""
 "%s\n"
 "\n"
 "Thank you.\n"
+msgstr ""
+
+#: handlers/api.py:26
+msgid "Thanks for signing up!"
+msgstr ""
+
+#: handlers/api.py:36
+msgid "Email updated!"
 msgstr ""
 
 #: libs/httplib2/__init__.py:394
@@ -180,31 +188,33 @@ msgstr ""
 msgid "DevFest Vienna - Call for Speakers"
 msgstr ""
 
-#: static/templates/call.html:14 static/templates/layout.html:49
+#: static/templates/call.html:14 static/templates/index.html:83
+#: static/templates/layout.html:49
 msgid "Call for Speakers"
 msgstr ""
 
-#: static/templates/call.html:16
+#: static/templates/call.html:17
 msgid ""
 "\n"
 "Interested in being part of the event as a speaker?\n"
-"Great! Please <a target=\"_blank\" "
-"href=\"https://docs.google.com/a/devfest.at/spreadsheet/viewform?pli=1&formkey=dHFDcmdUTnk4bHJvb2dHVmZSZ0Z0ZVE6MA#gid=0\">let"
-" us know a bit</a> about your proposed workshop or talk.\n"
 msgstr ""
 
-#: static/templates/call.html:20
+#: static/templates/call.html:21
+msgid "Please let us know more about it!"
+msgstr ""
+
+#: static/templates/call.html:24
 msgid "Type of Sessions"
 msgstr ""
 
-#: static/templates/call.html:22
+#: static/templates/call.html:26
 msgid ""
 "\n"
 "We are planning three type of sessions: talks, workshops, and lightning "
 "talks.\n"
 msgstr ""
 
-#: static/templates/call.html:27
+#: static/templates/call.html:31
 msgid ""
 "\n"
 "A regular <em>talk</em> (e.g. presentation, tech talk, etc) is supposed "
@@ -213,14 +223,14 @@ msgid ""
 "answers.\n"
 msgstr ""
 
-#: static/templates/call.html:33
+#: static/templates/call.html:37
 msgid ""
 "\n"
 "A <em>workshop</em> can either take about 50 minutes, and it can take a\n"
 "total of 110 minutes, ideally for more in-depth hands-on sessions.\n"
 msgstr ""
 
-#: static/templates/call.html:39
+#: static/templates/call.html:43
 msgid ""
 "\n"
 "In addition, there is the opportunity for <em>lightning talks</em> of "
@@ -232,11 +242,11 @@ msgid ""
 "details.\n"
 msgstr ""
 
-#: static/templates/call.html:46
+#: static/templates/call.html:50
 msgid "Language of the sessions"
 msgstr ""
 
-#: static/templates/call.html:48
+#: static/templates/call.html:52
 msgid ""
 "\n"
 "DevFest Vienna will have sessions in both German and English.\n"
@@ -244,35 +254,35 @@ msgid ""
 "accordingly.\n"
 msgstr ""
 
-#: static/templates/call.html:54
+#: static/templates/call.html:58
 msgid "Equipment"
 msgstr ""
 
-#: static/templates/call.html:56
+#: static/templates/call.html:60
 msgid ""
 "\n"
 "Each room is equiped with a beamer and network connecivity for your\n"
 "notebook PC.\n"
 msgstr ""
 
-#: static/templates/call.html:62
+#: static/templates/call.html:66
 msgid ""
 "\n"
 "Please let us know in advance if you need additional equipment.\n"
 msgstr ""
 
-#: static/templates/call.html:66
+#: static/templates/call.html:70
 msgid "Participant requirements"
 msgstr ""
 
-#: static/templates/call.html:68
+#: static/templates/call.html:72
 msgid ""
 "\n"
 "Let us know what requirements participants should satisfy to fully make\n"
 "use of your talk or workshop.\n"
 msgstr ""
 
-#: static/templates/call.html:74
+#: static/templates/call.html:78
 msgid ""
 "\n"
 "General coding knowledge and developing experience can be assumed.\n"
@@ -280,7 +290,7 @@ msgid ""
 "frameworks should however be announced in advance.\n"
 msgstr ""
 
-#: static/templates/call.html:81
+#: static/templates/call.html:85
 msgid ""
 "\n"
 "For workshops, make sure to let us know what the participants should\n"
@@ -289,7 +299,7 @@ msgid ""
 "to accomodate participants not fully prepared.\n"
 msgstr ""
 
-#: static/templates/call.html:91
+#: static/templates/call.html:96
 msgid "Submit your session proposal"
 msgstr ""
 
@@ -392,7 +402,7 @@ msgstr ""
 msgid "and maybe your talk or workshop?"
 msgstr ""
 
-#: static/templates/index.html:83
+#: static/templates/index.html:85
 msgid ""
 "\n"
 "Additionally there is enough time to meet and exchange with fellow "
@@ -400,20 +410,20 @@ msgid ""
 "and when developers come together amazing things can happen.\n"
 msgstr ""
 
-#: static/templates/index.html:89
+#: static/templates/index.html:90
 msgid "Day 2: <em>Happy Birthday, Android!</em>"
 msgstr ""
 
-#: static/templates/index.html:90
+#: static/templates/index.html:92
 msgid ""
 "\n"
-"It was on 5. November 2007 that Google launched Android as part of the\n"
+"It was on 5 November 2007 that Google launched Android as part of the\n"
 "Open Handset Alliance.\n"
 "Now, five years later, we are celebrating its success with a\n"
 "special birthday hackathon!\n"
 msgstr ""
 
-#: static/templates/index.html:97
+#: static/templates/index.html:99
 msgid ""
 "\n"
 "In teams we are developing applications for Android and\n"
@@ -423,11 +433,11 @@ msgid ""
 "a hacker space in Vienna.\n"
 msgstr ""
 
-#: static/templates/index.html:106
+#: static/templates/index.html:108
 msgid "DevFest Vienna is part of"
 msgstr ""
 
-#: static/templates/index.html:109
+#: static/templates/index.html:111
 msgid "Organized by"
 msgstr ""
 
@@ -474,54 +484,58 @@ msgstr "class"
 msgid "German"
 msgstr ""
 
-#: static/templates/layout.html:64
+#: static/templates/layout.html:66
+msgid "Sign out"
+msgstr ""
+
+#: static/templates/layout.html:73
 msgid "Sign in via:"
 msgstr ""
 
-#: static/templates/layout.html:67
+#: static/templates/layout.html:76
 msgid "Email and password"
 msgstr ""
 
-#: static/templates/layout.html:68
-msgid "New users"
+#: static/templates/layout.html:77
+msgid "New user"
 msgstr ""
 
-#: static/templates/layout.html:85
+#: static/templates/layout.html:95
 msgid "Sign up with your email address"
 msgstr ""
 
-#: static/templates/layout.html:93
-msgid "Username"
+#: static/templates/layout.html:103
+msgid "Name"
 msgstr ""
 
-#: static/templates/layout.html:99 static/templates/layout.html:132
+#: static/templates/layout.html:109 static/templates/layout.html:142
 msgid "Email address"
 msgstr ""
 
-#: static/templates/layout.html:105 static/templates/layout.html:138
+#: static/templates/layout.html:115 static/templates/layout.html:148
 msgid "Password"
 msgstr ""
 
-#: static/templates/layout.html:117
+#: static/templates/layout.html:127
 msgid "Sign Up"
 msgstr ""
 
-#: static/templates/layout.html:125
+#: static/templates/layout.html:135
 msgid "Sign in"
 msgstr ""
 
-#: static/templates/layout.html:150
+#: static/templates/layout.html:160
 msgid "Sign In"
 msgstr ""
 
-#: static/templates/layout.html:164
+#: static/templates/layout.html:174
 msgid ""
 "DevFest Vienna is jointly organized by <a href=\"http://jsug.at\">JSUG"
 "@TU-Wien</a> and <a href=\"http://gdg-vienna.at\">GDG Vienna</a> as part "
 "of the global <a href=\"http://devfest.info\">GDG DevFest Season.</a>"
 msgstr ""
 
-#: static/templates/layout.html:165
+#: static/templates/layout.html:175
 msgid "Find us on Google+"
 msgstr ""
 
@@ -603,39 +617,39 @@ msgstr ""
 msgid "DevFest Vienna - Sponsorship"
 msgstr ""
 
-#: static/templates/sponsor.html:16
+#: static/templates/sponsor.html:17
 msgid ""
 "\n"
 "Interested in being part of the event as a sponsor?\n"
 "Excellent!\n"
 msgstr ""
 
-#: static/templates/sponsor.html:20
+#: static/templates/sponsor.html:21
 msgid "Let us know about it!"
 msgstr ""
 
-#: static/templates/sponsor.html:21
+#: static/templates/sponsor.html:24
 msgid "Silver"
 msgstr ""
 
-#: static/templates/sponsor.html:23
+#: static/templates/sponsor.html:26
 msgid ""
 "\n"
 "As a silver sponsor, your logo is present on the local web site\n"
 "as well as in social media mentions (Google+ and Twitter).\n"
 msgstr ""
 
-#: static/templates/sponsor.html:29
+#: static/templates/sponsor.html:32
 msgid ""
 "\n"
 "You can provide stickers and / or flyers for the participants.\n"
 msgstr ""
 
-#: static/templates/sponsor.html:33
+#: static/templates/sponsor.html:36
 msgid "Gold"
 msgstr ""
 
-#: static/templates/sponsor.html:35
+#: static/templates/sponsor.html:38
 msgid ""
 "\n"
 "As gold sponsor, you get the same coverage as a silver sponsor,\n"
@@ -647,7 +661,7 @@ msgid ""
 "and <a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a>).\n"
 msgstr ""
 
-#: static/templates/sponsor.html:45
+#: static/templates/sponsor.html:48
 msgid ""
 "\n"
 "In addition to providing stickers and flyers to participants, you can\n"
@@ -656,7 +670,7 @@ msgid ""
 "One attendee from your company is allowed to represent you on-site.\n"
 msgstr ""
 
-#: static/templates/sponsor.html:53
+#: static/templates/sponsor.html:56
 msgid ""
 "\n"
 "Especially if your products are APIs and can be used within the\n"
@@ -664,11 +678,11 @@ msgid ""
 "winner category on the hackathon as a gold sponsor.\n"
 msgstr ""
 
-#: static/templates/sponsor.html:59
+#: static/templates/sponsor.html:62
 msgid "Platinum"
 msgstr ""
 
-#: static/templates/sponsor.html:61
+#: static/templates/sponsor.html:64
 msgid ""
 "\n"
 "As platinum sponsor, you get the most comprehensive presence online and\n"
@@ -681,7 +695,7 @@ msgid ""
 "and your logo will be present on their websites for a full year.\n"
 msgstr ""
 
-#: static/templates/sponsor.html:73
+#: static/templates/sponsor.html:76
 msgid ""
 "\n"
 "Just the same, your presence at the location is at platinum level as "
@@ -691,18 +705,18 @@ msgid ""
 "Two attendees from your company are allowed to represent you on-site.\n"
 msgstr ""
 
-#: static/templates/sponsor.html:81
+#: static/templates/sponsor.html:84
 msgid ""
 "\n"
 "And for the hackathon you are allowed to define two special winner\n"
 "categories as a platinum sponsor.\n"
 msgstr ""
 
-#: static/templates/sponsor.html:89
+#: static/templates/sponsor.html:93
 msgid "Sponsorship feedback form"
 msgstr ""
 
-#: static/templates/sponsor.html:90
+#: static/templates/sponsor.html:94
 msgid "Sponsorship information package"
 msgstr ""
 

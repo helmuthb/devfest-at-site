@@ -76,4 +76,4 @@ Please click the link below to confirm your email address:
 Thank you.
 """)
 
-EMAIL_SENDER = "DevFest Team <team@devfest.at>"
+EMAIL_SENDER = "DevFest Vienna <team@devfest.at>"

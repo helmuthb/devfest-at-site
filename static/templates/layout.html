@@ -58,16 +58,26 @@
                 </ul>
               </li>
 <!--
+{% if logged_in %}
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user" style="font-size:140%;"></i> <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{{ current_user.pic }}" style="max-width:27; max-height:27px; border:0; margin-top:-5px; margin-bottom:-5px;"> <b class="caret"></b></a>
+                <p class="dropdown-menu" style="padding: 5px;">
+                  {{ current_user.username }}
+                  <a href="/logout">{% trans %}Sign out{% endtrans %}</a>
+                </p>
+              </li>
+{% else %}
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user" style="font-size:140%;"></i><b class="caret"></b></a>
                 <p class="dropdown-menu" style="padding: 5px;">
                   {% trans %}Sign in via:{% endtrans %}<br>
                   <a href="/auth/google"><img src="/img/gplus-16.png" alt="Google+" style="border:0;width:16px;height:16px;padding-right:4px;"/> Google+</a>
                   <a href="/auth/twitter"><img src="/img/twitter-bird-light-bgs.png" style="border:0;"/> Twitter</a>
                   <a href="#signin" data-toggle="modal"><img src="/img/email-16.png" style="border:0; width:16px;padding-right:4px;"/> {% trans %}Email and password{% endtrans %}</a>
-                  <a href="#signup" data-toggle="modal"><img src="/img/email-16.png" style="border:0; width:16px;padding-right:4px;"/> {% trans %}New users{% endtrans %}</a>
+                  <a href="#signup" data-toggle="modal"><img src="/img/email-16.png" style="border:0; width:16px;padding-right:4px;"/> {% trans %}New user{% endtrans %}</a>
                 </p>
               </li>
+{% endif %}
 -->
             </ul>
           </div><!--/.nav-collapse -->
@@ -90,7 +100,7 @@
     <form id="signup_form" class="form-horizontal" name="email-signup">
       <fieldset>
         <div class="control-group">
-          <label class="control-label" for="username">{% trans %}Username{% endtrans %}</label>
+          <label class="control-label" for="username">{% trans %}Name{% endtrans %}</label>
           <div class="controls">
             <input type="text" class="input-xlarge required" id="username" val="None">
           </div>
@@ -98,7 +108,7 @@
         <div class="control-group">
           <label class="control-label" for="email_signup">{% trans %}Email address{% endtrans %}</label>
           <div class="controls">
-            <input type="text" class="input-xlarge required email" id="email_signup" val="None">
+            <input type="text" class="input-xlarge required email" name="email" id="email_signup" val="None">
           </div>
         </div>
         <div class="control-group">
@@ -131,7 +141,7 @@
         <div class="control-group">
           <label class="control-label" for="email_signin">{% trans %}Email address{% endtrans %}</label>
           <div class="controls">
-            <input type="text" class="input-xlarge required email" id="email_signin">
+            <input type="text" class="input-xlarge required email" name="email" id="email_signin">
           </div>
         </div>
         <div class="control-group">
