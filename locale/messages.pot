@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-26 17:22+0200\n"
+"POT-Creation-Date: 2012-09-26 22:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -198,6 +198,10 @@ msgid ""
 "Interested in being part of the event as a speaker?\n"
 msgstr ""
 
+#: static/templates/call.html:21 static/templates/call.html:96
+msgid "dFd2MzI2RF9aa29uNndxdG90Y0dHTVE6MQ"
+msgstr ""
+
 #: static/templates/call.html:21
 msgid "Please let us know more about it!"
 msgstr ""
@@ -323,28 +327,32 @@ msgstr ""
 msgid "DevFest Vienna"
 msgstr ""
 
-#: static/templates/index.html:16 static/templates/index.html:29
+#: static/templates/index.html:16 static/templates/index.html:28
 msgid "10. November, <a href=\"/location#tu-wien\">TU Vienna</a>"
 msgstr ""
 
-#: static/templates/index.html:17 static/templates/index.html:30
+#: static/templates/index.html:17 static/templates/index.html:29
 msgid "Mobile &amp; Web, Cloud &amp; Social"
 msgstr ""
 
-#: static/templates/index.html:18 static/templates/index.html:31
+#: static/templates/index.html:18 static/templates/index.html:30
 msgid "One day of sessions &amp; workshops"
 msgstr ""
 
-#: static/templates/index.html:19 static/templates/index.html:32
+#: static/templates/index.html:19 static/templates/index.html:31
 msgid "11. November, <a href=\"/location#metalab\">Metalab Vienna</a>"
 msgstr ""
 
-#: static/templates/index.html:20 static/templates/index.html:33
+#: static/templates/index.html:20 static/templates/index.html:32
 msgid "Happy Birthday, Android!"
 msgstr ""
 
-#: static/templates/index.html:21 static/templates/index.html:34
+#: static/templates/index.html:21 static/templates/index.html:33
 msgid "A hackathon celebrating Android"
+msgstr ""
+
+#: static/templates/index.html:34
+msgid "Register Now!"
 msgstr ""
 
 #: static/templates/index.html:41
@@ -432,11 +440,11 @@ msgid ""
 "a hacker space in Vienna.\n"
 msgstr ""
 
-#: static/templates/index.html:108
+#: static/templates/index.html:109
 msgid "DevFest Vienna is part of"
 msgstr ""
 
-#: static/templates/index.html:111
+#: static/templates/index.html:112
 msgid "Organized by"
 msgstr ""
 

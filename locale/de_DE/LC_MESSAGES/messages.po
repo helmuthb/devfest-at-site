@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-26 17:22+0200\n"
+"POT-Creation-Date: 2012-09-26 22:47+0200\n"
 "PO-Revision-Date: 2012-09-02 12:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de_DE <LL@li.org>\n"
@@ -213,12 +213,18 @@ msgstr "Call for Speakers"
 msgid ""
 "\n"
 "Interested in being part of the event as a speaker?\n"
-msgstr "Willst du als Vortragende / Vortragender bei diesem Event dabei sein? Ausgezeichnet! "
+msgstr ""
+"Willst du als Vortragende / Vortragender bei diesem Event dabei sein? "
+"Ausgezeichnet! "
+
+#: static/templates/call.html:21 static/templates/call.html:96
+msgid "dFd2MzI2RF9aa29uNndxdG90Y0dHTVE6MQ"
+msgstr "dEt2WU9xWF9lT2NSbTZzRHR4NUprTUE6MQ"
 
 #: static/templates/call.html:21
 #, fuzzy
 msgid "Please let us know more about it!"
-msgstr "Bitte erzählen Sie uns davon!"
+msgstr "Bitte erzähl uns davon!"
 
 #: static/templates/call.html:24
 msgid "Type of Sessions"
@@ -364,29 +370,33 @@ msgstr ""
 msgid "DevFest Vienna"
 msgstr "DevFest Vienna"
 
-#: static/templates/index.html:16 static/templates/index.html:29
+#: static/templates/index.html:16 static/templates/index.html:28
 msgid "10. November, <a href=\"/location#tu-wien\">TU Vienna</a>"
 msgstr "10. November, <a href=\"/location#tu-wien\">TU Wien</a>"
 
-#: static/templates/index.html:17 static/templates/index.html:30
+#: static/templates/index.html:17 static/templates/index.html:29
 msgid "Mobile &amp; Web, Cloud &amp; Social"
 msgstr "Mobile &amp; Web, Cloud &amp; Social"
 
-#: static/templates/index.html:18 static/templates/index.html:31
+#: static/templates/index.html:18 static/templates/index.html:30
 msgid "One day of sessions &amp; workshops"
 msgstr "Ein Tag mit Vorträgen und Workshops"
 
-#: static/templates/index.html:19 static/templates/index.html:32
+#: static/templates/index.html:19 static/templates/index.html:31
 msgid "11. November, <a href=\"/location#metalab\">Metalab Vienna</a>"
 msgstr "11. November, <a href=\"/location#metalab\">Metalab Wien</a>"
 
-#: static/templates/index.html:20 static/templates/index.html:33
+#: static/templates/index.html:20 static/templates/index.html:32
 msgid "Happy Birthday, Android!"
 msgstr "Alles Gute zum Geburtstag, Android!"
 
-#: static/templates/index.html:21 static/templates/index.html:34
+#: static/templates/index.html:21 static/templates/index.html:33
 msgid "A hackathon celebrating Android"
 msgstr "Ein Hackathon zu Ehren von Android"
+
+#: static/templates/index.html:34
+msgid "Register Now!"
+msgstr "Jetzt anmelden!"
 
 #: static/templates/index.html:41
 msgid ""
@@ -497,11 +507,11 @@ msgstr ""
 " <a href=\"/location/#metalab\">Metalab</a> statt, einem Hackerspace in "
 "Wien. "
 
-#: static/templates/index.html:108
+#: static/templates/index.html:109
 msgid "DevFest Vienna is part of"
 msgstr "DevFest Vienna ist ein Teil von"
 
-#: static/templates/index.html:111
+#: static/templates/index.html:112
 msgid "Organized by"
 msgstr "Organisiert durch"
 
