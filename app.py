@@ -8,6 +8,12 @@ routes = [webapp2.Route('/',                  handler = index.Index),
           webapp2.Route('/agenda',            handler = index.Agenda),
           webapp2.Route('/call',              handler = index.Call),
           webapp2.Route('/sponsor',           handler = index.Sponsor),
+          webapp2.Route('/session/<url>',     handler = index.Session),
+          webapp2.Route('/image/<id>',        handler = index.ObjectImage),
+          webapp2.Route('/editsession/<id>',  handler = form.EditSession),
+          webapp2.Route('/editsession',       handler = form.EditSession),
+          webapp2.Route('/editspeaker/<id>',  handler = form.EditSpeaker),
+          webapp2.Route('/editspeaker',       handler = form.EditSpeaker),
           
           # email authentication routes
           webapp2.Route('/email-confirm',     handler = email_auth.EmailConfirm),

@@ -1,0 +1,39 @@
+{% set area = 'home' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+DevFest Vienna - {{ session.title }}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<p>
+<h2>{{ session.title }}</h2>
+{% if session.image %}
+<img src="/image/{{ session.key.urlsafe() }}" style="float:right;">
+{% endif %}
+<p>{{ session.abstract }}</p>
+<div style="clear:both;"></div>
+{% for sp in speakers %}
+{% if sp.image %}
+<img src="/image/{{ sp.key.urlsafe() }}" style="float:left;">
+{% endif %}
+<h4>{% if sp.link %}<a href="{{ sp.link }}" target="_blank">{% endif %}{{ sp.name }}{% if sp.link %}</a>{% endif %}</h4>
+{% if sp.company_link %}<a href="{{ sp.company_link }}" target="_blank">{% endif %}{% if sp.company %}<em>{{ sp.company }}</em><br>{% endif %}{% if sp.company_link %}</a>{% endif %}
+<br>
+<p>{{ sp.bio }}</p>
+<div style="clear:both;"></div>
+{% endfor %}
+<br>
+<a class="btn btn-info" href="/call">{% trans %}Call for Speakers{% endtrans %}</a>
+<br>
+<p>
+</div>
+<div class="span3">
+<iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="348" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+</div>
+</div>
+{% endblock %}

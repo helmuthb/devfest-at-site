@@ -77,3 +77,6 @@ Thank you.
 """)
 
 EMAIL_SENDER = "DevFest Vienna <team@devfest.at>"
+
+# list of admin users
+ADMIN_EMAILS = ['helmuth@breitenfellner.at']

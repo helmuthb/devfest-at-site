@@ -138,3 +138,25 @@ class Widget(RESTModel):
 
 class EmailAddr(ndb.Model):
     email = ndb.StringProperty(required = True)
+
+class Speaker(ndb.Model):
+    url = ndb.StringProperty()
+    name = ndb.StringProperty()
+    link = ndb.StringProperty()
+    company = ndb.StringProperty()
+    company_link = ndb.StringProperty()
+    bio_en = ndb.TextProperty()
+    bio_de = ndb.TextProperty()
+    image = ndb.BlobProperty()
+
+class SessionTalk(ndb.Model):
+    url = ndb.StringProperty()
+    room = ndb.StringProperty()
+    slot = ndb.StringProperty()
+    title_en = ndb.StringProperty()
+    title_de = ndb.StringProperty()
+    abstract_en = ndb.TextProperty()
+    abstract_de = ndb.TextProperty()
+    image = ndb.BlobProperty()
+    language = ndb.StringProperty(choices = ['en', 'de', 'en-pref', 'de-pref'])
+    speaker = ndb.KeyProperty(repeated = True, kind=Speaker)

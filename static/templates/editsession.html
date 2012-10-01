@@ -1,0 +1,118 @@
+{% set area = 'admin' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% if is_edit %}
+DevFest Vienna - Edit Session
+{% else %}
+DevFest Vienna - Create Session
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{% for s in sessions %}
+<a href="/editsession/{{ s.key.urlsafe() }}">{{ s.title_en }}</a><br>
+{% endfor %}
+{% if is_edit %}
+<a href="/editsession">Create ...</a><br>
+{% endif %}
+{% if is_edit %}
+<h2>Edit Session</h2>
+{% else %}
+<h2>Create Session</h2>
+{% endif %}
+<form class="form-horizontal" method="post" enctype="multipart/form-data">
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-url">Session URL</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge" name="url" id="session-url" value="{{ session.url|e}}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-room">Room</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge" name="room" id="session-room" value="{{ session.room|e}}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-slot">Time Slot</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge" name="slot" id="session-slot" value="{{ session.slot|e }}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-title-en">Title (english)</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge required" name="title-en" id="session-title-en" value="{{ session.title_en|e }}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-title-de">Title (deutsch)</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge required" name="title-de" id="session-title-de" value="{{ session.title_de|e }}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-abstract-en">Abstract (english)</label>
+  <div class="controls">
+    <textarea class="input-xlarge required" name="abstract-en" id="session-abstract-en">{{ session.abstract_en|e }}</textarea>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-abstract-de">Abstract (deutsch)</label>
+  <div class="controls">
+    <textarea class="input-xlarge required" name="abstract-de" id="session-abstract-de">{{ session.abstract_de|e }}</textarea>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-image">Image</label>
+  <div class="controls">
+    <input type="file" class="input-xlarge" name="image" id="session-image"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-language">Language</label>
+  <div class="controls">
+    <select class="input-xlarge required" name="language" id="session-language">
+      <option value="">--Please choose--</option>
+      <option value="en" {% if session.language == 'en' %}selected{% endif %}>English</option>
+      <option value="en-pref" {% if session.language == 'en-pref' %}selected{% endif %}>Prefered English</option>
+      <option value="de" {% if session.language == 'de' %}selected{% endif %}>German</option>
+      <option value="de-pref" {% if session.language == 'de-pref' %}selected{% endif %}>Prefered German</option>
+    </select>
+  </div>
+</div>
+</fieldset>
+{% for speaker in speakers %}
+  <div class="controls">
+  <input type="checkbox" name="speaker" value="{{ speaker.key.urlsafe() }}"
+    id="speaker_{{ speaker.key.urlsafe() }}"
+    {% if speaker.key in session.speaker %}
+    checked="checked"
+    {% endif %} />
+  <label for="speaker_{{ speaker.key.urlsafe() }}">{{ speaker.name }}</label>
+  </div>
+{% endfor %}
+<div class="form-actions">
+  <input type="submit" class="btn btn-primary" value="Submit"/>
+</div>
+</form>
+{% endblock %}

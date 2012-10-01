@@ -1,0 +1,94 @@
+{% set area = 'admin' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% if is_edit %}
+DevFest Vienna - Edit Speaker
+{% else %}
+DevFest Vienna - Create Speaker
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{% for s in speakers %}
+<a href="/editspeaker/{{ s.key.urlsafe() }}">{{ s.name }}</a><br>
+{% endfor %}
+{% if is_edit %}
+<a href="/editspeaker">Create ...</a><br>
+{% endif %}
+{% if is_edit %}
+<h2>Edit Speaker</h2>
+{% else %}
+<h2>Create Speaker</h2>
+{% endif %}
+<form class="form-horizontal" method="post" enctype="multipart/form-data">
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="speaker-url">Speaker URL</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge" name="url" id="speaker-url" value="{{ speaker.url|e}}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="speaker-name">Name</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge required" name="name" id="speaker-name" value="{{ speaker.name|e}}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="speaker-slot">Link to profile</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge" name="link" id="speaker-link" value="{{ speaker.link|e }}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="speaker-company">Company</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge" name="company" id="speaker-company" value="{{ speaker.company|e }}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="speaker-company-link">Company Link</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge" name="company-link" id="speaker-company-link" value="{{ speaker.company_link|e }}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="speaker-bio-en">Biography (english)</label>
+  <div class="controls">
+    <textarea class="input-xlarge required" name="bio-en" id="speaker-bio-en">{{ speaker.bio_en|e }}</textarea>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="speaker-bio-de">Biography (german)</label>
+  <div class="controls">
+    <textarea class="input-xlarge required" name="bio-de" id="speaker-bio-de">{{ speaker.bio_de|e }}</textarea>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="speaker-image">Image</label>
+  <div class="controls">
+    <input type="file" class="input-xlarge" name="image" id="speaker-image"/>
+  </div>
+</div>
+</fieldset>
+<div class="form-actions">
+  <input type="submit" class="btn btn-primary" value="Submit"/>
+</div>
+</form>
+{% endblock %}
