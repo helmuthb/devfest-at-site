@@ -153,6 +153,7 @@ class SessionTalk(ndb.Model):
     url = ndb.StringProperty()
     room = ndb.StringProperty()
     slot = ndb.StringProperty()
+    type = ndb.StringProperty(choices = ['workshop', 'talk'])
     title_en = ndb.StringProperty()
     title_de = ndb.StringProperty()
     abstract_en = ndb.TextProperty()

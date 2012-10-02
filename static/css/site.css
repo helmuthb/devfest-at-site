@@ -1770,3 +1770,5 @@ td.slot-content{width:760px;}
 tr.slot-nosession,tr.slot-session{height:32px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
 tr.slot-nosession{background-color:#ddd;}
 .nav-tabs a{color:#555;}
+.leftimage{margin:10px 10px 10px 0;float:left;}
+.rightimage{margin:10px 0 10px 10px;float:right;}

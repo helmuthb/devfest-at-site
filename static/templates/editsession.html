@@ -49,6 +49,18 @@ DevFest Vienna - Create Session
 </fieldset>
 <fieldset>
 <div class="control-group">
+  <label class="control-label" for="session-type">Session Type</label>
+  <div class="controls">
+    <select class="input-xlarge" name="type" id="session-type">
+      <option value="">--Please choose--</option>
+      <option value="workshop" {% if session.type == 'workshop' %}selected{% endif %}>Hands-on Workshop</option>
+      <option value="talk" {% if session.type == 'talk' %}selected{% endif %}>Talk / Presentation</option>
+    </select>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
   <label class="control-label" for="session-title-en">Title (english)</label>
   <div class="controls">
     <input type="text" class="input-xlarge required" name="title-en" id="session-title-en" value="{{ session.title_en|e }}"/>

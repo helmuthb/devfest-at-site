@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-26 17:22+0200\n"
+"POT-Creation-Date: 2012-10-02 13:47+0200\n"
 "PO-Revision-Date: 2012-09-03 10:59+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
@@ -199,6 +199,11 @@ msgid ""
 "Interested in being part of the event as a speaker?\n"
 msgstr ""
 
+#: static/templates/call.html:21 static/templates/call.html:93
+#: static/templates/call.html:99
+msgid "dFd2MzI2RF9aa29uNndxdG90Y0dHTVE6MQ"
+msgstr ""
+
 #: static/templates/call.html:21
 msgid "Please let us know more about it!"
 msgstr ""
@@ -299,7 +304,7 @@ msgid ""
 "to accomodate participants not fully prepared.\n"
 msgstr ""
 
-#: static/templates/call.html:96
+#: static/templates/call.html:93 static/templates/call.html:99
 msgid "Submit your session proposal"
 msgstr ""
 
@@ -324,28 +329,32 @@ msgstr ""
 msgid "DevFest Vienna"
 msgstr ""
 
-#: static/templates/index.html:16 static/templates/index.html:29
+#: static/templates/index.html:16 static/templates/index.html:28
 msgid "10. November, <a href=\"/location#tu-wien\">TU Vienna</a>"
 msgstr ""
 
-#: static/templates/index.html:17 static/templates/index.html:30
+#: static/templates/index.html:17 static/templates/index.html:29
 msgid "Mobile &amp; Web, Cloud &amp; Social"
 msgstr ""
 
-#: static/templates/index.html:18 static/templates/index.html:31
+#: static/templates/index.html:18 static/templates/index.html:30
 msgid "One day of sessions &amp; workshops"
 msgstr ""
 
-#: static/templates/index.html:19 static/templates/index.html:32
+#: static/templates/index.html:19 static/templates/index.html:31
 msgid "11. November, <a href=\"/location#metalab\">Metalab Vienna</a>"
 msgstr ""
 
-#: static/templates/index.html:20 static/templates/index.html:33
+#: static/templates/index.html:20 static/templates/index.html:32
 msgid "Happy Birthday, Android!"
 msgstr ""
 
-#: static/templates/index.html:21 static/templates/index.html:34
+#: static/templates/index.html:21 static/templates/index.html:33
 msgid "A hackathon celebrating Android"
+msgstr ""
+
+#: static/templates/index.html:34
+msgid "Register Now!"
 msgstr ""
 
 #: static/templates/index.html:41
@@ -433,11 +442,11 @@ msgid ""
 "a hacker space in Vienna.\n"
 msgstr ""
 
-#: static/templates/index.html:108
+#: static/templates/index.html:109
 msgid "DevFest Vienna is part of"
 msgstr ""
 
-#: static/templates/index.html:111
+#: static/templates/index.html:112
 msgid "Organized by"
 msgstr ""
 
@@ -611,6 +620,38 @@ msgstr ""
 
 #: static/templates/location.html:93
 msgid "Metalab (11. November 2012)"
+msgstr ""
+
+#: static/templates/session.html:15
+msgid "Hands-on workshop"
+msgstr ""
+
+#: static/templates/session.html:15
+msgid "Talk / Presentation"
+msgstr ""
+
+#: static/templates/session.html:18 static/templates/session.html:61
+msgid "en"
+msgstr ""
+
+#: static/templates/session.html:18
+msgid "Tweet"
+msgstr ""
+
+#: static/templates/session.html:29
+msgid "Room"
+msgstr ""
+
+#: static/templates/session.html:31 static/templates/session.html:36
+msgid "TBA"
+msgstr ""
+
+#: static/templates/session.html:34
+msgid "Time"
+msgstr ""
+
+#: static/templates/session.html:51
+msgid "Interested in making a presentation or a workshop?"
 msgstr ""
 
 #: static/templates/sponsor.html:6

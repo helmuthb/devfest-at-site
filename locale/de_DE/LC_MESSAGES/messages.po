@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-09-26 22:47+0200\n"
+"POT-Creation-Date: 2012-10-02 13:47+0200\n"
 "PO-Revision-Date: 2012-09-02 12:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de_DE <LL@li.org>\n"
@@ -217,7 +217,8 @@ msgstr ""
 "Willst du als Vortragende / Vortragender bei diesem Event dabei sein? "
 "Ausgezeichnet! "
 
-#: static/templates/call.html:21 static/templates/call.html:96
+#: static/templates/call.html:21 static/templates/call.html:93
+#: static/templates/call.html:99
 msgid "dFd2MzI2RF9aa29uNndxdG90Y0dHTVE6MQ"
 msgstr "dEt2WU9xWF9lT2NSbTZzRHR4NUprTUE6MQ"
 
@@ -345,7 +346,7 @@ msgstr ""
 "Gleichzeitig rechne bitte etwas Zeit ein, um Teilnehmern, die noch nicht "
 "alles richtig vorbereitet haben, zu helfen."
 
-#: static/templates/call.html:96
+#: static/templates/call.html:93 static/templates/call.html:99
 msgid "Submit your session proposal"
 msgstr "Präsentation einreichen"
 
@@ -704,6 +705,38 @@ msgstr "Rathausstraße 6, 1010 Wien"
 #: static/templates/location.html:93
 msgid "Metalab (11. November 2012)"
 msgstr "Metalab (11. November 2012)"
+
+#: static/templates/session.html:15
+msgid "Hands-on workshop"
+msgstr "Workshop"
+
+#: static/templates/session.html:15
+msgid "Talk / Presentation"
+msgstr "Vortrag / Präsentation"
+
+#: static/templates/session.html:18 static/templates/session.html:61
+msgid "en"
+msgstr "de"
+
+#: static/templates/session.html:18
+msgid "Tweet"
+msgstr "Twittern"
+
+#: static/templates/session.html:29
+msgid "Room"
+msgstr "Raum"
+
+#: static/templates/session.html:31 static/templates/session.html:36
+msgid "TBA"
+msgstr ""
+
+#: static/templates/session.html:34
+msgid "Time"
+msgstr "Zeit"
+
+#: static/templates/session.html:51
+msgid "Interested in making a presentation or a workshop?"
+msgstr "Interessiert, selber einen Vortrag oder einen Workshop zu halten?"
 
 #: static/templates/sponsor.html:6
 msgid "DevFest Vienna - Sponsorship"
