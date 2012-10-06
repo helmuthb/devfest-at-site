@@ -7,15 +7,24 @@ DevFest Vienna - {{ session.title }}
 {% endblock %}
 
 {% block content %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=267479033283422";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="container">
 <div class="row-fluid">
 <div class="span9">
 <p>
-<a href="/"><img class="visible-phone" src="/img/banner-small.png"></a><br>
+<a href="/"><img class="visible-phone" src="/img/banner2-small.png"></a><br>
 <h3><em>{% if session.type == 'workshop' %}{% trans %}Hands-on workshop{% endtrans %}{% else %}{% trans %}Talk / Presentation{% endtrans %}{% endif %}</em>
 <div style="float:right;">
-<div class="g-plusone" data-annotation="none" data-size="large"></div>
-<a href="https://twitter.com/share" class="twitter-share-button" data-lang="{% trans %}en{% endtrans %}" data-size="large" data-related="DevFestVienna" data-count="none" data-hashtags="jsug,gdg,devfest,vienna" data-dnt="true">{% trans %}Tweet{% endtrans %}</a>
+<div class="g-plusone" data-annotation="none" data-size="medium"></div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="{% trans %}en{% endtrans %}" data-size="medium" data-related="DevFestVienna" data-count="none" data-hashtags="jsug,gdg,devfest,vienna" data-dnt="true">{% trans %}Tweet{% endtrans %}</a>
+<fb:like send="false" style="top:-4px;" layout="button_count" width="90" show_faces="false"></fb:like>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 </h3>
@@ -53,9 +62,9 @@ DevFest Vienna - {{ session.title }}
 <p>
 </div>
 <div class="span3">
-<a href="/"><img class="hidden-phone" src="/img/banner-small.png"></a><br>
+<a href="/"><img class="hidden-phone" src="/img/banner2-small.png"></a><br>
 <br>
-<iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="348" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+<iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
 </div>
 </div>
 <script type="text/javascript">
