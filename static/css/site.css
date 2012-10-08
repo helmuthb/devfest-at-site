@@ -1766,9 +1766,11 @@ label{cursor:default;}
 .github-btn-large .gh-count:before{left:-5px;margin-top:-6px;border-width:6px 6px 6px 0;}
 .github-btn-large .gh-count:after{left:-6px;margin-top:-7px;border-width:7px 7px 7px 0;}
 td.slot-time{width:120px;}
-td.slot-content{width:760px;}
+tr.slot-nosession td.slot-content{width:760px;}
+tr.slot-session td.slot-content{width:360px;}
 tr.slot-nosession,tr.slot-session{height:32px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
-tr.slot-nosession{background-color:#ddd;}
+tr.slot-nosession{background-color:#eee;}
+tr.slot-nosession td{font-style:italic;}
 .nav-tabs a{color:#555;}
 .leftimage{margin:10px 10px 10px 0;float:left;}
 .rightimage{margin:10px 0 10px 10px;float:right;}

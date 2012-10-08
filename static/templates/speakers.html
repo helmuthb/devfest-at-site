@@ -1,0 +1,50 @@
+{% set area = 'speakers' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% trans %}DevFest Vienna - Speakers{% endtrans %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<p>
+<a href="/"><img class="visible-phone" src="/img/banner2-small.png"></a><br>
+<h2>{% trans %}Speakers{% endtrans %}</h3>
+{% set first = true %}
+{% for sp in speakers %}
+{% if not first %}
+<hr>
+{% else %}
+{% set first = false %}
+{% endif %}
+{% if sp.image %}
+<img src="/image/{{ sp.key.urlsafe() }}" class="leftimage" style="width:128px; height:128px;">
+{% endif %}
+<h4>{% if sp.link %}<a href="{{ sp.link }}" target="_blank">{% endif %}{{ sp.name }}{% if sp.link %}</a>{% endif %}</h4>
+{% if sp.company_link %}<a href="{{ sp.company_link }}" target="_blank">{% endif %}{% if sp.company %}<em>{{ sp.company }}</em><br>{% endif %}{% if sp.company_link %}</a>{% endif %}
+<br>
+<p>{{ sp.bio }}</p>
+<div style="clear:both;"></div>
+{% endfor %}
+<br>
+<p>
+</div>
+<div class="span3">
+<a href="/"><img class="hidden-phone" src="/img/banner2-small.png"></a><br>
+<br>
+<iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+</div>
+</div>
+<script type="text/javascript">
+  window.___gcfg = {lang: '{% trans %}en{% endtrans %}'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+{% endblock %}

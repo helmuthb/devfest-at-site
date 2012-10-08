@@ -45,6 +45,22 @@ class Session(common.BaseHandler):
         sp.bio = sp.bio_en
     self.prep_html_response('session.html', {'session':session, 'speakers':speakers})
 
+class Speakers(common.BaseHandler):
+  def get(self):
+    speakers = model.Speaker.query().fetch()
+    # work depending on locale
+    locale = self.session['locale']
+    if self.request.get('locale'):
+      locale = self.request.get('locale')
+      i18n.get_i18n().set_locale(locale)
+    if locale[0:2] == "de":
+      for sp in speakers:
+        sp.bio = sp.bio_de
+    else:
+      for sp in speakers:
+        sp.bio = sp.bio_en
+    self.prep_html_response('speakers.html', {'speakers':speakers})
+
 class ObjectImage(common.BaseHandler):
   def get(self, id):
     object = ndb.Key(urlsafe = id).get()

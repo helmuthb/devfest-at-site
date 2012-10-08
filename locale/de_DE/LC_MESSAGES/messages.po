@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-10-02 13:47+0200\n"
+"POT-Creation-Date: 2012-10-08 10:24+0200\n"
 "PO-Revision-Date: 2012-09-02 12:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de_DE <LL@li.org>\n"
@@ -147,7 +147,7 @@ msgstr "Redirect, wobei aber ein Location: header fehlt."
 msgid "DevFest Vienna - Agenda"
 msgstr "DevFest Vienna - Agenda"
 
-#: static/templates/agenda.html:14 static/templates/layout.html:48
+#: static/templates/agenda.html:14 static/templates/layout.html:49
 msgid "Agenda"
 msgstr "Agenda"
 
@@ -163,39 +163,68 @@ msgstr "Registrierung"
 msgid "Welcome &amp; Introduction"
 msgstr "Willkommen &amp; Einführung"
 
-#: static/templates/agenda.html:28 static/templates/agenda.html:36
-msgid "Talks &amp; Workshops, in parallel in two rooms"
-msgstr "Vorträge &amp; Workshops, aufgeteilt auf zwei Räume gleichzeitig"
+#: static/templates/agenda.html:28
+msgid "Apps Script: Google-hosted Javascript"
+msgstr "Apps Script: Google-hosted Javascript"
 
-#: static/templates/agenda.html:32 static/templates/agenda.html:61
+#: static/templates/agenda.html:29
+msgid "Pay &amp; Identify with PayPal"
+msgstr "Bezahlen &amp; identifizieren mit PayPal"
+
+#: static/templates/agenda.html:33
+msgid "The Google+ Platform"
+msgstr "Die Google+-Plattform"
+
+#: static/templates/agenda.html:34
+msgid "Introduction to BitcoinJ"
+msgstr "Einführung in BitcoinJ"
+
+#: static/templates/agenda.html:38 static/templates/agenda.html:73
 msgid "Lunch"
 msgstr "Mittagessen"
 
-#: static/templates/agenda.html:40
+#: static/templates/agenda.html:42
+msgid "Google+ Hangouts Development"
+msgstr "Google+ Hangouts Entwicklung"
+
+#: static/templates/agenda.html:43
+msgid "Lightning Talks"
+msgstr "Lightning Talks"
+
+#: static/templates/agenda.html:47
 msgid "Coffee break"
 msgstr "Kaffeepause"
 
-#: static/templates/agenda.html:44
-msgid "Drinks, Challenges, Games &amp; time for chatting"
-msgstr "Getränke, Wettkämpfe, Spiele &amp; Zeit zum Plaudern"
+#: static/templates/agenda.html:51
+msgid "The go-start Web Framework"
+msgstr "Das Web-Framework go-start"
 
-#: static/templates/agenda.html:48
+#: static/templates/agenda.html:52 static/templates/session.html:40
+#: static/templates/session.html:45
+msgid "TBA"
+msgstr ""
+
+#: static/templates/agenda.html:56
+msgid "Drinks, Challenges, Games &amp; time for chatting"
+msgstr "Getränke, Verlosungen, Spiele &amp; Zeit zum Plaudern"
+
+#: static/templates/agenda.html:60
 msgid "Day 2: <em>Happy Birthday Android!</em>"
 msgstr "Tag 2: <em>Alles Gute zum Geburtstag, Android!</em>"
 
-#: static/templates/agenda.html:53
+#: static/templates/agenda.html:65
 msgid "Start of Android Birthday Hackathon"
 msgstr "Beginn des Android Geburtstag-Hackathon"
 
-#: static/templates/agenda.html:57 static/templates/agenda.html:65
+#: static/templates/agenda.html:69 static/templates/agenda.html:77
 msgid "Time for developing"
 msgstr "Zeit zum Entwickeln"
 
-#: static/templates/agenda.html:69
+#: static/templates/agenda.html:81
 msgid "Presentation of results"
 msgstr "Vorstellung der Ergebnisse"
 
-#: static/templates/agenda.html:73
+#: static/templates/agenda.html:85
 msgid "Award ceremony"
 msgstr "Preisverleihung"
 
@@ -203,8 +232,7 @@ msgstr "Preisverleihung"
 msgid "DevFest Vienna - Call for Speakers"
 msgstr "DevFest Vienna - Call for Speakers"
 
-#: static/templates/call.html:14 static/templates/index.html:83
-#: static/templates/layout.html:49
+#: static/templates/call.html:14
 msgid "Call for Speakers"
 msgstr "Call for Speakers"
 
@@ -443,31 +471,32 @@ msgstr ""
 "Mitgliedern der lokalen Entwicklergemeinschaft in Wien."
 
 #: static/templates/index.html:67
+#, fuzzy
 msgid ""
 "\n"
 "In two rooms at the <a href=\"/location#tu-wien\">University of "
 "Technology\n"
 "in Vienna</a> sessions will be held in parallel.\n"
-"Some of the sessions which have been announced are:\n"
+"Some of the <a href=\"/agenda\">sessions</a> which have been announced "
+"are:\n"
 msgstr ""
 "In zwei Räumen auf der <a href=\"/location#tu-wien\">TU Wien</a> werden "
-"Vorträge und Workshops in parallel gehalten. Hier einige der Vorträge und"
-" Workshops, die bereits eingereicht wurden: "
+"Vorträge und Workshops in parallel gehalten. Hier einige der <a "
+"href=\"/agenda\">Vorträge und Workshops</a>, die bereits eingereicht wurden: "
 
 #: static/templates/index.html:73
 msgid ""
 "\n"
-"Google+ API family, mobile payment APIs, Go web frameworks,\n"
-"GWT, Play! framework, Chrome extensions, Android Accessory Development "
-"Kit,\n"
-"Bitcoin Java API, Google App Scripts, ...\n"
+"<a href= \"/session/the-google-plus-platform\">Google+ API family</a>, <a"
+" href=\"/session/pay-identify-with-paypal\">mobile payment APIs</a>, <a "
+"href=\"/session/the-go-start-web-framework\">Go-start web framework</a>,"
+"\n"
+"<a href=\"/session/introduction-to-bitcoinj\">Bitcoin Java API</a>,\n"
+"<a href=\"/session/apps-script-google-hosted-javascript\">Google App "
+"Scripts</a>, ...\n"
 msgstr ""
 
 #: static/templates/index.html:80
-msgid "and maybe your talk or workshop?"
-msgstr "und vielleicht auch dein Vortrag oder Workshop?"
-
-#: static/templates/index.html:85
 msgid ""
 "\n"
 "Additionally there is enough time to meet and exchange with fellow "
@@ -478,11 +507,11 @@ msgstr ""
 "Entwicklern zur Verfügung; denn wenn Entwickler zusammenkommen kann "
 "unglaubliches herauskommen."
 
-#: static/templates/index.html:90
+#: static/templates/index.html:85
 msgid "Day 2: <em>Happy Birthday, Android!</em>"
 msgstr "Tag 2: <em>Alles Gute zum Geburtstag, Android!</em>"
 
-#: static/templates/index.html:92
+#: static/templates/index.html:87
 msgid ""
 "\n"
 "It was on 5 November 2007 that Google launched Android as part of the\n"
@@ -494,7 +523,7 @@ msgstr ""
 "Open Handset Alliance gestartet. Nun, fünf Jahre später, feiern wir "
 "dessen Erfolg mit einem speziellen Geburtstagshackathon! "
 
-#: static/templates/index.html:99
+#: static/templates/index.html:94
 msgid ""
 "\n"
 "In teams we are developing applications for Android and\n"
@@ -508,19 +537,19 @@ msgstr ""
 " <a href=\"/location/#metalab\">Metalab</a> statt, einem Hackerspace in "
 "Wien. "
 
-#: static/templates/index.html:109
+#: static/templates/index.html:104
 msgid "DevFest Vienna is part of"
 msgstr "DevFest Vienna ist ein Teil von"
 
-#: static/templates/index.html:112
+#: static/templates/index.html:107
 msgid "Organized by"
 msgstr "Organisiert durch"
 
-#: static/templates/layout.html:33
+#: static/templates/layout.html:34
 msgid "Your browser is <em>ancient!</em>"
 msgstr "Ihr Browser ist <em>steinalt!</em>"
 
-#: static/templates/layout.html:33
+#: static/templates/layout.html:34
 msgid ""
 "<a href=\"http://browsehappy.com/\">Upgrade to a different browser</a> or"
 " <a href=\"http://www.google.com/chromeframe/?redirect=true\">install "
@@ -531,87 +560,91 @@ msgstr ""
 "href=\"http://www.google.com/chromeframe/?redirect=true\">installieren "
 "Sie Google Chrome Frame</a> um diese Seite anzusehen."
 
-#: static/templates/layout.html:46
+#: static/templates/layout.html:47
 msgid "Home"
 msgstr ""
 
-#: static/templates/layout.html:47
+#: static/templates/layout.html:48
 #, fuzzy
 msgid "Location"
 msgstr "Veranstaltungsort"
 
-#: static/templates/layout.html:50 static/templates/sponsor.html:14
+#: static/templates/layout.html:50 static/templates/speakers.html:15
+msgid "Speakers"
+msgstr "Vortragende"
+
+#: static/templates/layout.html:51 static/templates/sponsor.html:14
 msgid "Sponsorship"
 msgstr "Sponsoren"
 
-#: static/templates/layout.html:54
+#: static/templates/layout.html:55
 msgid "Language"
 msgstr "Sprache"
 
-#: static/templates/layout.html:56
+#: static/templates/layout.html:57
 msgid "class-active-if-english"
 msgstr "class"
 
-#: static/templates/layout.html:56
+#: static/templates/layout.html:57
 msgid "English"
 msgstr "Englisch"
 
-#: static/templates/layout.html:57
+#: static/templates/layout.html:58
 msgid "class-active-if-german"
 msgstr "class=\"active\""
 
-#: static/templates/layout.html:57
+#: static/templates/layout.html:58
 msgid "German"
 msgstr "Deutsch"
 
-#: static/templates/layout.html:66
+#: static/templates/layout.html:67
 msgid "Sign out"
 msgstr "Abmelden"
 
-#: static/templates/layout.html:73
+#: static/templates/layout.html:74
 #, fuzzy
 msgid "Sign in via:"
 msgstr "Anmelden"
 
-#: static/templates/layout.html:76
+#: static/templates/layout.html:77
 msgid "Email and password"
 msgstr "Email und Passwort"
 
-#: static/templates/layout.html:77
+#: static/templates/layout.html:78
 #, fuzzy
 msgid "New user"
 msgstr "Neue Benutzer"
 
-#: static/templates/layout.html:95
+#: static/templates/layout.html:96
 msgid "Sign up with your email address"
 msgstr "Mit E-Mail-Adresse registrieren"
 
-#: static/templates/layout.html:103
+#: static/templates/layout.html:104
 #, fuzzy
 msgid "Name"
 msgstr "Benutzername"
 
-#: static/templates/layout.html:109 static/templates/layout.html:142
+#: static/templates/layout.html:110 static/templates/layout.html:143
 msgid "Email address"
 msgstr "E-Mail Adresse"
 
-#: static/templates/layout.html:115 static/templates/layout.html:148
+#: static/templates/layout.html:116 static/templates/layout.html:149
 msgid "Password"
 msgstr "Passwort"
 
-#: static/templates/layout.html:127
+#: static/templates/layout.html:128
 msgid "Sign Up"
 msgstr "Registrieren"
 
-#: static/templates/layout.html:135
+#: static/templates/layout.html:136
 msgid "Sign in"
 msgstr "Anmelden"
 
-#: static/templates/layout.html:160
+#: static/templates/layout.html:161
 msgid "Sign In"
 msgstr "Anmelden"
 
-#: static/templates/layout.html:174
+#: static/templates/layout.html:175
 msgid ""
 "DevFest Vienna is jointly organized by <a href=\"http://jsug.at\">JSUG"
 "@TU-Wien</a> and <a href=\"http://gdg-vienna.at\">GDG Vienna</a> as part "
@@ -622,7 +655,7 @@ msgstr ""
 "globalen <a href=\"http://devfest.info\">GDG DevFest Season</a> gemeinsam"
 " veranstaltet."
 
-#: static/templates/layout.html:175
+#: static/templates/layout.html:176
 msgid "Find us on Google+"
 msgstr "Wir sind auf Google+"
 
@@ -706,37 +739,39 @@ msgstr "Rathausstraße 6, 1010 Wien"
 msgid "Metalab (11. November 2012)"
 msgstr "Metalab (11. November 2012)"
 
-#: static/templates/session.html:15
+#: static/templates/session.html:23
 msgid "Hands-on workshop"
 msgstr "Workshop"
 
-#: static/templates/session.html:15
+#: static/templates/session.html:23
 msgid "Talk / Presentation"
 msgstr "Vortrag / Präsentation"
 
-#: static/templates/session.html:18 static/templates/session.html:61
+#: static/templates/session.html:26 static/templates/session.html:71
+#: static/templates/speakers.html:42
 msgid "en"
 msgstr "de"
 
-#: static/templates/session.html:18
+#: static/templates/session.html:26
 msgid "Tweet"
 msgstr "Twittern"
 
-#: static/templates/session.html:29
+#: static/templates/session.html:38
 msgid "Room"
 msgstr "Raum"
 
-#: static/templates/session.html:31 static/templates/session.html:36
-msgid "TBA"
-msgstr ""
-
-#: static/templates/session.html:34
+#: static/templates/session.html:43
 msgid "Time"
 msgstr "Zeit"
 
-#: static/templates/session.html:51
+#: static/templates/session.html:60
 msgid "Interested in making a presentation or a workshop?"
 msgstr "Interessiert, selber einen Vortrag oder einen Workshop zu halten?"
+
+#: static/templates/speakers.html:6
+#, fuzzy
+msgid "DevFest Vienna - Speakers"
+msgstr "DevFest Vienna - Vortragende"
 
 #: static/templates/sponsor.html:6
 msgid "DevFest Vienna - Sponsorship"
@@ -874,4 +909,18 @@ msgstr "Sponsorship Formular"
 #: static/templates/sponsor.html:94
 msgid "Sponsorship information package"
 msgstr "Sponsorship Informations-Paket (in Englisch)"
+
+#~ msgid "Talks &amp; Workshops, in parallel in two rooms"
+#~ msgstr "Vorträge &amp; Workshops, aufgeteilt auf zwei Räume gleichzeitig"
+
+#~ msgid ""
+#~ "\n"
+#~ "Google+ API family, mobile payment APIs, Go web frameworks,\n"
+#~ "GWT, Play! framework, Chrome extensions, "
+#~ "Android Accessory Development Kit,\n"
+#~ "Bitcoin Java API, Google App Scripts, ...\n"
+#~ msgstr ""
+
+#~ msgid "and maybe your talk or workshop?"
+#~ msgstr "und vielleicht auch dein Vortrag oder Workshop?"
 

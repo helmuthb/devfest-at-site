@@ -414,8 +414,11 @@ label {
 td.slot-time {
   width: 120px;
 }
-td.slot-content {
+tr.slot-nosession td.slot-content {
   width: 760px;
+}
+tr.slot-session td.slot-content {
+  width: 360px;
 }
 tr.slot-nosession,
 tr.slot-session {
@@ -424,7 +427,10 @@ tr.slot-session {
   border-bottom: 1px solid #ccc;
 }
 tr.slot-nosession {
-  background-color: #ddd;
+  background-color: #eee;
+}
+tr.slot-nosession td {
+  font-style: italic;
 }
 .nav-tabs a {
   color: #555;

@@ -48,7 +48,7 @@ DevFest Vienna - {{ session.title }}
 <div style="clear:both;"></div>
 {% for sp in speakers %}
 {% if sp.image %}
-<img src="/image/{{ sp.key.urlsafe() }}" class="leftimage">
+<img src="/image/{{ sp.key.urlsafe() }}" class="leftimage" style="width:128px; height:128px;">
 {% endif %}
 <h4>{% if sp.link %}<a href="{{ sp.link }}" target="_blank">{% endif %}{{ sp.name }}{% if sp.link %}</a>{% endif %}</h4>
 {% if sp.company_link %}<a href="{{ sp.company_link }}" target="_blank">{% endif %}{% if sp.company %}<em>{{ sp.company }}</em><br>{% endif %}{% if sp.company_link %}</a>{% endif %}
