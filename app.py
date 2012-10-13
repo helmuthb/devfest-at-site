@@ -1,7 +1,7 @@
 import webapp2
 
 import settings
-from handlers import index, form, api, common, email_auth, locale
+from handlers import index, form, api, common, email_auth, locale, json
 
 routes = [webapp2.Route('/',                  handler = index.Index),
           webapp2.Route('/location',          handler = index.Location),
@@ -15,6 +15,10 @@ routes = [webapp2.Route('/',                  handler = index.Index),
           webapp2.Route('/editsession',       handler = form.EditSession),
           webapp2.Route('/editspeaker/<id>',  handler = form.EditSpeaker),
           webapp2.Route('/editspeaker',       handler = form.EditSpeaker),
+
+          # JSON results for Android app
+          webapp2.Route('/json/sessions',     handler = json.JsonSessions),
+          webapp2.Route('/json/speakers',     handler = json.JsonSpeakers),
           
           # email authentication routes
           webapp2.Route('/email-confirm',     handler = email_auth.EmailConfirm),

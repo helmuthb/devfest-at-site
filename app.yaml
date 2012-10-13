@@ -23,6 +23,9 @@ handlers:
   static_files: static/humans.txt
   upload: static/humans.txt
   
+- url: /download
+  static_dir: static/download
+
 - url: /css
   static_dir: static/css
   
