@@ -27,7 +27,7 @@ class JsonSessions(common.BaseHandler):
       event['track'] = event_raw.track
       event['attending'] = 'N'
       event['id'] = event_raw.url
-      event['thumbnail_url'] = 'http://www.devfest.at/image/' + event['id']
+      event['thumbnail_url'] = 'http://www.devfest.at/image/' + event_raw.url
       event['speaker_id'] = [ sp.urlsafe() for sp in event_raw.speaker ]
       event['room'] = string.lower(event_raw.room)
       event['level'] = 'Intro'
