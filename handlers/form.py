@@ -21,10 +21,13 @@ class EditSession(BaseHandler):
     except:
       session = None
       is_edit = False
-    self.prep_html_response('editsession.html', {'sessions':sessions, 'session':session, 'is_edit':is_edit, 'speakers':speakers})
+    tracks = [ 'Android', 'Java', 'Web', 'Cloud', 'Social', 'Business', 'Workshop' ]
+    self.prep_html_response('editsession.html', {'sessions':sessions, 'session':session, 'is_edit':is_edit, 'speakers':speakers, 'tracks':tracks})
 
   @with_login
   def post(self, id=None):
+    if self.current_user.email not in settings.ADMIN_EMAILS:
+      return self.prep_html_response('generic_error.html', { 'code': 401 } )
     if id:
       session = ndb.Key(urlsafe = id).get()
     else:
@@ -41,6 +44,7 @@ class EditSession(BaseHandler):
       session.image = db.Blob(self.request.get('image'))
     session.language = self.request.get('language')
     session.speaker = [ ndb.Key(urlsafe = x) for x in self.request.get_all('speaker') ]
+    session.track = self.request.get_all('track')
     # store in DB
     session.put()
     # redirect to the get
@@ -64,6 +68,8 @@ class EditSpeaker(BaseHandler):
 
   @with_login
   def post(self, id=None):
+    if self.current_user.email not in settings.ADMIN_EMAILS:
+      return self.prep_html_response('generic_error.html', { 'code': 401 } )
     if id:
       speaker = ndb.Key(urlsafe = id).get()
     else:

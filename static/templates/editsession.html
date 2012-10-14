@@ -12,7 +12,7 @@ DevFest Vienna - Create Session
 
 {% block content %}
 {% for s in sessions %}
-<a href="/editsession/{{ s.key.urlsafe() }}">{{ s.title_en }}</a><br>
+<a href="/editsession/{{ s.key.urlsafe() }}">{{ s.title_en|e }}</a><br>
 {% endfor %}
 {% if is_edit %}
 <a href="/editsession">Create ...</a><br>
@@ -113,6 +113,21 @@ DevFest Vienna - Create Session
   </div>
 </div>
 </fieldset>
+<fieldset>
+<label class="control-label">Track</label>
+{% for track in tracks %}
+  <div class="controls">
+  <input type="checkbox" name="track" value="{{ track }}"
+    id="track_{{ track }}"
+    {% if track in session.track %}
+    checked="checked"
+    {% endif %} />
+  <label for="track_{{ track }}">{{ track }}</label>
+  </div>
+{% endfor %}
+</fieldset>
+<fieldset>
+<label class="control-label">Speaker</label>
 {% for speaker in speakers %}
   <div class="controls">
   <input type="checkbox" name="speaker" value="{{ speaker.key.urlsafe() }}"
@@ -123,6 +138,7 @@ DevFest Vienna - Create Session
   <label for="speaker_{{ speaker.key.urlsafe() }}">{{ speaker.name }}</label>
   </div>
 {% endfor %}
+</fieldset>
 <div class="form-actions">
   <input type="submit" class="btn btn-primary" value="Submit"/>
 </div>

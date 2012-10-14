@@ -3,7 +3,7 @@
 {% import 'forms.html' as forms %}
 
 {% block title %}
-DevFest Vienna - {{ session.title }}
+DevFest Vienna - {{ session.title|e }}
 {% endblock %}
 
 {% block content %}
@@ -28,7 +28,7 @@ DevFest Vienna - {{ session.title }}
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 </h3>
-<h2>{{ session.title }}</h2>
+<h2>{{ session.title|e }}</h2>
 {% if session.image %}
 <img src="/image/{{ session.key.urlsafe() }}" class="rightimage">
 {% endif %}

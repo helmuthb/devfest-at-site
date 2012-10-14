@@ -158,6 +158,7 @@ class SessionTalk(ndb.Model):
     title_de = ndb.StringProperty()
     abstract_en = ndb.TextProperty()
     abstract_de = ndb.TextProperty()
+    track = ndb.StringProperty(repeated = True)
     image = ndb.BlobProperty()
     language = ndb.StringProperty(choices = ['en', 'de', 'en-pref', 'de-pref'])
-    speaker = ndb.KeyProperty(repeated = True, kind=Speaker)
+    speaker = ndb.KeyProperty(repeated = True, kind = Speaker)

@@ -12,7 +12,7 @@ DevFest Vienna - Create Speaker
 
 {% block content %}
 {% for s in speakers %}
-<a href="/editspeaker/{{ s.key.urlsafe() }}">{{ s.name }}</a><br>
+<a href="/editspeaker/{{ s.key.urlsafe() }}">{{ s.name|e }}</a><br>
 {% endfor %}
 {% if is_edit %}
 <a href="/editspeaker">Create ...</a><br>
