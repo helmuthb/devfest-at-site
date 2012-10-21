@@ -19,6 +19,12 @@ routes = [webapp2.Route('/',                  handler = index.Index),
           # JSON results for Android app
           webapp2.Route('/json/sessions',     handler = json.JsonSessions),
           webapp2.Route('/json/speakers',     handler = json.JsonSpeakers),
+          webapp2.Route('/json/news',         handler = json.JsonNews),
+          webapp2.Route('/json/rooms',        handler = json.JsonRooms),
+          webapp2.Route('/json/slots',        handler = json.JsonSlots),
+          webapp2.Route('/json/tracks',       handler = json.JsonTracks),
+          webapp2.Route('/json/suggests',     handler = json.JsonSuggests),
+          webapp2.Route('/json/sponsors',     handler = json.JsonSponsors),
           
           # email authentication routes
           webapp2.Route('/email-confirm',     handler = email_auth.EmailConfirm),

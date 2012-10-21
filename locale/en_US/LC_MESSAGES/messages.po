@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-10-08 10:24+0200\n"
+"POT-Creation-Date: 2012-10-17 17:58+0200\n"
 "PO-Revision-Date: 2012-09-03 10:59+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
@@ -164,7 +164,7 @@ msgstr ""
 msgid "Introduction to BitcoinJ"
 msgstr ""
 
-#: static/templates/agenda.html:38 static/templates/agenda.html:73
+#: static/templates/agenda.html:38 static/templates/agenda.html:83
 msgid "Lunch"
 msgstr ""
 
@@ -181,35 +181,47 @@ msgid "Coffee break"
 msgstr ""
 
 #: static/templates/agenda.html:51
-msgid "The go-start Web Framework"
+msgid "The go-start Web Framework (part 1)"
 msgstr ""
 
-#: static/templates/agenda.html:52 static/templates/session.html:40
-#: static/templates/session.html:45
-msgid "TBA"
+#: static/templates/agenda.html:52
+msgid "Introducing Activiti"
 msgstr ""
 
 #: static/templates/agenda.html:56
-msgid "Drinks, Challenges, Games &amp; time for chatting"
+msgid "The go-start Web Framework (part 2)"
 msgstr ""
 
-#: static/templates/agenda.html:60
+#: static/templates/agenda.html:57
+msgid "Google Web Toolkit in practice"
+msgstr ""
+
+#: static/templates/agenda.html:61 static/templates/agenda.html:62
+#: static/templates/session.html:40 static/templates/session.html:45
+msgid "TBA"
+msgstr ""
+
+#: static/templates/agenda.html:66
+msgid "Afterparty!"
+msgstr ""
+
+#: static/templates/agenda.html:70
 msgid "Day 2: <em>Happy Birthday Android!</em>"
 msgstr ""
 
-#: static/templates/agenda.html:65
+#: static/templates/agenda.html:75
 msgid "Start of Android Birthday Hackathon"
 msgstr ""
 
-#: static/templates/agenda.html:69 static/templates/agenda.html:77
+#: static/templates/agenda.html:79 static/templates/agenda.html:87
 msgid "Time for developing"
 msgstr ""
 
-#: static/templates/agenda.html:81
+#: static/templates/agenda.html:91
 msgid "Presentation of results"
 msgstr ""
 
-#: static/templates/agenda.html:85
+#: static/templates/agenda.html:95
 msgid "Award ceremony"
 msgstr ""
 
@@ -471,10 +483,14 @@ msgid ""
 msgstr ""
 
 #: static/templates/index.html:104
-msgid "DevFest Vienna is part of"
+msgid "Sponsored by"
 msgstr ""
 
 #: static/templates/index.html:107
+msgid "DevFest Vienna is part of"
+msgstr ""
+
+#: static/templates/index.html:110
 msgid "Organized by"
 msgstr ""
 
@@ -794,26 +810,9 @@ msgstr ""
 msgid "Sponsorship information package"
 msgstr ""
 
-#~ msgid "Talks &amp; Workshops, in parallel in two rooms"
+#~ msgid "The go-start Web Framework"
 #~ msgstr ""
 
-#~ msgid ""
-#~ "\n"
-#~ "In two rooms at the <a "
-#~ "href=\"/location#tu-wien\">University of Technology"
-#~ "\n"
-#~ "in Vienna</a> sessions will be held in parallel.\n"
-#~ "Some of the sessions which have been announced are:\n"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "Google+ API family, mobile payment APIs, Go web frameworks,\n"
-#~ "GWT, Play! framework, Chrome extensions, "
-#~ "Android Accessory Development Kit,\n"
-#~ "Bitcoin Java API, Google App Scripts, ...\n"
-#~ msgstr ""
-
-#~ msgid "and maybe your talk or workshop?"
+#~ msgid "Drinks, Challenges, Games &amp; time for chatting"
 #~ msgstr ""
 

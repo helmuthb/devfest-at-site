@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-10-08 10:24+0200\n"
+"POT-Creation-Date: 2012-10-17 17:58+0200\n"
 "PO-Revision-Date: 2012-09-02 12:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de_DE <LL@li.org>\n"
@@ -179,7 +179,7 @@ msgstr "Die Google+-Plattform"
 msgid "Introduction to BitcoinJ"
 msgstr "Einführung in BitcoinJ"
 
-#: static/templates/agenda.html:38 static/templates/agenda.html:73
+#: static/templates/agenda.html:38 static/templates/agenda.html:83
 msgid "Lunch"
 msgstr "Mittagessen"
 
@@ -196,35 +196,49 @@ msgid "Coffee break"
 msgstr "Kaffeepause"
 
 #: static/templates/agenda.html:51
-msgid "The go-start Web Framework"
-msgstr "Das Web-Framework go-start"
+#, fuzzy
+msgid "The go-start Web Framework (part 1)"
+msgstr "Das Web-Framework go-start (1. Teil)"
 
-#: static/templates/agenda.html:52 static/templates/session.html:40
-#: static/templates/session.html:45
+#: static/templates/agenda.html:52
+msgid "Introducing Activiti"
+msgstr "Vorstellung von Activiti"
+
+#: static/templates/agenda.html:56
+#, fuzzy
+msgid "The go-start Web Framework (part 2)"
+msgstr "Das Web-Framework go-start (2. Teil)"
+
+#: static/templates/agenda.html:57
+msgid "Google Web Toolkit in practice"
+msgstr "Google Web Toolkit in der Praxis"
+
+#: static/templates/agenda.html:61 static/templates/agenda.html:62
+#: static/templates/session.html:40 static/templates/session.html:45
 msgid "TBA"
 msgstr ""
 
-#: static/templates/agenda.html:56
-msgid "Drinks, Challenges, Games &amp; time for chatting"
-msgstr "Getränke, Verlosungen, Spiele &amp; Zeit zum Plaudern"
+#: static/templates/agenda.html:66
+msgid "Afterparty!"
+msgstr ""
 
-#: static/templates/agenda.html:60
+#: static/templates/agenda.html:70
 msgid "Day 2: <em>Happy Birthday Android!</em>"
 msgstr "Tag 2: <em>Alles Gute zum Geburtstag, Android!</em>"
 
-#: static/templates/agenda.html:65
+#: static/templates/agenda.html:75
 msgid "Start of Android Birthday Hackathon"
 msgstr "Beginn des Android Geburtstag-Hackathon"
 
-#: static/templates/agenda.html:69 static/templates/agenda.html:77
+#: static/templates/agenda.html:79 static/templates/agenda.html:87
 msgid "Time for developing"
 msgstr "Zeit zum Entwickeln"
 
-#: static/templates/agenda.html:81
+#: static/templates/agenda.html:91
 msgid "Presentation of results"
 msgstr "Vorstellung der Ergebnisse"
 
-#: static/templates/agenda.html:85
+#: static/templates/agenda.html:95
 msgid "Award ceremony"
 msgstr "Preisverleihung"
 
@@ -482,7 +496,8 @@ msgid ""
 msgstr ""
 "In zwei Räumen auf der <a href=\"/location#tu-wien\">TU Wien</a> werden "
 "Vorträge und Workshops in parallel gehalten. Hier einige der <a "
-"href=\"/agenda\">Vorträge und Workshops</a>, die bereits eingereicht wurden: "
+"href=\"/agenda\">Vorträge und Workshops</a>, die bereits eingereicht "
+"wurden: "
 
 #: static/templates/index.html:73
 msgid ""
@@ -538,10 +553,14 @@ msgstr ""
 "Wien. "
 
 #: static/templates/index.html:104
+msgid "Sponsored by"
+msgstr ""
+
+#: static/templates/index.html:107
 msgid "DevFest Vienna is part of"
 msgstr "DevFest Vienna ist ein Teil von"
 
-#: static/templates/index.html:107
+#: static/templates/index.html:110
 msgid "Organized by"
 msgstr "Organisiert durch"
 
@@ -910,17 +929,6 @@ msgstr "Sponsorship Formular"
 msgid "Sponsorship information package"
 msgstr "Sponsorship Informations-Paket (in Englisch)"
 
-#~ msgid "Talks &amp; Workshops, in parallel in two rooms"
-#~ msgstr "Vorträge &amp; Workshops, aufgeteilt auf zwei Räume gleichzeitig"
-
-#~ msgid ""
-#~ "\n"
-#~ "Google+ API family, mobile payment APIs, Go web frameworks,\n"
-#~ "GWT, Play! framework, Chrome extensions, "
-#~ "Android Accessory Development Kit,\n"
-#~ "Bitcoin Java API, Google App Scripts, ...\n"
-#~ msgstr ""
-
-#~ msgid "and maybe your talk or workshop?"
-#~ msgstr "und vielleicht auch dein Vortrag oder Workshop?"
+#~ msgid "Drinks, Challenges, Games &amp; time for chatting"
+#~ msgstr "Getränke, Verlosungen, Spiele &amp; Zeit zum Plaudern"
 
