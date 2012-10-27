@@ -34,7 +34,7 @@ class JsonHandler(common.BaseHandler):
 
   # helper to get the etag value
   def etagStamp(self):
-    return "2012-10-21"
+    return "2012-10-22"
 
 class JsonSessions(JsonHandler):
   def getData(self, locale):
@@ -55,6 +55,8 @@ class JsonSessions(JsonHandler):
       event['thumbnail_url'] = 'http://www.devfest.at/image/' + event_raw.key.urlsafe()
       event['speaker_id'] = [ sp.urlsafe() for sp in event_raw.speaker ]
       event['room'] = string.lower(event_raw.room)
+      if event['room'] == 'ei9':
+        event['room'] = 'ei09'
       event['level'] = 'Intro'
       if locale[0:2] == "de":
         event['title'] = event_raw.title_de
@@ -120,14 +122,13 @@ class JsonSlots(JsonHandler):
   def getData(self, locale):
     if locale[0:2] == "de":
       slots_day1 = [
-         { 'start': '09:00', 'end': '09:30', 'meta': 'Vorraum',
+         { 'start': '09:00', 'end': '09:15', 'meta': 'Vorraum',
            'title': 'Registrierung / Check-In' },
-         { 'start': '09:30', 'end': '10:00', 'meta': 'Vorraum',
+         { 'start': '09:15', 'end': '09:30', 'meta': 'Vorraum',
            'title': 'Willkommen & Einführung' },
-         { 'start': '11:00', 'end': '11:15', 'meta': '', 'title': 'Pause' },
-         { 'start': '12:15', 'end': '13:30', 'meta': 'Vorraum',
+         { 'start': '12:50', 'end': '13:50', 'meta': 'Vorraum',
            'title': 'Mittagessen' },
-         { 'start': '14:30', 'end': '15:00', 'meta': '', 'title': 'Pause' } ]
+         { 'start': '15:35', 'end': '15:50', 'meta': '', 'title': 'Kaffeepause' } ]
       slots_day2 = [
          { 'start': '10:00', 'end': '10:00', 'meta': 'Hauptraum',
            'title': 'Beginn des Android Geburtstags Hackathon' },
@@ -143,14 +144,13 @@ class JsonSlots(JsonHandler):
            'title': 'Preisverleihung' } ]
     else:
       slots_day1 = [
-         { 'start': '09:00', 'end': '09:30', 'meta': 'Main Hall',
+         { 'start': '09:00', 'end': '09:15', 'meta': 'Main Hall',
            'title': 'Registration / Check-In' },
-         { 'start': '09:30', 'end': '10:00', 'meta': 'Main Hall',
+         { 'start': '09:15', 'end': '09:30', 'meta': 'Main Hall',
            'title': 'Welcome & Introduction' },
-         { 'start': '11:00', 'end': '11:15', 'meta': '', 'title': 'Break' },
-         { 'start': '12:15', 'end': '13:30', 'meta': 'Main Hall',
+         { 'start': '12:50', 'end': '13:50', 'meta': 'Main Hall',
            'title': 'Lunch Break' },
-         { 'start': '14:30', 'end': '15:00', 'meta': '', 'title': 'Break' } ]
+         { 'start': '15:35', 'end': '15:50', 'meta': '', 'title': 'Break' } ]
       slots_day2 = [
          { 'start': '10:00', 'end': '10:00', 'meta': 'Main room',
            'title': 'Start of Android Birthday Hackathon' },

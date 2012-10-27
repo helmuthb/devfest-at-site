@@ -16,6 +16,10 @@ class Agenda(common.BaseHandler):
   def get(self):
     self.prep_html_response('agenda.html')
 
+class Agenda2(common.BaseHandler):
+  def get(self):
+    self.prep_html_response('agenda2.html')
+
 class Sponsor(common.BaseHandler):
   def get(self):
     self.prep_html_response('sponsor.html')

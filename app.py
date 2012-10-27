@@ -6,6 +6,7 @@ from handlers import index, form, api, common, email_auth, locale, json
 routes = [webapp2.Route('/',                  handler = index.Index),
           webapp2.Route('/location',          handler = index.Location),
           webapp2.Route('/agenda',            handler = index.Agenda),
+          webapp2.Route('/agenda2',           handler = index.Agenda2),
           webapp2.Route('/call',              handler = index.Call),
           webapp2.Route('/sponsor',           handler = index.Sponsor),
           webapp2.Route('/session/<url>',     handler = index.Session),
@@ -41,16 +42,6 @@ routes = [webapp2.Route('/',                  handler = index.Index),
           # i18n manual locale change
           webapp2.Route('/locale/<locale>', handler=locale.SetLocale),
 
-          # REST API
-          webapp2.Route('/rest/<obj_t>s', 
-                        methods = ['PUT'], 
-                        handler = common.BaseRESTHandler), # note the s at the end of URI
-          webapp2.Route('/rest/<obj_t>/<identifier:\d+>', 
-                        methods = ['GET', 'POST', 'DELETE'], 
-                        handler = common.BaseRESTHandler), 
-          
-          # RPC API
-          webapp2.Route('/rpc/<action>',               handler = api.RPCHandler), 
           ]                             
                                        
 application = webapp2.WSGIApplication(routes,   
