@@ -34,7 +34,7 @@ class JsonHandler(common.BaseHandler):
 
   # helper to get the etag value
   def etagStamp(self):
-    return "2012-10-22"
+    return "2012-10-27"
 
 class JsonSessions(JsonHandler):
   def getData(self, locale):

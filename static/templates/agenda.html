@@ -7,11 +7,26 @@
 {% endblock %}
 
 {% block content %}
+<!-- facebook integration -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=267479033283422";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="container">
 <div class="row-fluid">
 <div class="span9">
-<img class="visible-phone" src="/img/banner2-small.png"><br>
+<a href="/"><img class="visible-phone" src="/img/banner2-small.png"></a><br>
 <h2>{% trans %}Agenda{% endtrans %}</h2>
+<div style="float:right;">
+<div class="g-plusone" data-annotation="none" data-size="medium"></div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="{% trans %}en{% endtrans %}" data-size="medium" data-related="DevFestVienna" data-count="none" data-hashtags="jsug,gdg,devfest,vienna" data-dnt="true">{% trans %}Tweet{% endtrans %}</a>
+<fb:like send="false" style="top:-4px;" layout="button_count" width="90" show_faces="false"></fb:like>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
 <h3>{% trans %}Day 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>{% endtrans %}</h3>
 <p>
 <table border="0" class="table table-hover">
@@ -54,11 +69,11 @@
   <tr class="slot-session">
     <td class="slot-time">15:50 - 16:50</td>
     <td class="slot-content"><a href="/session/google-web-toolkit">{% trans %}Google Web Toolkit in practice{% endtrans %}</a></td>
-    <td class="slot-content"><em>{% trans %}TBA{% endtrans %}</em></td>
+    <td class="slot-content"><em>{% trans %}Reverse Engineering{% endtrans %}</em></td>
   </tr>
   <tr class="slot-session">
     <td class="slot-time">17:00 - 18:00</td>
-    <td class="slot-content"><em>{% trans %}JavaScript testing{% endtrans %}</em></td>
+    <td class="slot-content"><em>{% trans %}Selenium Codelab{% endtrans %}</em></td>
     <td class="slot-content"><a href="/session/hackathon-pitch">{% trans %}Hackathon-Pitch{% endtrans %}</a></td>
   </tr>
   <tr class="slot-nosession">
@@ -114,4 +129,13 @@
 </div>
 </div>
 </div>
+<script type="text/javascript">
+  window.___gcfg = {lang: '{% trans %}en{% endtrans %}'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 {% endblock %}
