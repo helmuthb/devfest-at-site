@@ -96,13 +96,23 @@ class JsonNews(JsonHandler):
                  'title': 'Source dieser App ist auf github',
                  'link': 'https://github.com/helmuthb/devfestsched',
                  'summary': 'Neugierig was diese App im Detail macht? ' +
-                            'Schau dir den Quelltext an!' } ]
+                            'Schau dir den Quelltext an!' },
+               { 'date': time.mktime(datetime.date(2012, 11, 9).timetuple()),
+                 'title': 'Feedback zu den Sessions oder Fragen',
+                 'link': 'http://www.instando.com/event/devfest',
+                 'summary': 'Mit Instando kannst du Fragen zu den Sessions ' +
+                            'in Echtzeit stellen!' } ]
     else:
       news = [ { 'date': time.mktime(datetime.date(2012, 10, 21).timetuple()),
                  'title': 'Source of this app is on github',
                  'link': 'https://github.com/helmuthb/devfestsched',
                  'summary': 'Curious about what this app does in detail? ' +
-                            'Have a look at the source code!' } ]
+                            'Have a look at the source code!' },
+               { 'date': time.mktime(datetime.date(2012, 11, 9).timetuple()), 
+                 'title': 'Feedback and questions to sessions',
+                 'link': 'http://www.instando.com/event/devfest', 
+                 'summary': 'Using Instando you can post questions to ' + 
+                            'the sessions in realtime!!' } ]
     return { 'announcements': news }
 
 class JsonRooms(JsonHandler):
