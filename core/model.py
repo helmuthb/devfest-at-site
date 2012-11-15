@@ -165,6 +165,7 @@ class SessionTalk(ndb.Model):
     abstract_de = ndb.TextProperty()
     track = ndb.StringProperty(repeated = True)
     video = ndb.StringProperty()
+    slides = ndb.TextProperty()
     link = ndb.StructuredProperty(TextLink, repeated = True)
     image = ndb.BlobProperty()
     language = ndb.StringProperty(choices = ['en', 'de', 'en-pref', 'de-pref'])

@@ -133,6 +133,12 @@ DevFest Vienna - Create Session
 </div>
 </fieldset>
 <fieldset>
+<label class="control-label" for="slides">Slides HTML</label>
+<div class="controls">
+<textarea name="slides" id="slides">{{ session.slides|e }}</textarea>
+</div>
+</fieldset>
+<fieldset>
 <label class="control-label">Link</label>
 {% for link in session.link %}
   <div class="controls">

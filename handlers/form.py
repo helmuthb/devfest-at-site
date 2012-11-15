@@ -51,6 +51,7 @@ class EditSession(BaseHandler):
                                     link = links_link[i]))
     session.link = link_list
     session.video = self.request.get('video')
+    session.slides = self.request.get('slides')
     if self.request.get('image'):
       session.image = db.Blob(self.request.get('image'))
     session.language = self.request.get('language')

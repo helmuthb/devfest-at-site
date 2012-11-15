@@ -48,6 +48,9 @@ DevFest Vienna - {{ session.title|e }}
 {% if session.video %}
 <iframe width="560" height="315" src="http://www.youtube.com/embed/{{ session.video }}?rel=0" frameborder="0" allowfullscreen></iframe>
 {% endif %}
+{% if session.slides %}
+{{ session.slides }}
+{% endif %}
 {% if session.link|length > 0 %}
 <h3>{% trans %}Documents, Links, Slides{% endtrans %}</h3>
 {% for link in session.link %}
