@@ -33,19 +33,32 @@ DevFest Vienna - {{ session.title|e }}
 <img src="/image/{{ session.key.urlsafe() }}" class="rightimage">
 {% endif %}
 <p>{{ session.abstract }}</p>
-<table border="0" padding="0" spacing="0" style="text-align:left;">
-<tr>
- <th>{% trans %}Room{% endtrans %}:</th>
- <td>&nbsp;</td>
- <td>{% if session.room %}{{session.room}}{% else %}<em>{% trans %}TBA{% endtrans %}</em>{% endif %}</td>
-</tr>
-<tr>
- <th>{% trans %}Time{% endtrans %}:</th>
- <td>&nbsp;</td>
- <td>{% if session.slot %}{{session.slot}}{% else %}<em>{% trans %}TBA{% endtrans %}</em>{% endif %}</td>
-</tr>
-</table>
 <div style="clear:both;"></div>
+</div>
+<div class="span3">
+<a href="/"><img class="hidden-phone" src="/img/banner2-small.png"></a><br>
+<br>
+<!-- <iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe> -->
+<p><em>{% trans %}Sponsored by{% endtrans %}</em><br>
+<a href="http://www.cenarion.com" target="_blank"><img src="/img/cenarion-logo.png" style="border:0;"></a><br>
+<a href="http://www.oreilly.de" target="_blank"><img src="/img/oreilly_logo_4c.png" style="border:0;"></a><br>
+</p>
+</div>
+</div>
+{% if session.video %}
+<iframe width="560" height="315" src="http://www.youtube.com/embed/{{ session.video }}?rel=0" frameborder="0" allowfullscreen></iframe>
+{% endif %}
+{% if session.link|length > 0 %}
+<h3>{% trans %}Documents, Links, Slides{% endtrans %}</h3>
+{% for link in session.link %}
+<h4><a href="{{ link.link }}" target="_blank">{{ link.text }}</a></h4>
+{% endfor %}
+{% endif %}
+{% if speakers|length > 1 %}
+<h3>{% trans %}Speakers{% endtrans %}</h3>
+{% elif speakers|length > 0 %}
+<h3>{% trans %}Speaker{% endtrans %}</h3>
+{% endif %}
 {% for sp in speakers %}
 {% if sp.image %}
 <img src="/image/{{ sp.key.urlsafe() }}" class="leftimage" style="width:128px; height:128px;">
@@ -58,23 +71,6 @@ DevFest Vienna - {{ session.title|e }}
 {% endfor %}
 <br>
 <p>
-</div>
-<div class="span3">
-<a href="/"><img class="hidden-phone" src="/img/banner2-small.png"></a><br>
-<br>
-<!-- <iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe> -->
-<p><em>{% trans %}Sponsored by{% endtrans %}</em><br>
-<a href="http://www.cenarion.com" target="_blank"><img src="/img/cenarion-logo.png" style="border:0;"></a><br>
-<a href="http://www.oreilly.de" target="_blank"><img src="/img/oreilly_logo_4c.png" style="border:0;"></a><br>
-</p>
-<p><em>{% trans %}DevFest Vienna is part of{% endtrans %}</em><br>
-<a href="http://www.devfest.info" target="_blank"><img src="/img/gdg-devfest-medium.png" style="border:0;"></a>
-</p>
-<p><em>{% trans %}Organized by{% endtrans %}</em><br>
-<a href="http://jsug.at" target="_blank"><img src="/img/jsug-logo.png" style="border:0;"></a><br>
-<a href="http://gdg-vienna.at" target="_blank"><img src="/img/gdg-vienna.png" style="border:0;"></a><br>
-</p>
-</div>
 </div>
 <script type="text/javascript">
   window.___gcfg = {lang: '{% trans %}en{% endtrans %}'};

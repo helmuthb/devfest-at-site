@@ -42,11 +42,15 @@ class Session(common.BaseHandler):
       session.abstract = session.abstract_de
       for sp in speakers:
         sp.bio = sp.bio_de
+      for link in session.link:
+        link.text = link.text_de
     else:
       session.title = session.title_en
       session.abstract = session.abstract_en
       for sp in speakers:
         sp.bio = sp.bio_en
+      for link in session.link:
+        link.text = link.text_en
     self.prep_html_response('session.html', {'session':session, 'speakers':speakers})
 
 class Speakers(common.BaseHandler):
