@@ -149,6 +149,11 @@ class Speaker(ndb.Model):
     bio_de = ndb.TextProperty()
     image = ndb.BlobProperty()
 
+class TextLink(ndb.Model):
+    text_en = ndb.StringProperty()
+    text_de = ndb.StringProperty()
+    link = ndb.StringProperty()
+
 class SessionTalk(ndb.Model):
     url = ndb.StringProperty()
     room = ndb.StringProperty()
@@ -159,6 +164,8 @@ class SessionTalk(ndb.Model):
     abstract_en = ndb.TextProperty()
     abstract_de = ndb.TextProperty()
     track = ndb.StringProperty(repeated = True)
+    video = ndb.StringProperty()
+    link = ndb.StructuredProperty(TextLink, repeated = True)
     image = ndb.BlobProperty()
     language = ndb.StringProperty(choices = ['en', 'de', 'en-pref', 'de-pref'])
     speaker = ndb.KeyProperty(repeated = True, kind = Speaker)

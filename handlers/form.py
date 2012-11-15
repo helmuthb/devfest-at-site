@@ -40,6 +40,17 @@ class EditSession(BaseHandler):
     session.title_de = self.request.get('title-de')
     session.abstract_en = self.request.get('abstract-en')
     session.abstract_de = self.request.get('abstract-de')
+    links_en = self.request.get_all('link-text-en')
+    links_de = self.request.get_all('link-text-de')
+    links_link = self.request.get_all('link-link')
+    link_list = []
+    for i in range(len(links_en)):
+      if links_en[i] != '':
+        link_list.append(model.TextLink(text_en = links_en[i],
+                                    text_de = links_de[i],
+                                    link = links_link[i]))
+    session.link = link_list
+    session.video = self.request.get('video')
     if self.request.get('image'):
       session.image = db.Blob(self.request.get('image'))
     session.language = self.request.get('language')

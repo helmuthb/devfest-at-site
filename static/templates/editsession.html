@@ -127,6 +127,32 @@ DevFest Vienna - Create Session
 {% endfor %}
 </fieldset>
 <fieldset>
+<label class="control-label" for="video">Youtube ID</label>
+<div class="controls">
+<input type="text" id="video" name="video" value="{{ session.video }}" />
+</div>
+</fieldset>
+<fieldset>
+<label class="control-label">Link</label>
+{% for link in session.link %}
+  <div class="controls">
+  <input type="text" name="link-text-en" value="{{ link.text_en }}"
+     placeholder="Title (English)" />
+  <input type="text" name="link-text-de" value="{{ link.text_de }}"
+     placeholder="Title (German)" />
+  <input type="text" name="link-link" value="{{ link.link }}"
+     placeholder="Link URL" />
+  </div>
+{% endfor %}
+  <div class="controls">
+  <input type="text" name="link-text-en" value=""
+     placeholder="Title (English)" />
+  <input type="text" name="link-text-de" value=""
+     placeholder="Title (German)" />
+  <input type="text" name="link-link" value=""
+     placeholder="Link URL" />
+</fieldset>
+<fieldset>
 <label class="control-label">Speaker</label>
 {% for speaker in speakers %}
   <div class="controls">
