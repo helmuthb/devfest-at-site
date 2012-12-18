@@ -1,12 +1,16 @@
 import common
 import logging
+import random
 from google.appengine.ext import ndb
 from core import model
 from webapp2_extras import i18n
 
 class Index(common.BaseHandler):
   def get(self):
-    self.prep_html_response('index.html')
+    # get the images...
+    list = [ '/img/pics/image_' + str(i) + '.jpg' for i in range(70) ]
+    random.shuffle(list)
+    self.prep_html_response('index.html', {'images':list})
 
 class Location(common.BaseHandler):
   def get(self):
@@ -15,6 +19,24 @@ class Location(common.BaseHandler):
 class Agenda(common.BaseHandler):
   def get(self):
     self.prep_html_response('agenda.html')
+
+class Sessions(common.BaseHandler):
+  def get(self):
+    sessions = model.SessionTalk.query().fetch()
+    # work depending on locale
+    locale = self.session['locale']
+    if self.request.get('locale'):
+      locale = self.request.get('locale')
+      i18n.get_i18n().set_locale(locale)
+    if locale[0:2] == "de":
+      for session in sessions:
+        session.title = session.title_de
+        session.abstract = session.abstract_de
+    else:
+      for session in sessions:
+        session.title = session.title_de
+        session.abstract = session.abstract_de
+    self.prep_html_response('sessions.html', {'sessions':sessions})
 
 class Agenda2(common.BaseHandler):
   def get(self):

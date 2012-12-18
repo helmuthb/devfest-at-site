@@ -66,6 +66,7 @@ class JsonSessions(JsonHandler):
         event['abstract'] = event_raw.abstract_en
       event['has_streaming'] = False
       event['livestream_url'] = ''
+      
       events.append(event)
     return { 'result': [ { 'events':events, 'event_type':'sessions' } ] }
 
@@ -95,6 +96,10 @@ class JsonNews(JsonHandler):
       news = [ { 'date': time.mktime(datetime.date(2012, 10, 21).timetuple()),
                  'title': 'Source dieser App ist auf github',
                  'link': 'https://github.com/helmuthb/devfestsched',
+                 'summary': 'Neugierig was diese App im Detail macht? ' +
+                            'Schau dir den Quelltext an!' },
+               { 'date': time.mktime(datetime.date(2012, 11, 9).timetuple()),
+                 'title': 'Feedback zu den Sessions oder Fragen',
                  'summary': 'Neugierig was diese App im Detail macht? ' +
                             'Schau dir den Quelltext an!' },
                { 'date': time.mktime(datetime.date(2012, 11, 9).timetuple()),

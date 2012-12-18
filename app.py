@@ -6,6 +6,7 @@ from handlers import index, form, api, common, email_auth, locale, json
 routes = [webapp2.Route('/',                  handler = index.Index),
           webapp2.Route('/location',          handler = index.Location),
           webapp2.Route('/agenda',            handler = index.Agenda),
+          webapp2.Route('/sessions',          handler = index.Sessions),
           webapp2.Route('/agenda2',           handler = index.Agenda2),
           webapp2.Route('/call',              handler = index.Call),
           webapp2.Route('/sponsor',           handler = index.Sponsor),
