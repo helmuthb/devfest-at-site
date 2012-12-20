@@ -67,8 +67,8 @@ class JsonSessions(JsonHandler):
       event['has_streaming'] = False
       event['livestream_url'] = ''
       if event_raw.video:
-        event['youtube_url'] = ( 'http://www.youtube.com/watch?v='
-                                 + event_raw.video )
+        event['youtube_url'] = [ 'http://youtu.be/' + event_raw.video ]
+        event['youtube_link'] = event_raw.video
       
       events.append(event)
     return { 'result': [ { 'events':events, 'event_type':'sessions' } ] }
