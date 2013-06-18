@@ -32,6 +32,7 @@ class EditSession(BaseHandler):
       session = ndb.Key(urlsafe = id).get()
     else:
       session = model.SessionTalk()
+    session.event = self.request.get('event')
     session.url = self.request.get('url')
     session.room = self.request.get('room')
     session.slot = self.request.get('slot')
@@ -86,6 +87,7 @@ class EditSpeaker(BaseHandler):
       speaker = ndb.Key(urlsafe = id).get()
     else:
       speaker = model.Speaker()
+    speaker.event = self.request.get('event', allow_multiple=True)
     speaker.url = self.request.get('url')
     speaker.name = self.request.get('name')
     speaker.link = self.request.get('link')

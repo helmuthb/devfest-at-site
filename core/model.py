@@ -140,6 +140,7 @@ class EmailAddr(ndb.Model):
     email = ndb.StringProperty(required = True)
 
 class Speaker(ndb.Model):
+    event = ndb.StringProperty(repeated = True)
     url = ndb.StringProperty()
     name = ndb.StringProperty()
     link = ndb.StringProperty()
@@ -155,6 +156,7 @@ class TextLink(ndb.Model):
     link = ndb.StringProperty()
 
 class SessionTalk(ndb.Model):
+    event = ndb.StringProperty(default = '2012')
     url = ndb.StringProperty()
     room = ndb.StringProperty()
     slot = ndb.StringProperty()

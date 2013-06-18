@@ -33,6 +33,17 @@ DevFest Vienna - Create Speaker
 </fieldset>
 <fieldset>
 <div class="control-group">
+  <label class="control-label" for="speaker-event">Event</label>
+  <div class="controls">
+    <select class="input-xlarge" name="event" id="speaker-event" multiple="true">
+      <option value="2012" {% if "2012" in speaker.event %}selected{% endif %}>2012</option>
+      <option value="2013" {% if "2013" in speaker.event %}selected{% endif %}>2013</option>
+    </select>>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
   <label class="control-label" for="speaker-name">Name</label>
   <div class="controls">
     <input type="text" class="input-xlarge required" name="name" id="speaker-name" value="{{ speaker.name|e}}"/>
