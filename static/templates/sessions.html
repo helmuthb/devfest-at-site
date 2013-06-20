@@ -19,7 +19,7 @@
 <div class="container">
 <div class="row-fluid">
 <div class="span9">
-<a href="/"><img class="visible-phone" src="/img/banner2-small.png"></a><br>
+<a href="/"><img class="visible-phone" src="/img/banner2-{{event}}-small.png"></a><br>
 <div style="float:right;">
 <div class="g-plusone" data-annotation="none" data-size="medium"></div>
 <a href="https://twitter.com/share" class="twitter-share-button" data-lang="{% trans %}en{% endtrans %}" data-size="medium" data-related="DevFestVienna" data-count="none" data-hashtags="jsug,gdg,devfest,vienna" data-dnt="true">{% trans %}Tweet{% endtrans %}</a>
@@ -34,7 +34,7 @@
 {% else %}
 {% set first = false %}
 {% endif %}
-<a href="/session/{{ s.url }}" style="height:90px; overflow:hidden; display:block;">
+<a href="/{{event}}/session/{{ s.url }}" style="height:90px; overflow:hidden; display:block;">
 <img src="/img/vids/{{ s.url }}.jpg" style="float:left; display:block; height:90px;">
 <div style="float:left;">
 <h4>{{ s.title|e }}</h4>
@@ -46,7 +46,7 @@
 {% endfor %}
 </div>
 <div class="span3">
-<a href="/"><img class="hidden-phone" src="/img/banner2-small.png"></a><br>
+<a href="/"><img class="hidden-phone" src="/img/banner2-{{event}}-small.png"></a><br>
 <br>
 <!-- <iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe> -->
 <p><em>{% trans %}Sponsored by{% endtrans %}</em><br>

@@ -21,8 +21,8 @@ class Agenda(common.BaseHandler):
     self.prep_html_response('agenda.html')
 
 class Sessions(common.BaseHandler):
-  def get(self):
-    sessions = model.SessionTalk.query().fetch()
+  def get(self, event='2012'):
+    sessions = model.SessionTalk.query(model.SessionTalk.event == event).fetch()
     # work depending on locale
     locale = self.session['locale']
     if self.request.get('locale'):
@@ -36,7 +36,7 @@ class Sessions(common.BaseHandler):
       for session in sessions:
         session.title = session.title_de
         session.abstract = session.abstract_de
-    self.prep_html_response('sessions.html', {'sessions':sessions})
+    self.prep_html_response('sessions.html', {'event':event,'sessions':sessions})
 
 class Agenda2(common.BaseHandler):
   def get(self):
@@ -51,8 +51,8 @@ class Call(common.BaseHandler):
     self.prep_html_response('call.html')
 
 class Session(common.BaseHandler):
-  def get(self, url):
-    session = model.SessionTalk.query(model.SessionTalk.url == url).fetch(1)[0]
+  def get(self, url, event='2012'):
+    session = model.SessionTalk.query(ndb.AND(model.SessionTalk.event == event, model.SessionTalk.url == url)).fetch(1)[0]
     speakers = [ sp.get() for sp in session.speaker ]
     # work depending on locale
     locale = self.session['locale']
@@ -73,11 +73,11 @@ class Session(common.BaseHandler):
         sp.bio = sp.bio_en
       for link in session.link:
         link.text = link.text_en
-    self.prep_html_response('session.html', {'session':session, 'speakers':speakers})
+    self.prep_html_response('session.html', {'event':event, 'session':session, 'speakers':speakers})
 
 class Speakers(common.BaseHandler):
-  def get(self):
-    speakers = model.Speaker.query().fetch()
+  def get(self, event='2012'):
+    speakers = model.Speaker.query(model.Speaker.event == event).fetch()
     # work depending on locale
     locale = self.session['locale']
     if self.request.get('locale'):
@@ -89,7 +89,7 @@ class Speakers(common.BaseHandler):
     else:
       for sp in speakers:
         sp.bio = sp.bio_en
-    self.prep_html_response('speakers.html', {'speakers':speakers})
+    self.prep_html_response('speakers.html', {'event':event, 'speakers':speakers})
 
 class ObjectImage(common.BaseHandler):
   def get(self, id):

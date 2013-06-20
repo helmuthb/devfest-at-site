@@ -19,7 +19,7 @@ DevFest Vienna - {{ session.title|e }}
 <div class="row-fluid">
 <div class="span9">
 <p>
-<a href="/"><img class="visible-phone" src="/img/banner2-small.png"></a><br>
+<a href="/"><img class="visible-phone" src="/img/banner2-{{event}}-small.png"></a><br>
 <h3><em>{% if session.type == 'workshop' %}{% trans %}Hands-on workshop{% endtrans %}{% else %}{% trans %}Talk / Presentation{% endtrans %}{% endif %}</em>
 <div style="float:right;">
 <div class="g-plusone" data-annotation="none" data-size="medium"></div>
@@ -36,7 +36,7 @@ DevFest Vienna - {{ session.title|e }}
 <div style="clear:both;"></div>
 </div>
 <div class="span3">
-<a href="/"><img class="hidden-phone" src="/img/banner2-small.png"></a><br>
+<a href="/"><img class="hidden-phone" src="/img/banner2-{{event}}-small.png"></a><br>
 <br>
 <!-- <iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe> -->
 <p><em>{% trans %}Sponsored by{% endtrans %}</em><br>
