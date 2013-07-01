@@ -34,9 +34,9 @@
 {% else %}
 {% set first = false %}
 {% endif %}
-<a href="/{{event}}/session/{{ s.url }}" style="height:90px; overflow:hidden; display:block;">
+<a href="/{{event}}/session/{{ s.url }}" style="height:120px; overflow:hidden; display:block;">
 <img src="/img/vids/{{ s.url }}.jpg" style="float:left; display:block; height:90px;">
-<div style="float:left;">
+<div style="float:left; position:absolute;">
 <h4>{{ s.title|e }}</h4>
 </div>
 {% if s.image %}
