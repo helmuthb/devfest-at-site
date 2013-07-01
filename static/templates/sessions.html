@@ -34,13 +34,13 @@
 {% else %}
 {% set first = false %}
 {% endif %}
-<a href="/{{event}}/session/{{ s.url }}" style="height:120px; overflow:hidden; display:block;">
+<a href="/{{event}}/session/{{ s.url }}" class="sessionPage" style="height:120px; overflow:hidden; display:block; font-style: italic; font-family: Georgia; ">
 <img src="/img/vids/{{ s.url }}.jpg" style="float:left; display:block; height:90px;">
 <div style="float:left; position:absolute;">
-<h4>{{ s.title|e }}</h4>
+<h4>>>{{ s.title|e }}</h4>
 </div>
 {% if s.image %}
-<img src="/image/{{ s.key.urlsafe() }}" style="float:right;">
+<img src="/image/{{ s.key.urlsafe() }}" style="float:right; margin-top:20px;">
 {% endif %}
 </a>
 {% endfor %}

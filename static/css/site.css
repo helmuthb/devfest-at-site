@@ -1822,3 +1822,12 @@ tr.slot-nosession td{font-style:italic;}
 	-moz-background-clip: padding-box;
 	background-clip: padding-box;
 }
+.sessionPage {
+	
+}
+
+.sessionPage a:hover{
+	border: 1px solid #999;
+	background-color: rgb(247, 245, 245);
+	border-radius: 5px;
+}
