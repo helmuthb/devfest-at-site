@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-06-20 21:18+0200\n"
+"POT-Creation-Date: 2013-07-06 11:32+0200\n"
 "PO-Revision-Date: 2012-09-02 12:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de_DE <LL@li.org>\n"
@@ -148,10 +148,10 @@ msgstr "DevFest Vienna - Agenda"
 msgid "Agenda"
 msgstr "Agenda"
 
-#: static/templates/agenda.html:26 static/templates/agenda.html:134
-#: static/templates/session.html:26 static/templates/session.html:101
-#: static/templates/sessions.html:25 static/templates/sessions.html:67
-#: static/templates/speakers.html:53
+#: static/templates/agenda.html:26 static/templates/agenda.html:124
+#: static/templates/session.html:26 static/templates/session.html:98
+#: static/templates/sessions.html:25 static/templates/sessions.html:57
+#: static/templates/speakers.html:43
 msgid "en"
 msgstr "de"
 
@@ -161,7 +161,7 @@ msgid "Tweet"
 msgstr "Twittern"
 
 #: static/templates/agenda.html:30 static/templates/agenda2.html:15
-#: static/templates/index.html:79
+#: static/templates/index.html:77
 msgid "Day 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>"
 msgstr "Tag 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>"
 
@@ -256,25 +256,6 @@ msgstr "Vorstellung der Ergebnisse"
 #: static/templates/agenda.html:110 static/templates/agenda2.html:95
 msgid "Award ceremony"
 msgstr "Preisverleihung"
-
-#: static/templates/agenda.html:119 static/templates/agenda2.html:104
-#: static/templates/index.html:159 static/templates/session.html:42
-#: static/templates/sessions.html:52 static/templates/speakers.html:39
-#: static/templates/sponsor.html:102
-msgid "Sponsored by"
-msgstr ""
-
-#: static/templates/agenda.html:123 static/templates/agenda2.html:107
-#: static/templates/index.html:163 static/templates/sessions.html:56
-#: static/templates/speakers.html:43 static/templates/sponsor.html:106
-msgid "DevFest Vienna is part of"
-msgstr "DevFest Vienna ist ein Teil von"
-
-#: static/templates/agenda.html:126 static/templates/agenda2.html:110
-#: static/templates/index.html:166 static/templates/sessions.html:59
-#: static/templates/speakers.html:46 static/templates/sponsor.html:109
-msgid "Organized by"
-msgstr "Organisiert durch"
 
 #: static/templates/agenda2.html:57
 msgid "TBA"
@@ -454,10 +435,35 @@ msgid "DevFest Vienna"
 msgstr "DevFest Vienna"
 
 #: static/templates/index.html:25
+msgid "Save the date!"
+msgstr "Datum freihalten!"
+
+#: static/templates/index.html:26
+msgid "18<sup>th</sup> - 20<sup>th</sup> October 2013"
+msgstr "18. - 20. Oktober 2013"
+
+#: static/templates/index.html:27
+msgid "DevFest Vienna 2013 - more details coming soon"
+msgstr "DevFest Vienna 2013 - Details folgen in K&uuml;rze"
+
+#: static/templates/index.html:29 static/templates/index.html:43
+#: static/templates/sponsor.html:21 static/templates/sponsor.html:92
+msgid "https://docs.google.com/spreadsheet/viewform?formkey=dG5DQXU0V1FaREtMM0J5X3ZwY1ItRVE6MA"
+msgstr "https://docs.google.com/spreadsheet/viewform?formkey=dDhrOXVpeHFFQVllUWFEMFdXWmdYdXc6MA"
+
+#: static/templates/index.html:29 static/templates/index.html:43
+msgid "DevFest 2013"
+msgstr "DevFest 2013"
+
+#: static/templates/index.html:30 static/templates/index.html:41
+msgid "Register Now!"
+msgstr "Jetzt anmelden!"
+
+#: static/templates/index.html:38
 msgid "Coming this fall to Vienna!"
 msgstr "Diesen Herbst in Wien!"
 
-#: static/templates/index.html:26
+#: static/templates/index.html:39
 msgid ""
 "Again we will have a DevFest in Vienna.\n"
 "We are in full steam for the planning - stay tuned!"
@@ -465,44 +471,7 @@ msgstr ""
 "Auch dieses Jahr werden wir ein DevFest in Wien haben.\n"
 "Wir sind inmitten der Planung - mehr in K&uuml;rze!"
 
-#: static/templates/index.html:28 static/templates/index.html:45
-#: static/templates/sponsor.html:21 static/templates/sponsor.html:92
-msgid "https://docs.google.com/spreadsheet/viewform?formkey=dG5DQXU0V1FaREtMM0J5X3ZwY1ItRVE6MA"
-msgstr "https://docs.google.com/spreadsheet/viewform?formkey=dDhrOXVpeHFFQVllUWFEMFdXWmdYdXc6MA"
-
-#: static/templates/index.html:28 static/templates/index.html:45
-msgid "DevFest 2013"
-msgstr ""
-
-#: static/templates/index.html:29 static/templates/index.html:43
-msgid "Register Now!"
-msgstr "Jetzt anmelden!"
-
-#: static/templates/index.html:37
-msgid "10. November 2012, TU Vienna"
-msgstr "10. November 2012, TU Wien"
-
-#: static/templates/index.html:38
-msgid "Mobile &amp; Web, Cloud &amp; Social"
-msgstr "Mobile &amp; Web, Cloud &amp; Social"
-
-#: static/templates/index.html:39
-msgid "One day of sessions &amp; workshops"
-msgstr "Ein Tag mit Vorträgen und Workshops"
-
-#: static/templates/index.html:40
-msgid "11. November 2012, Metalab Vienna"
-msgstr "11. November 2012, Metalab Wien"
-
-#: static/templates/index.html:41
-msgid "Happy Birthday, Android!"
-msgstr "Alles Gute zum Geburtstag, Android!"
-
-#: static/templates/index.html:42
-msgid "A hackathon celebrating Android"
-msgstr "Ein Hackathon zu Ehren von Android"
-
-#: static/templates/index.html:52
+#: static/templates/index.html:50
 msgid ""
 "\n"
 "DevFests are large-scale community events throughout the world, following"
@@ -513,11 +482,11 @@ msgstr ""
 "Tradition von Google DevFests folgen und von lokalen Entwicklergruppen "
 "organisiert werden."
 
-#: static/templates/index.html:58
+#: static/templates/index.html:56
 msgid "Videos &amp; Slides from Day 1 are Online!"
 msgstr "Videos &amp; Präsentationen vom Tag 1 sind Online!"
 
-#: static/templates/index.html:61
+#: static/templates/index.html:59
 msgid ""
 "\n"
 "In 2012 there was for the first time a DevFest in Vienna, jointly\n"
@@ -533,7 +502,7 @@ msgstr ""
 "target=\"_blank\">Google\n"
 "Developer Group Vienna</a> veranstaltet."
 
-#: static/templates/index.html:67
+#: static/templates/index.html:65
 msgid ""
 "\n"
 "A total of 145 participants enjoyed a weekend around development for "
@@ -543,7 +512,7 @@ msgstr ""
 "Insgesamt 145 Teilnehmer erfreuten sich eines Wochenendes rund um die "
 "Entwicklung für mobile Platformen und das Web.\n"
 
-#: static/templates/index.html:80
+#: static/templates/index.html:78
 msgid ""
 "\n"
 "The first day was full of workshops and sessions given\n"
@@ -552,7 +521,7 @@ msgstr ""
 "Der erste Tag war Workshops und Vorträgen gewidmet, geleitet von "
 "Mitgliedern der lokalen Entwicklergemeinschaft in Wien."
 
-#: static/templates/index.html:84
+#: static/templates/index.html:82
 msgid ""
 "\n"
 "In two rooms at the University of Technology\n"
@@ -563,7 +532,7 @@ msgstr ""
 "Vorträge und Workshops in parallel gehalten. Hier einige der <a "
 "href=\"/2012/sessions\">Vorträge und Workshops</a>, die gehalten wurden: "
 
-#: static/templates/index.html:90
+#: static/templates/index.html:88
 msgid ""
 "\n"
 "<a href= \"/2012/session/the-google-plus-platform\">Google+ API "
@@ -574,15 +543,15 @@ msgid ""
 "<a href=\"/2012/session/apps-script-google-hosted-javascript\">Google App"
 " Scripts</a>, ...\n"
 msgstr ""
-"<a href= \"/2012/session/the-google-plus-platform\">Google+ API-Familie</a>,"
-" <a href=\"/2012/session/pay-identify-with-paypal\">mobile "
-"Bezahl-APIs</a>, <a href=\"/2012/session/the-go-start-web-framework"
-"\">das Go-start Web Framework</a>,\n"
+"<a href= \"/2012/session/the-google-plus-platform\">Google+ API-"
+"Familie</a>, <a href=\"/2012/session/pay-identify-with-paypal\">mobile "
+"Bezahl-APIs</a>, <a href=\"/2012/session/the-go-start-web-framework\">das"
+" Go-start Web Framework</a>,\n"
 "<a href=\"/2012/session/introduction-to-bitcoinj\">Bitcoin Java API</a>,\n"
 "<a href=\"/2012/session/apps-script-google-hosted-javascript\">Google App"
 " Scripts</a>, ...\n"
 
-#: static/templates/index.html:97
+#: static/templates/index.html:95
 msgid ""
 "\n"
 "Additionally there was enough time to meet and exchange with fellow "
@@ -593,7 +562,7 @@ msgstr ""
 "Entwicklern zur Verfügung; <em>denn wenn Entwickler zusammenkommen kann "
 "unglaubliches herauskommen.</em>"
 
-#: static/templates/index.html:103
+#: static/templates/index.html:101
 msgid ""
 "\n"
 "Day 1 endet with an awesome afterparty <em>powered by <a "
@@ -604,11 +573,11 @@ msgstr ""
 "href=\"http://www.cenarion.com\" target=\"_blank\">Cenarion,</a></em> am "
 "Program.\n"
 
-#: static/templates/index.html:120
+#: static/templates/index.html:118
 msgid "Day 2: <em>Happy Birthday, Android!</em>"
 msgstr "Tag 2: <em>Alles Gute zum Geburtstag, Android!</em>"
 
-#: static/templates/index.html:122
+#: static/templates/index.html:120
 msgid ""
 "\n"
 "It was on 5 November 2007 that Google launched Android as part of the\n"
@@ -620,7 +589,7 @@ msgstr ""
 "Open Handset Alliance gestartet. Nun, fünf Jahre später, feierten wir "
 "dessen Erfolg mit einem speziellen Geburtstagshackathon! "
 
-#: static/templates/index.html:129
+#: static/templates/index.html:127
 msgid ""
 "\n"
 "In teams we were developing applications for Android and\n"
@@ -631,9 +600,8 @@ msgid ""
 msgstr ""
 "Wir erstellten Anwendungen für Android in kleinen Teams, und die Besten "
 "nahmen wertvolle Preise nach hause: Nexus 7 Tablets, Raspberry Pi's,\n"
-"Arduino Kits, Bücher und Gadgets. Der Hackathon fand im "
-"Metalab statt, einem Hackerspace in Wien."
-" "
+"Arduino Kits, Bücher und Gadgets. Der Hackathon fand im Metalab statt, "
+"einem Hackerspace in Wien. "
 
 #: static/templates/layout.html:34
 msgid "Your browser is <em>ancient!</em>"
@@ -664,7 +632,7 @@ msgid "Sessions"
 msgstr "Vorträge"
 
 #: static/templates/layout.html:51 static/templates/layout.html:58
-#: static/templates/session.html:83 static/templates/speakers.html:15
+#: static/templates/session.html:80 static/templates/speakers.html:15
 msgid "Speakers"
 msgstr "Vortragende"
 
@@ -742,20 +710,28 @@ msgstr "Anmelden"
 
 #: static/templates/layout.html:184
 msgid ""
-"DevFest Vienna is jointly organized by <a href=\"http://jsug.at\">JSUG"
-"@TU-Wien</a> and <a href=\"http://gdg-vienna.at\">GDG Vienna</a> as part "
-"of the global <a href=\"http://devfest.info\">GDG DevFest Season.</a>"
+"DevFest Vienna is jointly organized by\n"
+"<a href=\"http://jsug.at\" target=\"_blank\">JSUG@TU-Wien</a>,\n"
+"<a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a> and\n"
+"<a href=\"www.meetup.com/AndroidHeads\" target=\"_blank\">AndroidHeads "
+"Vienna</a>\n"
+"as part of the global\n"
+"<a href=\"http://devfest.info\" target=\"_blank\">GDG DevFest Season.</a>"
 msgstr ""
-"DevFest Vienna wird von der <a href=\"http://jsug.at\">JSUG@TU-Wien</a> "
-"und der <a href=\"http://gdg-vienna.at\">GDG Vienna</a> im Rahmen der "
-"globalen <a href=\"http://devfest.info\">GDG DevFest Season</a> gemeinsam"
-" veranstaltet."
+"DevFest Vienna wird von\n"
+"<a href=\"http://jsug.at\" target=\"_blank\">JSUG@TU-Wien</a>,\n"
+"<a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a> and\n"
+"<a href=\"www.meetup.com/AndroidHeads\" target=\"_blank\">AndroidHeads "
+"Vienna</a>\n"
+"gemeinsam veranstaltet als Teil der weltweiten\n"
+"<a href=\"http://devfest.info\" target=\"_blank\">GDG DevFest Season.</a>"
 
-#: static/templates/layout.html:185
+
+#: static/templates/layout.html:190
 msgid "Find us on Google+"
 msgstr "Wir sind auf Google+"
 
-#: static/templates/layout.html:185
+#: static/templates/layout.html:190
 msgid " and on "
 msgstr " und auf "
 
@@ -847,11 +823,11 @@ msgstr "Workshop"
 msgid "Talk / Presentation"
 msgstr "Vortrag / Präsentation"
 
-#: static/templates/session.html:77
+#: static/templates/session.html:74
 msgid "Documents, Links, Slides"
 msgstr "Dokumente, Links, Folien"
 
-#: static/templates/session.html:85
+#: static/templates/session.html:82
 msgid "Speaker"
 msgstr "Vortragende"
 
@@ -1004,17 +980,29 @@ msgstr "Sponsorship Formular"
 msgid "Sponsorship information package"
 msgstr "Sponsorship Informations-Paket (in Englisch)"
 
+#: static/templates/sponsorlist.html:1
+msgid "Sponsored by"
+msgstr ""
+
+#: static/templates/sponsorlist.html:7
+msgid "DevFest Vienna is part of"
+msgstr "DevFest Vienna ist ein Teil von"
+
+#: static/templates/sponsorlist.html:10
+msgid "Organized by"
+msgstr "Organisiert durch"
+
 #~ msgid ""
-#~ "\n"
-#~ "<a href= \"/session/the-google-plus-"
-#~ "platform\">Google+ API family</a>, <a "
-#~ "href=\"/session/pay-identify-with-paypal\">mobile"
-#~ " payment APIs</a>, <a href=\"/session/the-"
-#~ "go-start-web-framework\">Go-start web "
-#~ "framework</a>,\n"
-#~ "<a href=\"/session/introduction-to-bitcoinj\">Bitcoin Java API</a>,\n"
-#~ "<a href=\"/session/apps-script-google-"
-#~ "hosted-javascript\">Google App Scripts</a>, ..."
-#~ "\n"
+#~ "DevFest Vienna is jointly organized by"
+#~ " <a href=\"http://jsug.at\">JSUG@TU-Wien</a> and"
+#~ " <a href=\"http://gdg-vienna.at\">GDG Vienna</a>"
+#~ " as part of the global <a "
+#~ "href=\"http://devfest.info\">GDG DevFest Season.</a>"
 #~ msgstr ""
+#~ "DevFest Vienna wird von der <a "
+#~ "href=\"http://jsug.at\">JSUG@TU-Wien</a> und der "
+#~ "<a href=\"http://gdg-vienna.at\">GDG Vienna</a> "
+#~ "im Rahmen der globalen <a "
+#~ "href=\"http://devfest.info\">GDG DevFest Season</a> "
+#~ "gemeinsam veranstaltet."
 
