@@ -336,7 +336,7 @@ msgid ""
 msgstr ""
 "Und au&szlig;erdem gibt es die M&ouml;glichkeit von <em>Highlight-Pr&auml;sentationen</em> "
 "von k&uuml;rzerer Dauer (25 Minuten sowie einige Minuten f&uuml;r "
-"Fragen und Antworten.\n"
+"Fragen und Antworten).\n"
 "Sie bieten sich an, um eine Idee oder ein Werzkeug kurz "
 "vorzustellen, ohne auf technische Details einzugehen."
 

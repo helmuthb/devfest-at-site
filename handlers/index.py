@@ -48,6 +48,11 @@ class Sponsor(common.BaseHandler):
 
 class Call(common.BaseHandler):
   def get(self):
+    # work depending on locale
+    locale = self.session['locale']
+    if self.request.get('locale'):
+      locale = self.request.get('locale')
+      i18n.get_i18n().set_locale(locale)
     self.prep_html_response('call.html')
 
 class Session(common.BaseHandler):
