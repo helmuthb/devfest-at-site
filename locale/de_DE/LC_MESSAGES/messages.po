@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-08-09 15:05+0000\n"
+"POT-Creation-Date: 2013-08-21 07:57+0000\n"
 "PO-Revision-Date: 2012-09-02 12:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de_DE <LL@li.org>\n"
@@ -161,7 +161,7 @@ msgid "Tweet"
 msgstr "Twittern"
 
 #: static/templates/agenda.html:30 static/templates/agenda2.html:15
-#: static/templates/index.html:79
+#: static/templates/index.html:80
 msgid "Day 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>"
 msgstr "Tag 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>"
 
@@ -281,8 +281,8 @@ msgstr ""
 "Willst du als Vortragende / Vortragender bei diesem Event dabei sein? "
 "Ausgezeichnet! "
 
-#: static/templates/call.html:21 static/templates/call.html:96
-#: static/templates/call.html:102
+#: static/templates/call.html:21 static/templates/call.html:99
+#: static/templates/call.html:105
 msgid "dFd2MzI2RF9aa29uNndxdG90Y0dHTVE6MQ"
 msgstr "dEt2WU9xWF9lT2NSbTZzRHR4NUprTUE6MQ"
 
@@ -296,21 +296,25 @@ msgid ""
 "We encourage submissions from female speakers to enhance the gender "
 "balance.\n"
 msgstr ""
-"Da wir am DevFest 2012 ausschließlich männliche Vortragende hatten, freuen wir uns "
-"heuer ganz besonders über Einreichungen von Frauen!"
+"Da wir am DevFest 2012 ausschließlich männliche Vortragende hatten, "
+"freuen wir uns heuer ganz besonders über Einreichungen von Frauen!"
 
-#: static/templates/call.html:28
+#: static/templates/call.html:29
+msgid "Call for Speakers is open till 30 August!"
+msgstr "Der Call for Speakers ist bis zum 30. August geöffnet!"
+
+#: static/templates/call.html:31
 msgid "Type of Sessions"
 msgstr "Arten von Workshops oder Vorträgen"
 
-#: static/templates/call.html:30
+#: static/templates/call.html:33
 msgid ""
 "\n"
 "We are planning three type of sessions: talks, workshops, and lightning "
 "talks.\n"
 msgstr "Es sind drei Arten geplant: Vorträge, Workshops und Impulsvorträge.\n"
 
-#: static/templates/call.html:35
+#: static/templates/call.html:38
 msgid ""
 "\n"
 "A regular <em>talk</em> (e.g. presentation, tech talk, etc) is supposed "
@@ -322,7 +326,7 @@ msgstr ""
 "Minuten dauern; anschließend sind 5-10 Minuten für Fragen und Antworten "
 "eingeplant."
 
-#: static/templates/call.html:41
+#: static/templates/call.html:44
 msgid ""
 "\n"
 "A <em>workshop</em> can either take about 50 minutes, and it can take a\n"
@@ -332,7 +336,7 @@ msgstr ""
 " ist aber auch möglich, einen Workshop über 110 Minuten anzubieten, was "
 "sich für technisch tiefgehende Workshops empfiehlt."
 
-#: static/templates/call.html:47
+#: static/templates/call.html:50
 #, fuzzy
 msgid ""
 "\n"
@@ -349,11 +353,11 @@ msgstr ""
 "Sie bieten sich an, um eine Idee oder ein Werzkeug kurz vorzustellen, "
 "ohne auf technische Details einzugehen."
 
-#: static/templates/call.html:54
+#: static/templates/call.html:57
 msgid "Language of the sessions"
 msgstr "Sprache"
 
-#: static/templates/call.html:56
+#: static/templates/call.html:59
 msgid ""
 "\n"
 "DevFest Vienna will have sessions in both German and English.\n"
@@ -364,11 +368,11 @@ msgstr ""
 "anbieten. Bitte lass uns wissen, in welcher Sprache dein Workshop oder "
 "Vortrag gehalten wird, damit wir ihn entsprechend ankündigen können."
 
-#: static/templates/call.html:62
+#: static/templates/call.html:65
 msgid "Equipment"
 msgstr "Ausrüstung"
 
-#: static/templates/call.html:64
+#: static/templates/call.html:67
 msgid ""
 "\n"
 "Each room is equiped with a beamer and network connecivity for your\n"
@@ -377,7 +381,7 @@ msgstr ""
 "In jedem Vortragsraum sind ein Beamer und Netzwerkanbindung für dein "
 "Notebook vorhanden."
 
-#: static/templates/call.html:69
+#: static/templates/call.html:72
 msgid ""
 "\n"
 "Please let us know in advance if you need additional equipment.\n"
@@ -385,11 +389,11 @@ msgstr ""
 "Falls du weitere Ausrüstung benötigst, lass es uns bitte rechtzeitig "
 "wissen."
 
-#: static/templates/call.html:73
+#: static/templates/call.html:76
 msgid "Participant requirements"
 msgstr "Voraussetzungen an die Teilnehmenden"
 
-#: static/templates/call.html:75
+#: static/templates/call.html:78
 msgid ""
 "\n"
 "Let us know what requirements participants should satisfy to fully make\n"
@@ -398,7 +402,7 @@ msgstr ""
 "Gibt es spezielle Voraussetzungen, die die Teilnehmenden erfüllen "
 "sollten, um das meiste aus deinem Vortrag oder Workshop herauszuholen?"
 
-#: static/templates/call.html:81
+#: static/templates/call.html:84
 msgid ""
 "\n"
 "General coding knowledge and developing experience can be assumed.\n"
@@ -410,7 +414,7 @@ msgstr ""
 "besonderen APIs oder Frameworks benötigt werden, sollte das aber "
 "angekündigt werden."
 
-#: static/templates/call.html:88
+#: static/templates/call.html:91
 msgid ""
 "\n"
 "For workshops, make sure to let us know what the participants should\n"
@@ -423,7 +427,7 @@ msgstr ""
 "Gleichzeitig rechne bitte ein wenig Zeit ein, um Teilnehmende, die noch "
 "nicht alles richtig vorbereitet haben, zu unterstützen."
 
-#: static/templates/call.html:96 static/templates/call.html:102
+#: static/templates/call.html:99 static/templates/call.html:105
 msgid "Submit your session proposal"
 msgstr "Präsentation einreichen"
 
@@ -448,35 +452,36 @@ msgstr ""
 msgid "DevFest Vienna"
 msgstr "DevFest Vienna"
 
-#: static/templates/index.html:25
-msgid "Save the date!"
-msgstr "Datum freihalten!"
-
 #: static/templates/index.html:26
-msgid "18<sup>th</sup> - 20<sup>th</sup> October 2013"
+msgid "18 - 20 October 2013"
 msgstr "18. - 20. Oktober 2013"
 
 #: static/templates/index.html:27
-msgid "DevFest Vienna 2013 - more details coming soon"
-msgstr "DevFest Vienna 2013 - Details folgen in K&uuml;rze"
+#, fuzzy
+msgid "DevFest Vienna 2013"
+msgstr "DevFest Vienna 2012"
 
-#: static/templates/index.html:30 static/templates/index.html:45
+#: static/templates/index.html:28
+msgid "Call for Speakers is open<br>till 30 August 2013!"
+msgstr "Der Call for Speakers ist<br>bis zum 30. August geöffnet!"
+
+#: static/templates/index.html:31 static/templates/index.html:46
 msgid "https://docs.google.com/spreadsheet/viewform?formkey=dG5DQXU0V1FaREtMM0J5X3ZwY1ItRVE6MA"
 msgstr "https://docs.google.com/spreadsheet/viewform?formkey=dDhrOXVpeHFFQVllUWFEMFdXWmdYdXc6MA"
 
-#: static/templates/index.html:30 static/templates/index.html:45
+#: static/templates/index.html:31 static/templates/index.html:46
 msgid "DevFest 2013"
 msgstr "DevFest 2013"
 
-#: static/templates/index.html:32 static/templates/index.html:43
+#: static/templates/index.html:33 static/templates/index.html:44
 msgid "Register Now!"
 msgstr "Jetzt anmelden!"
 
-#: static/templates/index.html:40
+#: static/templates/index.html:41
 msgid "Coming this fall to Vienna!"
 msgstr "Diesen Herbst in Wien!"
 
-#: static/templates/index.html:41
+#: static/templates/index.html:42
 msgid ""
 "Again we will have a DevFest in Vienna.\n"
 "We are in full steam for the planning - stay tuned!"
@@ -484,7 +489,7 @@ msgstr ""
 "Auch dieses Jahr werden wir ein DevFest in Wien haben.\n"
 "Wir sind inmitten der Planung - mehr in K&uuml;rze!"
 
-#: static/templates/index.html:52
+#: static/templates/index.html:53
 msgid ""
 "\n"
 "DevFests are large-scale community events throughout the world, following"
@@ -495,11 +500,11 @@ msgstr ""
 "Tradition von Google DevFests folgen und von lokalen Entwicklergruppen "
 "organisiert werden."
 
-#: static/templates/index.html:58
+#: static/templates/index.html:59
 msgid "Videos &amp; Slides from Day 1 are Online!"
 msgstr "Videos &amp; Präsentationen vom Tag 1 sind Online!"
 
-#: static/templates/index.html:61
+#: static/templates/index.html:62
 msgid ""
 "\n"
 "In 2012 there was for the first time a DevFest in Vienna, jointly\n"
@@ -516,7 +521,7 @@ msgstr ""
 "target=\"_blank\">Google\n"
 "Developer Group Vienna</a>. "
 
-#: static/templates/index.html:67
+#: static/templates/index.html:68
 msgid ""
 "\n"
 "A total of 145 participants enjoyed a weekend around development for "
@@ -527,7 +532,7 @@ msgstr ""
 "11. November 2012 eines Wochenendes rund um die Entwicklung für mobile "
 "Plattformen und das Web.\n"
 
-#: static/templates/index.html:80
+#: static/templates/index.html:81
 msgid ""
 "\n"
 "The first day was full of workshops and sessions given\n"
@@ -536,7 +541,7 @@ msgstr ""
 "Der erste Tag war Workshops und Vorträgen gewidmet, geleitet von "
 "Mitgliedern der lokalen Entwicklergemeinschaft in Wien."
 
-#: static/templates/index.html:84
+#: static/templates/index.html:85
 msgid ""
 "\n"
 "In two rooms at the University of Technology\n"
@@ -546,7 +551,7 @@ msgstr ""
 "In zwei Hörsälen an der <a href=\"/location#tu-wien\">TU Wien</a> wurden "
 "zeitgleich unter anderem folgende Vorträge und Workshops gehalten: "
 
-#: static/templates/index.html:90
+#: static/templates/index.html:91
 msgid ""
 "\n"
 "<a href= \"/2012/session/the-google-plus-platform\">Google+ API "
@@ -565,7 +570,7 @@ msgstr ""
 "<a href=\"/2012/session/apps-script-google-hosted-javascript\">Google App"
 " Scripts</a>, ...\n"
 
-#: static/templates/index.html:97
+#: static/templates/index.html:98
 msgid ""
 "\n"
 "Additionally there was enough time to meet and exchange with fellow "
@@ -573,7 +578,7 @@ msgid ""
 "<em>and when developers come together amazing things can happen.</em>\n"
 msgstr "Zusätzlich war genug Zeit zum gegenseitigen Kennenlernen vorhanden.</em>"
 
-#: static/templates/index.html:103
+#: static/templates/index.html:104
 msgid ""
 "\n"
 "Day 1 endet with an awesome afterparty <em>powered by <a "
@@ -584,11 +589,11 @@ msgstr ""
 "by <a href=\"http://www.cenarion.com\" "
 "target=\"_blank\">Cenarion</a></em>."
 
-#: static/templates/index.html:120
+#: static/templates/index.html:121
 msgid "Day 2: <em>Happy Birthday, Android!</em>"
 msgstr "Tag 2: <em>Alles Gute zum Geburtstag, Android!</em>"
 
-#: static/templates/index.html:122
+#: static/templates/index.html:123
 msgid ""
 "\n"
 "It was on 5 November 2007 that Google launched Android as part of the\n"
@@ -600,7 +605,7 @@ msgstr ""
 "Open Handset Alliance gestartet. Nun, fünf Jahre später, feierten wir "
 "dessen Erfolg mit einem speziellen Geburtstagshackathon! "
 
-#: static/templates/index.html:129
+#: static/templates/index.html:130
 msgid ""
 "\n"
 "In teams we were developing applications for Android and\n"
@@ -1011,4 +1016,13 @@ msgstr "Organisiert durch"
 
 #~ msgid "Feedback form"
 #~ msgstr "Feedback-Formular"
+
+#~ msgid "Save the date!"
+#~ msgstr "Datum freihalten!"
+
+#~ msgid "DevFest Vienna 2013 - more details coming soon"
+#~ msgstr "DevFest Vienna 2013 - Details folgen in K&uuml;rze"
+
+#~ msgid "18<sup>th</sup> - 20<sup>th</sup> October 2013"
+#~ msgstr "18. - 20. Oktober 2013"
 

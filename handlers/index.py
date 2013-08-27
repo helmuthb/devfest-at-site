@@ -34,8 +34,8 @@ class Sessions(common.BaseHandler):
         session.abstract = session.abstract_de
     else:
       for session in sessions:
-        session.title = session.title_de
-        session.abstract = session.abstract_de
+        session.title = session.title_en
+        session.abstract = session.abstract_en
     self.prep_html_response('sessions.html', {'event':event,'sessions':sessions})
 
 class Agenda2(common.BaseHandler):
@@ -82,7 +82,7 @@ class Session(common.BaseHandler):
 
 class Speakers(common.BaseHandler):
   def get(self, event='2012'):
-    speakers = model.Speaker.query(model.Speaker.event == event).fetch()
+    speakers = model.Speaker.query(model.Speaker.event == event).order(model.Speaker.url).fetch()
     # work depending on locale
     locale = self.session['locale']
     if self.request.get('locale'):

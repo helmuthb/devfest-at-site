@@ -25,8 +25,14 @@ class JsonHandler(common.BaseHandler):
     except:
       pass
     self.response.set_status(200)
-    self.response.headers['Content-Type'] = 'application/json'
-    self.response.write(json.encode(result))
+    # support jsonp
+    if self.request.get('callback'):
+      self.response.headers['Content-Type'] = 'application/javascript'
+      resultText = self.request.get('callback') + "(" + json.encode(result) + ");"
+    else:
+      self.response.headers['Content-Type'] = 'application/json'
+      resultText = json.encode(result)
+    self.response.write(resultText)
 
   # override this method to provide the data
   def getData(self, locale):
@@ -38,14 +44,17 @@ class JsonHandler(common.BaseHandler):
 
 class JsonSessions(JsonHandler):
   def getData(self, locale):
-    events_raw = model.SessionTalk.query().fetch()
+    events_raw = model.SessionTalk.query(model.SessionTalk.event == '2013').fetch()
     events = []
     for event_raw in events_raw:
       if event_raw.slot == 'TBD':
         continue
       event = {}
-      event['start_date'] = '2012-11-10'
-      event['end_date'] = '2012-11-10'
+      if event_raw.type == 'workshop':
+        event['start_date'] = '2013-10-18'
+      else:
+        event['start_date'] = '2013-10-19'
+      event['end_date'] = event['start_date']
       event['start_time'] = event_raw.slot[:5]
       event['end_time'] = event_raw.slot[-5:]
       event['tags'] = ''
@@ -75,7 +84,7 @@ class JsonSessions(JsonHandler):
 
 class JsonSpeakers(JsonHandler):
   def getData(self, locale):
-    speakers_raw = model.Speaker.query().fetch()
+    speakers_raw = model.Speaker.query(model.Speaker.event == '2013').fetch()
     speakers = []
     for speaker_raw in speakers_raw:
       speaker = {}
@@ -96,49 +105,37 @@ class JsonSpeakers(JsonHandler):
 class JsonNews(JsonHandler):
   def getData(self, locale):
     if locale[0:2] == "de":
-      news = [ { 'date': time.mktime(datetime.date(2012, 10, 21).timetuple()),
-                 'title': 'Source dieser App ist auf github',
-                 'link': 'https://github.com/helmuthb/devfestsched',
-                 'summary': 'Neugierig was diese App im Detail macht? ' +
-                            'Schau dir den Quelltext an!' },
-               { 'date': time.mktime(datetime.date(2012, 11, 9).timetuple()),
-                 'title': 'Feedback zu den Sessions oder Fragen',
-                 'summary': 'Neugierig was diese App im Detail macht? ' +
-                            'Schau dir den Quelltext an!' },
-               { 'date': time.mktime(datetime.date(2012, 11, 9).timetuple()),
-                 'title': 'Feedback zu den Sessions oder Fragen',
-                 'link': 'http://www.instando.com/event/devfest',
-                 'summary': 'Mit Instando kannst du Fragen zu den Sessions ' +
-                            'in Echtzeit stellen!' } ]
+      news = [ { 'date': time.mktime(datetime.date(2013, 9, 2).timetuple()),
+                 'title': 'Registrierung ist offen',
+                 'link': 'https://devfestvienna2013.eventbrite.com',
+                 'summary': 'Registrierung ist offen, Eintritt frei!' } ]
     else:
-      news = [ { 'date': time.mktime(datetime.date(2012, 10, 21).timetuple()),
-                 'title': 'Source of this app is on github',
-                 'link': 'https://github.com/helmuthb/devfestsched',
-                 'summary': 'Curious about what this app does in detail? ' +
-                            'Have a look at the source code!' },
-               { 'date': time.mktime(datetime.date(2012, 11, 9).timetuple()), 
-                 'title': 'Feedback and questions to sessions',
-                 'link': 'http://www.instando.com/event/devfest', 
-                 'summary': 'Using Instando you can post questions to ' + 
-                            'the sessions in realtime!!' } ]
+      news = [ { 'date': time.mktime(datetime.date(2013, 9, 2).timetuple()),
+                 'title': 'Registration is open',
+                 'link': 'https://devfestvienna2013.eventbrite.com',
+                 'summary': 'Registration is open, no fee!' } ]
     return { 'announcements': news }
 
 class JsonRooms(JsonHandler):
   def getData(self, locale):
-    rooms = [ { 'floor': '0', 'id': 'ei09', 'name': 'EI9' },
-              { 'floor': '0', 'id': 'ei10', 'name': 'EI10' },
-              { 'floor': '1', 'id': 'nelsons', 'name': 'Nelson\'s' } ]
+    rooms = [ { 'floor': '0', 'id': 'ws1', 'name': 'WS1' },
+              { 'floor': '0', 'id': 'ws2', 'name': 'WS2' },
+              { 'floor': '1', 'id': 'ei09', 'name': 'EI9' },
+              { 'floor': '1', 'id': 'ei10', 'name': 'EI10' },
+              { 'floor': '2', 'id': 'nelsons', 'name': 'Nelson\'s' },
+              { 'floor': '3', 'id': 'sektor5', 'name': 'Sektor5' } ]
     if locale[0:2] == 'de':
-      rooms.append({ 'floor': '0', 'id': 'mainhall', 'name': 'Vorraum' })
-      rooms.append({ 'floor': '2', 'id': 'mainroom', 'name': 'Hauptraum' })
+      rooms.append({ 'floor': '1', 'id': 'mainhall', 'name': 'Vorraum' })
     else:
-      rooms.append({ 'floor': '0', 'id': 'mainhall', 'name': 'Main hall' })
-      rooms.append({ 'floor': '2', 'id': 'mainroom', 'name': 'Main room' })
+      rooms.append({ 'floor': '1', 'id': 'mainhall', 'name': 'Main hall' })
     return { 'rooms': rooms }
 
 class JsonSlots(JsonHandler):
   def getData(self, locale):
     if locale[0:2] == "de":
+      slots_day0 = [
+         { 'start': '13:50', 'end': '14:00', 'meta': 'Vorraum',
+            'title': 'Registrierung / Check-In' } ]
       slots_day1 = [
          { 'start': '09:00', 'end': '09:15', 'meta': 'Vorraum',
            'title': 'Registrierung / Check-In' },
@@ -161,6 +158,9 @@ class JsonSlots(JsonHandler):
          { 'start': '18:30', 'end': '19:00', 'meta': 'Hauptraum',
            'title': 'Preisverleihung' } ]
     else:
+      slots_day0 = [
+         { 'start': '13:50', 'end': '14:00', 'meta': 'Main Hall',
+            'title': 'Registration / Check-In' } ]
       slots_day1 = [
          { 'start': '09:00', 'end': '09:15', 'meta': 'Main Hall',
            'title': 'Registration / Check-In' },
@@ -182,8 +182,9 @@ class JsonSlots(JsonHandler):
            'title': 'Presentation of Results' },
          { 'start': '18:30', 'end': '19:00', 'meta': 'Main room',
            'title': 'Award Ceremony' } ]
-    return { 'day': [ { 'date': '2012-11-10', 'slot': slots_day1 },
-                      { 'date': '2012-11-11', 'slot': slots_day2 } ] }
+    return { 'day': [ { 'date': '2013-10-18', 'slot': slots_day0 },
+                      { 'date': '2013-10-19', 'slot': slots_day1 },
+                      { 'date': '2013-10-20', 'slot': slots_day2 } ] }
 
 class JsonTracks(JsonHandler):
   def getData(self, locale):
