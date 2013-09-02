@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-08-21 07:57+0000\n"
+"POT-Creation-Date: 2013-09-02 10:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,11 +131,11 @@ msgstr ""
 msgid "DevFest Vienna - Agenda"
 msgstr ""
 
-#: static/templates/agenda.html:23 static/templates/agenda2.html:14
-msgid "Agenda"
+#: static/templates/agenda.html:23
+msgid "Tentative Agenda"
 msgstr ""
 
-#: static/templates/agenda.html:26 static/templates/agenda.html:124
+#: static/templates/agenda.html:26 static/templates/agenda.html:155
 #: static/templates/session.html:26 static/templates/session.html:98
 #: static/templates/sessions.html:25 static/templates/sessions.html:57
 #: static/templates/speakers.html:43
@@ -147,101 +147,186 @@ msgstr ""
 msgid "Tweet"
 msgstr ""
 
-#: static/templates/agenda.html:30 static/templates/agenda2.html:15
-#: static/templates/index.html:80
-msgid "Day 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>"
+#: static/templates/agenda.html:30
+msgid "Day 0, 18 October 2013: <em>Hands-On Workshops</em>"
 msgstr ""
 
-#: static/templates/agenda.html:35 static/templates/agenda2.html:20
+#: static/templates/agenda.html:35
+msgid "JEE6 and NoSQL in the Cloud"
+msgstr ""
+
+#: static/templates/agenda.html:36
+msgid "jQuery Mobile"
+msgstr ""
+
+#: static/templates/agenda.html:40 static/templates/agenda.html:45
+msgid "OSGi - all you need to know"
+msgstr ""
+
+#: static/templates/agenda.html:41
+msgid "Hangout Development"
+msgstr ""
+
+#: static/templates/agenda.html:46
+msgid "From Java to Scala"
+msgstr ""
+
+#: static/templates/agenda.html:51
+msgid "Day 1, 19 October 2013: <em>Talks and Presentations</em>"
+msgstr ""
+
+#: static/templates/agenda.html:56 static/templates/agenda2.html:20
 msgid "Registration"
 msgstr ""
 
-#: static/templates/agenda.html:39 static/templates/agenda2.html:24
+#: static/templates/agenda.html:60 static/templates/agenda2.html:24
 msgid "Welcome &amp; Introduction"
 msgstr ""
 
-#: static/templates/agenda.html:43 static/templates/agenda2.html:28
-msgid "Apps Script: Google-hosted Javascript"
+#: static/templates/agenda.html:64
+msgid "RAD for mobile with Codiqa and jQuery Mobile"
 msgstr ""
 
-#: static/templates/agenda.html:44 static/templates/agenda2.html:29
-msgid "Introduction to BitcoinJ"
+#: static/templates/agenda.html:65
+msgid "Google+ Platform - A Year Later"
 msgstr ""
 
-#: static/templates/agenda.html:48 static/templates/agenda2.html:33
-msgid "The Google+ Platform"
+#: static/templates/agenda.html:69
+msgid "Functional Domain Modeling"
 msgstr ""
 
-#: static/templates/agenda.html:49 static/templates/agenda2.html:34
-msgid "Pay &amp; Identify with PayPal"
+#: static/templates/agenda.html:70
+msgid "Introduction to MVP with GWT"
 msgstr ""
 
-#: static/templates/agenda.html:53 static/templates/agenda2.html:38
-msgid "Google+ Hangouts Development"
+#: static/templates/agenda.html:74
+msgid "Surviving the environment disasters"
 msgstr ""
 
-#: static/templates/agenda.html:54 static/templates/agenda2.html:39
-msgid "Introducing Activiti"
+#: static/templates/agenda.html:75
+msgid "indoo.rs location based services"
 msgstr ""
 
-#: static/templates/agenda.html:58 static/templates/agenda.html:98
+#: static/templates/agenda.html:79 static/templates/agenda.html:129
 #: static/templates/agenda2.html:43 static/templates/agenda2.html:83
 msgid "Lunch"
 msgstr ""
 
-#: static/templates/agenda.html:62 static/templates/agenda2.html:47
-msgid "The go-start Web Framework"
+#: static/templates/agenda.html:83
+msgid "Going Reactive - High Performance JVM code with Reactor"
 msgstr ""
 
-#: static/templates/agenda.html:63 static/templates/agenda2.html:48
-msgid "Android Development 101"
+#: static/templates/agenda.html:84
+msgid "Gradle Build System"
 msgstr ""
 
-#: static/templates/agenda.html:67 static/templates/agenda2.html:52
+#: static/templates/agenda.html:88
+msgid "Schemas for the real world"
+msgstr ""
+
+#: static/templates/agenda.html:89
+msgid "Hybrid App development with Phonegap"
+msgstr ""
+
+#: static/templates/agenda.html:93 static/templates/agenda2.html:52
 msgid "Coffee break"
 msgstr ""
 
-#: static/templates/agenda.html:71 static/templates/agenda2.html:56
-msgid "Google Web Toolkit in practice"
+#: static/templates/agenda.html:97
+msgid ""
+"How to survive a successful App Launch (<a "
+"href=\"http://www.willhaben.at\" target=\"_blank\">willhaben.at</a>)"
 msgstr ""
 
-#: static/templates/agenda.html:72
-msgid "Reverse Engineering"
+#: static/templates/agenda.html:98
+msgid "Smart TV and Google TV"
 msgstr ""
 
-#: static/templates/agenda.html:76
-msgid "PageObject Pattern - Selenium Codelab"
+#: static/templates/agenda.html:102
+msgid "Bad Tests, Good Tests"
 msgstr ""
 
-#: static/templates/agenda.html:77 static/templates/agenda2.html:62
-msgid "Hackathon-Pitch"
+#: static/templates/agenda.html:103
+msgid "Thinking Beyond RDBMS : Building Polyglot Persistence Java Applications"
 msgstr ""
 
-#: static/templates/agenda.html:81 static/templates/agenda2.html:66
+#: static/templates/agenda.html:107
+msgid "Image processing with OpenCV, JavaFX and Scala"
+msgstr ""
+
+#: static/templates/agenda.html:108
+msgid "IT security - a never ending saga"
+msgstr ""
+
+#: static/templates/agenda.html:112 static/templates/agenda2.html:66
 msgid ""
 "Afterparty - <a href=\"http://www.cenarion.com\" "
 "target=\"_blank\">powered by Cenarion!</a>"
 msgstr ""
 
-#: static/templates/agenda.html:85 static/templates/agenda2.html:70
-msgid "Day 2: <em>Happy Birthday Android!</em>"
+#: static/templates/agenda.html:116
+msgid "Day 10, 20 October 2013: <em>OpenHack-style Hackathon</em>"
 msgstr ""
 
-#: static/templates/agenda.html:90 static/templates/agenda2.html:75
-msgid "Start of Android Birthday Hackathon"
+#: static/templates/agenda.html:121
+msgid "Start of Hackathon"
 msgstr ""
 
-#: static/templates/agenda.html:94 static/templates/agenda.html:102
+#: static/templates/agenda.html:125 static/templates/agenda.html:133
 #: static/templates/agenda2.html:79 static/templates/agenda2.html:87
 msgid "Time for developing"
 msgstr ""
 
-#: static/templates/agenda.html:106 static/templates/agenda2.html:91
+#: static/templates/agenda.html:137 static/templates/agenda2.html:91
 msgid "Presentation of results"
 msgstr ""
 
-#: static/templates/agenda.html:110 static/templates/agenda2.html:95
+#: static/templates/agenda.html:141 static/templates/agenda2.html:95
 msgid "Award ceremony"
+msgstr ""
+
+#: static/templates/agenda2.html:14
+msgid "Agenda"
+msgstr ""
+
+#: static/templates/agenda2.html:15 static/templates/index.html:80
+msgid "Day 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>"
+msgstr ""
+
+#: static/templates/agenda2.html:28
+msgid "Apps Script: Google-hosted Javascript"
+msgstr ""
+
+#: static/templates/agenda2.html:29
+msgid "Introduction to BitcoinJ"
+msgstr ""
+
+#: static/templates/agenda2.html:33
+msgid "The Google+ Platform"
+msgstr ""
+
+#: static/templates/agenda2.html:34
+msgid "Pay &amp; Identify with PayPal"
+msgstr ""
+
+#: static/templates/agenda2.html:38
+msgid "Google+ Hangouts Development"
+msgstr ""
+
+#: static/templates/agenda2.html:39
+msgid "Introducing Activiti"
+msgstr ""
+
+#: static/templates/agenda2.html:47
+msgid "The go-start Web Framework"
+msgstr ""
+
+#: static/templates/agenda2.html:48
+msgid "Android Development 101"
+msgstr ""
+
+#: static/templates/agenda2.html:56
+msgid "Google Web Toolkit in practice"
 msgstr ""
 
 #: static/templates/agenda2.html:57
@@ -252,11 +337,23 @@ msgstr ""
 msgid "JavaScript testing"
 msgstr ""
 
+#: static/templates/agenda2.html:62
+msgid "Hackathon-Pitch"
+msgstr ""
+
+#: static/templates/agenda2.html:70
+msgid "Day 2: <em>Happy Birthday Android!</em>"
+msgstr ""
+
+#: static/templates/agenda2.html:75
+msgid "Start of Android Birthday Hackathon"
+msgstr ""
+
 #: static/templates/call.html:6
 msgid "DevFest Vienna - Call for Speakers"
 msgstr ""
 
-#: static/templates/call.html:14 static/templates/layout.html:53
+#: static/templates/call.html:14 static/templates/layout.html:54
 msgid "Call for Speakers"
 msgstr ""
 
@@ -403,31 +500,37 @@ msgstr ""
 msgid "Code: %(code)s"
 msgstr ""
 
-#: static/templates/index.html:6
+#: static/templates/index.html:6 static/templates/index2.html:6
 msgid "DevFest Vienna"
 msgstr ""
 
-#: static/templates/index.html:26
+#: static/templates/index.html:26 static/templates/index2.html:26
+#: static/templates/index2.html:47
 msgid "18 - 20 October 2013"
 msgstr ""
 
-#: static/templates/index.html:27
+#: static/templates/index.html:27 static/templates/index2.html:27
+#: static/templates/index2.html:48
 msgid "DevFest Vienna 2013"
 msgstr ""
 
-#: static/templates/index.html:28
+#: static/templates/index.html:28 static/templates/index2.html:28
 msgid "Call for Speakers is open<br>till 30 August 2013!"
 msgstr ""
 
 #: static/templates/index.html:31 static/templates/index.html:46
+#: static/templates/index2.html:37 static/templates/index2.html:51
 msgid "https://docs.google.com/spreadsheet/viewform?formkey=dG5DQXU0V1FaREtMM0J5X3ZwY1ItRVE6MA"
 msgstr ""
 
 #: static/templates/index.html:31 static/templates/index.html:46
+#: static/templates/index2.html:37 static/templates/index2.html:51
 msgid "DevFest 2013"
 msgstr ""
 
 #: static/templates/index.html:33 static/templates/index.html:44
+#: static/templates/index2.html:35 static/templates/index2.html:39
+#: static/templates/index2.html:49 static/templates/index2.html:57
 msgid "Register Now!"
 msgstr ""
 
@@ -441,7 +544,7 @@ msgid ""
 "We are in full steam for the planning - stay tuned!"
 msgstr ""
 
-#: static/templates/index.html:53
+#: static/templates/index.html:53 static/templates/index2.html:64
 msgid ""
 "\n"
 "DevFests are large-scale community events throughout the world, following"
@@ -449,7 +552,7 @@ msgid ""
 "the tradition of Google DevFests and organized by local user groups.\n"
 msgstr ""
 
-#: static/templates/index.html:59
+#: static/templates/index.html:59 static/templates/index2.html:140
 msgid "Videos &amp; Slides from Day 1 are Online!"
 msgstr ""
 
@@ -536,6 +639,69 @@ msgid ""
 "a hacker space in Vienna.\n"
 msgstr ""
 
+#: static/templates/index2.html:32 static/templates/index2.html:53
+msgid "Step Up"
+msgstr ""
+
+#: static/templates/index2.html:33 static/templates/index2.html:55
+msgid ""
+"Accelerate your skills with the sixteen tech talks and five workshops "
+"this DevFest is offering"
+msgstr ""
+
+#: static/templates/index2.html:76
+msgid "Tech Talks - Day 1"
+msgstr ""
+
+#: static/templates/index2.html:77
+msgid "On Saturday we will have sessions about various topics:"
+msgstr ""
+
+#: static/templates/index2.html:79
+msgid "Workshops - Day 0"
+msgstr ""
+
+#: static/templates/index2.html:80
+msgid ""
+"With Saturday offering presentations and tech talks, the Friday afternoon"
+"\n"
+"  will have workshops dedicated to current IT topics."
+msgstr ""
+
+#: static/templates/index2.html:82
+msgid "You bring your laptop PC and in the team you will explore topics like:"
+msgstr ""
+
+#: static/templates/index2.html:84
+msgid ""
+"The level of the workshops varies - some of them are ready for novices,\n"
+"  other require intermediate knowledge and experience."
+msgstr ""
+
+#: static/templates/index2.html:86
+msgid "OpenHack-Style Hackathon - Day 10"
+msgstr ""
+
+#: static/templates/index2.html:104
+msgid "And on Sunday we will have a OpenHack-style Hackathon."
+msgstr ""
+
+#: static/templates/index2.html:105
+msgid "Any software, any technology, any tools are allowed."
+msgstr ""
+
+#: static/templates/index2.html:106
+msgid "For some APIs and toolsets our sponsors will award special prizes!"
+msgstr ""
+
+#: static/templates/index2.html:114
+msgid "Better Software for a Better World!"
+msgstr ""
+
+#: static/templates/index2.html:121
+msgid "Austrian Largest Online Advertisment Portal"
+msgstr ""
+
 #: static/templates/layout.html:34
 msgid "Your browser is <em>ancient!</em>"
 msgstr ""
@@ -555,89 +721,89 @@ msgstr ""
 msgid "Location"
 msgstr ""
 
-#: static/templates/layout.html:50 static/templates/layout.html:59
+#: static/templates/layout.html:51 static/templates/layout.html:61
 #: static/templates/sessions.html:29
 msgid "Sessions"
 msgstr ""
 
-#: static/templates/layout.html:51 static/templates/layout.html:58
+#: static/templates/layout.html:53 static/templates/layout.html:60
 #: static/templates/session.html:80 static/templates/speakers.html:15
 msgid "Speakers"
 msgstr ""
 
-#: static/templates/layout.html:54 static/templates/sponsor.html:14
+#: static/templates/layout.html:55 static/templates/sponsor.html:14
 msgid "Sponsorship"
 msgstr ""
 
-#: static/templates/layout.html:56
+#: static/templates/layout.html:58
 msgid "DevFest Vienna 2012"
 msgstr ""
 
-#: static/templates/layout.html:64
+#: static/templates/layout.html:66
 msgid "Language"
 msgstr ""
 
-#: static/templates/layout.html:66
+#: static/templates/layout.html:68
 msgid "class-active-if-english"
 msgstr ""
 
-#: static/templates/layout.html:66
+#: static/templates/layout.html:68
 msgid "English"
 msgstr ""
 
-#: static/templates/layout.html:67
+#: static/templates/layout.html:69
 msgid "class-active-if-german"
 msgstr ""
 
-#: static/templates/layout.html:67
+#: static/templates/layout.html:69
 msgid "German"
 msgstr ""
 
-#: static/templates/layout.html:76
+#: static/templates/layout.html:78
 msgid "Sign out"
 msgstr ""
 
-#: static/templates/layout.html:83
+#: static/templates/layout.html:85
 msgid "Sign in via:"
 msgstr ""
 
-#: static/templates/layout.html:86
+#: static/templates/layout.html:88
 msgid "Email and password"
 msgstr ""
 
-#: static/templates/layout.html:87
+#: static/templates/layout.html:89
 msgid "New user"
 msgstr ""
 
-#: static/templates/layout.html:105
+#: static/templates/layout.html:107
 msgid "Sign up with your email address"
 msgstr ""
 
-#: static/templates/layout.html:113
+#: static/templates/layout.html:115
 msgid "Name"
 msgstr ""
 
-#: static/templates/layout.html:119 static/templates/layout.html:152
+#: static/templates/layout.html:121 static/templates/layout.html:154
 msgid "Email address"
 msgstr ""
 
-#: static/templates/layout.html:125 static/templates/layout.html:158
+#: static/templates/layout.html:127 static/templates/layout.html:160
 msgid "Password"
 msgstr ""
 
-#: static/templates/layout.html:137
+#: static/templates/layout.html:139
 msgid "Sign Up"
 msgstr ""
 
-#: static/templates/layout.html:145
+#: static/templates/layout.html:147
 msgid "Sign in"
 msgstr ""
 
-#: static/templates/layout.html:170
+#: static/templates/layout.html:172
 msgid "Sign In"
 msgstr ""
 
-#: static/templates/layout.html:184
+#: static/templates/layout.html:186
 msgid ""
 "DevFest Vienna is jointly organized by\n"
 "<a href=\"http://jsug.at\" target=\"_blank\">JSUG@TU-Wien</a>,\n"
@@ -645,14 +811,15 @@ msgid ""
 "<a href=\"www.meetup.com/AndroidHeads\" target=\"_blank\">AndroidHeads "
 "Vienna</a>\n"
 "as part of the global\n"
-"<a href=\"http://devfest.info\" target=\"_blank\">GDG DevFest Season.</a>"
+"<a href=\"https://developers.google.com/events/devfest/\" "
+"target=\"_blank\">GDG DevFest Season 2013.</a>"
 msgstr ""
 
-#: static/templates/layout.html:190
+#: static/templates/layout.html:192
 msgid "Find us on Google+"
 msgstr ""
 
-#: static/templates/layout.html:190
+#: static/templates/layout.html:192
 msgid " and on "
 msgstr ""
 
@@ -870,11 +1037,11 @@ msgstr ""
 msgid "Sponsored by"
 msgstr ""
 
-#: static/templates/sponsorlist.html:7
+#: static/templates/sponsorlist.html:8
 msgid "DevFest Vienna is part of"
 msgstr ""
 
-#: static/templates/sponsorlist.html:10
+#: static/templates/sponsorlist.html:11
 msgid "Organized by"
 msgstr ""
 

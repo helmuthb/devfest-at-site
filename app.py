@@ -3,7 +3,10 @@ import webapp2
 import settings
 from handlers import index, form, api, common, email_auth, locale, json
 
-routes = [webapp2.Route('/',                  handler = index.Index),
+routes = [webapp2.Route('/',                  handler = index.Index2),
+          
+          # staging area for new start page
+          # webapp2.Route('/index2',            handler = index.Index2),
 
           # JSON results for Android app
           webapp2.Route('/json/sessions',     handler = json.JsonSessions),

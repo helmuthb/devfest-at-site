@@ -12,6 +12,13 @@ class Index(common.BaseHandler):
     random.shuffle(list)
     self.prep_html_response('index.html', {'images':list})
 
+class Index2(common.BaseHandler):
+  def get(self):
+    # get the images...
+    list = [ '/img/pics/image_' + str(i) + '.jpg' for i in range(70) ]
+    random.shuffle(list)
+    self.prep_html_response('index2.html', {'images':list})
+    
 class Location(common.BaseHandler):
   def get(self):
     self.prep_html_response('location.html')
