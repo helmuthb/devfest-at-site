@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-02 10:02+0000\n"
+"POT-Creation-Date: 2013-09-16 14:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -218,10 +218,6 @@ msgstr ""
 
 #: static/templates/agenda.html:84
 msgid "Gradle Build System"
-msgstr ""
-
-#: static/templates/agenda.html:88
-msgid "Schemas for the real world"
 msgstr ""
 
 #: static/templates/agenda.html:89
@@ -552,7 +548,7 @@ msgid ""
 "the tradition of Google DevFests and organized by local user groups.\n"
 msgstr ""
 
-#: static/templates/index.html:59 static/templates/index2.html:140
+#: static/templates/index.html:59 static/templates/index2.html:147
 msgid "Videos &amp; Slides from Day 1 are Online!"
 msgstr ""
 
@@ -702,6 +698,10 @@ msgstr ""
 msgid "Austrian Largest Online Advertisment Portal"
 msgstr ""
 
+#: static/templates/index2.html:128
+msgid "The faster, saver way to send and receive money"
+msgstr ""
+
 #: static/templates/layout.html:34
 msgid "Your browser is <em>ancient!</em>"
 msgstr ""
@@ -727,7 +727,7 @@ msgid "Sessions"
 msgstr ""
 
 #: static/templates/layout.html:53 static/templates/layout.html:60
-#: static/templates/session.html:80 static/templates/speakers.html:15
+#: static/templates/session.html:71 static/templates/speakers.html:15
 msgid "Speakers"
 msgstr ""
 
@@ -905,11 +905,11 @@ msgstr ""
 msgid "Talk / Presentation"
 msgstr ""
 
-#: static/templates/session.html:74
+#: static/templates/session.html:65
 msgid "Documents, Links, Slides"
 msgstr ""
 
-#: static/templates/session.html:82
+#: static/templates/session.html:73
 msgid "Speaker"
 msgstr ""
 
@@ -1037,11 +1037,11 @@ msgstr ""
 msgid "Sponsored by"
 msgstr ""
 
-#: static/templates/sponsorlist.html:8
+#: static/templates/sponsorlist.html:9
 msgid "DevFest Vienna is part of"
 msgstr ""
 
-#: static/templates/sponsorlist.html:11
+#: static/templates/sponsorlist.html:12
 msgid "Organized by"
 msgstr ""
 

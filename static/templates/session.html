@@ -34,14 +34,6 @@ DevFest Vienna - {{ session.title|e }}
 {% endif %}
 <p>{{ session.abstract }}</p>
 <div style="clear:both;"></div>
-</div>
-<div class="span3">
-<a href="/"><img class="hidden-phone" src="/img/banner2-{{event}}-small.png"></a><br>
-<br>
-<!-- <iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe> -->
-{%include "sponsorlist.html"%}
-</div>
-</div>
 <div>
 {% if session.video %}
 <div style="float:left;">
@@ -69,7 +61,6 @@ DevFest Vienna - {{ session.title|e }}
 </div>
 {% endif %}
 <div style="clear:both;"></div>
-</div>
 {% if session.link|length > 0 %}
 <h3>{% trans %}Documents, Links, Slides{% endtrans %}</h3>
 {% for link in session.link %}
@@ -82,6 +73,7 @@ DevFest Vienna - {{ session.title|e }}
 <h3>{% trans %}Speaker{% endtrans %}</h3>
 {% endif %}
 {% for sp in speakers %}
+<div>
 {% if sp.image %}
 <img src="/image/{{ sp.key.urlsafe() }}" class="leftimage" style="width:128px; height:128px;">
 {% endif %}
@@ -89,10 +81,18 @@ DevFest Vienna - {{ session.title|e }}
 {% if sp.company_link %}<a href="{{ sp.company_link }}" target="_blank">{% endif %}{% if sp.company %}<em>{{ sp.company }}</em><br>{% endif %}{% if sp.company_link %}</a>{% endif %}
 <br>
 <p>{{ sp.bio }}</p>
+</div>
 <div style="clear:both;"></div>
 {% endfor %}
+</div>
+</div>
+<div class="span3">
+<a href="/"><img class="hidden-phone" src="/img/banner2-{{event}}-small.png"></a><br>
 <br>
-<p>
+<!-- <iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe> -->
+{%include "sponsorlist.html"%}
+</div>
+</div>
 </div>
 <script type="text/javascript">
   window.___gcfg = {lang: '{% trans %}en{% endtrans %}'};

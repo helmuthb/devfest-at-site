@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-02 10:02+0000\n"
+"POT-Creation-Date: 2013-09-16 14:51+0000\n"
 "PO-Revision-Date: 2012-09-02 12:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de_DE <LL@li.org>\n"
@@ -232,10 +232,6 @@ msgstr "Going Reactive - Hochperformanter JVM-Code mit Reactor"
 #: static/templates/agenda.html:84
 msgid "Gradle Build System"
 msgstr "Gradle Build-System"
-
-#: static/templates/agenda.html:88
-msgid "Schemas for the real world"
-msgstr "Schemata für die reale Welt"
 
 #: static/templates/agenda.html:89
 msgid "Hybrid App development with Phonegap"
@@ -604,7 +600,7 @@ msgstr ""
 "Tradition von Google DevFests folgen und von lokalen Entwicklergruppen "
 "organisiert werden."
 
-#: static/templates/index.html:59 static/templates/index2.html:140
+#: static/templates/index.html:59 static/templates/index2.html:147
 msgid "Videos &amp; Slides from Day 1 are Online!"
 msgstr "Videos &amp; Präsentationen vom Tag 1 sind Online!"
 
@@ -794,6 +790,10 @@ msgstr "Bessere Software für eine bessere Welt!"
 msgid "Austrian Largest Online Advertisment Portal"
 msgstr "Österreichs größtes Online Anzeigenportal"
 
+#: static/templates/index2.html:128
+msgid "The faster, saver way to send and receive money"
+msgstr "Der schnellere, sicherere Weg Geld zu senden und zu empfangen"
+
 #: static/templates/layout.html:34
 msgid "Your browser is <em>ancient!</em>"
 msgstr "Ihr Browser ist <em>steinalt!</em>"
@@ -823,7 +823,7 @@ msgid "Sessions"
 msgstr "Vorträge"
 
 #: static/templates/layout.html:53 static/templates/layout.html:60
-#: static/templates/session.html:80 static/templates/speakers.html:15
+#: static/templates/session.html:71 static/templates/speakers.html:15
 msgid "Speakers"
 msgstr "Vortragende"
 
@@ -1016,11 +1016,11 @@ msgstr "Workshop"
 msgid "Talk / Presentation"
 msgstr "Vortrag / Präsentation"
 
-#: static/templates/session.html:74
+#: static/templates/session.html:65
 msgid "Documents, Links, Slides"
 msgstr "Dokumente, Links, Folien"
 
-#: static/templates/session.html:82
+#: static/templates/session.html:73
 msgid "Speaker"
 msgstr "Vortragende"
 
@@ -1181,11 +1181,11 @@ msgstr "Sponsorship Informations-Paket (in Englisch)"
 msgid "Sponsored by"
 msgstr ""
 
-#: static/templates/sponsorlist.html:8
+#: static/templates/sponsorlist.html:9
 msgid "DevFest Vienna is part of"
 msgstr "DevFest Vienna ist ein Teil von"
 
-#: static/templates/sponsorlist.html:11
+#: static/templates/sponsorlist.html:12
 msgid "Organized by"
 msgstr "Organisiert durch"
 
@@ -1209,4 +1209,7 @@ msgstr "Organisiert durch"
 
 #~ msgid "PageObject Pattern - Selenium Codelab"
 #~ msgstr ""
+
+#~ msgid "Schemas for the real world"
+#~ msgstr "Schemata für die reale Welt"
 
