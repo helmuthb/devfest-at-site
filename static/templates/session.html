@@ -33,6 +33,10 @@ DevFest Vienna - {{ session.title|e }}
 <img src="/image/{{ session.key.urlsafe() }}" class="rightimage">
 {% endif %}
 <p>{{ session.abstract }}</p>
+{% if not session.finished and session.type == 'workshop' %}
+<h4>{% trans %}Requirements{% endtrans %}</h4>
+<p>{{ session.requirements }}</p>
+{% endif %}
 <div style="clear:both;"></div>
 <div>
 {% if session.video %}

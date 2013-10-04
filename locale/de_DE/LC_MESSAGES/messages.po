@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-16 14:51+0000\n"
+"POT-Creation-Date: 2013-09-22 16:22+0000\n"
 "PO-Revision-Date: 2012-09-02 12:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de_DE <LL@li.org>\n"
@@ -148,8 +148,8 @@ msgstr "DevFest Vienna - Agenda"
 msgid "Tentative Agenda"
 msgstr "Vorläufige Agenda"
 
-#: static/templates/agenda.html:26 static/templates/agenda.html:155
-#: static/templates/session.html:26 static/templates/session.html:98
+#: static/templates/agenda.html:26 static/templates/agenda.html:160
+#: static/templates/session.html:26 static/templates/session.html:102
 #: static/templates/sessions.html:25 static/templates/sessions.html:57
 #: static/templates/speakers.html:43
 msgid "en"
@@ -173,6 +173,7 @@ msgid "jQuery Mobile"
 msgstr "jQuery Mobile"
 
 #: static/templates/agenda.html:40 static/templates/agenda.html:45
+#: static/templates/agenda.html:50
 msgid "OSGi - all you need to know"
 msgstr "OSGi - alles was man dazu wissen muss"
 
@@ -181,67 +182,75 @@ msgid "Hangout Development"
 msgstr "Google+ Hangouts Entwicklung"
 
 #: static/templates/agenda.html:46
+msgid "Payments for Droids"
+msgstr "Bezahlen für Droiden"
+
+#: static/templates/agenda.html:51
 msgid "From Java to Scala"
 msgstr "Von Java zu Scala"
 
-#: static/templates/agenda.html:51
+#: static/templates/agenda.html:56
 msgid "Day 1, 19 October 2013: <em>Talks and Presentations</em>"
 msgstr "Tag 1, 19. Oktober 2013: <em>Vorträge und Präsentationen</em>"
 
-#: static/templates/agenda.html:56 static/templates/agenda2.html:20
+#: static/templates/agenda.html:61 static/templates/agenda2.html:20
 msgid "Registration"
 msgstr "Registrierung"
 
-#: static/templates/agenda.html:60 static/templates/agenda2.html:24
+#: static/templates/agenda.html:65 static/templates/agenda2.html:24
 msgid "Welcome &amp; Introduction"
 msgstr "Willkommen &amp; Einführung"
 
-#: static/templates/agenda.html:64
+#: static/templates/agenda.html:69
 msgid "RAD for mobile with Codiqa and jQuery Mobile"
 msgstr "RAD für Mobile mit Codiqa und jQuery Mobile"
 
-#: static/templates/agenda.html:65
+#: static/templates/agenda.html:70
 msgid "Google+ Platform - A Year Later"
 msgstr "Google+ Plattform - ein Jahr später"
 
-#: static/templates/agenda.html:69
+#: static/templates/agenda.html:74
 msgid "Functional Domain Modeling"
 msgstr "Funktionales Domänen-Modell"
 
-#: static/templates/agenda.html:70
+#: static/templates/agenda.html:75
 msgid "Introduction to MVP with GWT"
 msgstr "Eintauchen in MVP mit GWT"
 
-#: static/templates/agenda.html:74
+#: static/templates/agenda.html:79
 msgid "Surviving the environment disasters"
 msgstr "Die Umgebungs-Katastrophen überleben"
 
-#: static/templates/agenda.html:75
+#: static/templates/agenda.html:80
 msgid "indoo.rs location based services"
 msgstr "indoo.rs Lokalisierungsdienste"
 
-#: static/templates/agenda.html:79 static/templates/agenda.html:129
+#: static/templates/agenda.html:84 static/templates/agenda.html:134
 #: static/templates/agenda2.html:43 static/templates/agenda2.html:83
 msgid "Lunch"
 msgstr "Mittagessen"
 
-#: static/templates/agenda.html:83
+#: static/templates/agenda.html:88
 msgid "Going Reactive - High Performance JVM code with Reactor"
 msgstr "Going Reactive - Hochperformanter JVM-Code mit Reactor"
 
-#: static/templates/agenda.html:84
+#: static/templates/agenda.html:89
 msgid "Gradle Build System"
 msgstr "Gradle Build-System"
 
-#: static/templates/agenda.html:89
+#: static/templates/agenda.html:93
+msgid "Flying Sharks"
+msgstr "Fliegende Haie"
+
+#: static/templates/agenda.html:94
 msgid "Hybrid App development with Phonegap"
 msgstr "Hybride Anwendungs-Entwicklung mit Phonegap"
 
-#: static/templates/agenda.html:93 static/templates/agenda2.html:52
+#: static/templates/agenda.html:98 static/templates/agenda2.html:52
 msgid "Coffee break"
 msgstr "Kaffeepause"
 
-#: static/templates/agenda.html:97
+#: static/templates/agenda.html:102
 msgid ""
 "How to survive a successful App Launch (<a "
 "href=\"http://www.willhaben.at\" target=\"_blank\">willhaben.at</a>)"
@@ -249,50 +258,50 @@ msgstr ""
 "Wie man einen erfolgreichen App Launch überlebt (<a "
 "href=\"http://www.willhaben.at\" target=\"_blank\">willhaben.at</a>)"
 
-#: static/templates/agenda.html:98
+#: static/templates/agenda.html:103
 msgid "Smart TV and Google TV"
 msgstr "Smart-TV und Google-TV"
 
-#: static/templates/agenda.html:102
+#: static/templates/agenda.html:107
 msgid "Bad Tests, Good Tests"
 msgstr "Schlechte Tests, gute Tests"
 
-#: static/templates/agenda.html:103
+#: static/templates/agenda.html:108
 msgid "Thinking Beyond RDBMS : Building Polyglot Persistence Java Applications"
 msgstr "Über RDBMs hinaus: Mehrsprachige Persistenz in Java-Anwendungen"
 
-#: static/templates/agenda.html:107
+#: static/templates/agenda.html:112
 msgid "Image processing with OpenCV, JavaFX and Scala"
 msgstr "Bildverarbeitung mit OpenCV, JavaFX und Scala"
 
-#: static/templates/agenda.html:108
+#: static/templates/agenda.html:113
 msgid "IT security - a never ending saga"
 msgstr "IT Sicherheit - eine unendliche Geschichte"
 
-#: static/templates/agenda.html:112 static/templates/agenda2.html:66
+#: static/templates/agenda.html:117 static/templates/agenda2.html:66
 msgid ""
 "Afterparty - <a href=\"http://www.cenarion.com\" "
 "target=\"_blank\">powered by Cenarion!</a>"
 msgstr ""
 
-#: static/templates/agenda.html:116
+#: static/templates/agenda.html:121
 msgid "Day 10, 20 October 2013: <em>OpenHack-style Hackathon</em>"
 msgstr "Tag 10, 20. Oktober 2013: <em>OpenHack-style Hackathon</em>"
 
-#: static/templates/agenda.html:121
+#: static/templates/agenda.html:126
 msgid "Start of Hackathon"
 msgstr "Beginn des Hackathon"
 
-#: static/templates/agenda.html:125 static/templates/agenda.html:133
+#: static/templates/agenda.html:130 static/templates/agenda.html:138
 #: static/templates/agenda2.html:79 static/templates/agenda2.html:87
 msgid "Time for developing"
 msgstr "Zeit zum Entwickeln"
 
-#: static/templates/agenda.html:137 static/templates/agenda2.html:91
+#: static/templates/agenda.html:142 static/templates/agenda2.html:91
 msgid "Presentation of results"
 msgstr "Vorstellung der Ergebnisse"
 
-#: static/templates/agenda.html:141 static/templates/agenda2.html:95
+#: static/templates/agenda.html:146 static/templates/agenda2.html:95
 msgid "Award ceremony"
 msgstr "Preisverleihung"
 
@@ -823,7 +832,7 @@ msgid "Sessions"
 msgstr "Vorträge"
 
 #: static/templates/layout.html:53 static/templates/layout.html:60
-#: static/templates/session.html:71 static/templates/speakers.html:15
+#: static/templates/session.html:75 static/templates/speakers.html:15
 msgid "Speakers"
 msgstr "Vortragende"
 
@@ -1016,11 +1025,15 @@ msgstr "Workshop"
 msgid "Talk / Presentation"
 msgstr "Vortrag / Präsentation"
 
-#: static/templates/session.html:65
+#: static/templates/session.html:37
+msgid "Requirements"
+msgstr "Teilnahmevoraussetzungen"
+
+#: static/templates/session.html:69
 msgid "Documents, Links, Slides"
 msgstr "Dokumente, Links, Folien"
 
-#: static/templates/session.html:73
+#: static/templates/session.html:77
 msgid "Speaker"
 msgstr "Vortragende"
 

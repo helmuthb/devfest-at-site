@@ -39,10 +39,12 @@ class Sessions(common.BaseHandler):
       for session in sessions:
         session.title = session.title_de
         session.abstract = session.abstract_de
+        session.requirements = session.requirements_de
     else:
       for session in sessions:
         session.title = session.title_en
         session.abstract = session.abstract_en
+        session.requirements = session.requirements_en
     self.prep_html_response('sessions.html', {'event':event,'sessions':sessions})
 
 class Agenda2(common.BaseHandler):
@@ -74,6 +76,7 @@ class Session(common.BaseHandler):
     if locale[0:2] == "de":
       session.title = session.title_de
       session.abstract = session.abstract_de
+      session.requirements = session.requirements_de
       for sp in speakers:
         sp.bio = sp.bio_de
       for link in session.link:
@@ -81,6 +84,7 @@ class Session(common.BaseHandler):
     else:
       session.title = session.title_en
       session.abstract = session.abstract_en
+      session.requirements = session.requirements_en
       for sp in speakers:
         sp.bio = sp.bio_en
       for link in session.link:

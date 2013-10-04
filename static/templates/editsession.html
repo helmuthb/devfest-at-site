@@ -40,6 +40,13 @@ DevFest Vienna - Create Session
 </fieldset>
 <fieldset>
 <div class="control-group">
+  <label class="control-label" for="session-finished">Finished</label>
+  <div class="controls">
+    <input type="checkbox" class="input-xlarge" name="finished" id="session-finished" value="1" {% if session.finished %} checked="checked" {% endif %}/>
+  </div>
+</fieldset>
+<fieldset>
+<div class="control-group">
   <label class="control-label" for="session-room">Room</label>
   <div class="controls">
     <input type="text" class="input-xlarge" name="room" id="session-room" value="{{ session.room|e}}"/>
@@ -79,6 +86,22 @@ DevFest Vienna - Create Session
   <label class="control-label" for="session-title-de">Title (deutsch)</label>
   <div class="controls">
     <input type="text" class="input-xlarge required" name="title-de" id="session-title-de" value="{{ session.title_de|e }}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-requirements-en">Requirements (english)</label>
+  <div class="controls">
+    <textarea class="input-xlarge required" name="requirements-en" id="session-requirements-en">{{ session.requirements_en|e }}</textarea>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-requirements-de">Requirements (deutsch)</label>
+  <div class="controls">
+    <textarea class="input-xlarge required" name="requirements-de" id="session-requirements-de">{{ session.requirements_de|e }}</textarea>
   </div>
 </div>
 </fieldset>
