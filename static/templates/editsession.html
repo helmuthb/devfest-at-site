@@ -73,6 +73,19 @@ DevFest Vienna - Create Session
   </div>
 </div>
 </fieldset>
+  <fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-level">Level</label>
+  <div class="controls">
+    <select class="input-xlarge" name="level" id="session-level">
+      <option value="">--Please choose--</option>
+      <option value="101" {% if session.level == '101' %}selected{% endif %}>101 - starters</option>
+      <option value="201" {% if session.level == '201' %}selected{% endif %}>201 - intermediate</option>
+      <option value="301" {% if session.level == '301' %}selected{% endif %}>301 - advanced</option>
+    </select>
+  </div>
+</div>
+</fieldset>
 <fieldset>
 <div class="control-group">
   <label class="control-label" for="session-title-en">Title (english)</label>

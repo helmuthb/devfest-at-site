@@ -35,6 +35,7 @@ class EditSession(BaseHandler):
     session.event = self.request.get('event')
     session.url = self.request.get('url')
     session.finished = bool(self.request.get('finished'))
+    session.level = self.request.get('level')
     session.room = self.request.get('room')
     session.slot = self.request.get('slot')
     session.type = self.request.get('type')

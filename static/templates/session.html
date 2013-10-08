@@ -24,7 +24,7 @@ DevFest Vienna - {{ session.title|e }}
 <div style="float:right;">
 <div class="g-plusone" data-annotation="none" data-size="medium"></div>
 <a href="https://twitter.com/share" class="twitter-share-button" data-lang="{% trans %}en{% endtrans %}" data-size="medium" data-related="DevFestVienna" data-count="none" data-hashtags="jsug,gdg,devfest,vienna" data-dnt="true">{% trans %}Tweet{% endtrans %}</a>
-<fb:like send="false" style="top:-4px;" layout="button_count" width="90" show_faces="false"></fb:like>
+<fb:like send="false" style="top:0px;" layout="button_count" width="90" show_faces="false"></fb:like>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 </h3>
@@ -33,6 +33,10 @@ DevFest Vienna - {{ session.title|e }}
 <img src="/image/{{ session.key.urlsafe() }}" class="rightimage">
 {% endif %}
 <p>{{ session.abstract }}</p>
+{% if session.level %}
+<h4>{% trans %}Level{% endtrans %}</h4>
+<p>{{ session.leveltext }}</p>
+{% endif %}
 {% if not session.finished and session.type == 'workshop' %}
 <h4>{% trans %}Requirements{% endtrans %}</h4>
 <p>{{ session.requirements }}</p>
@@ -93,7 +97,7 @@ DevFest Vienna - {{ session.title|e }}
 <div class="span3">
 <a href="/"><img class="hidden-phone" src="/img/banner2-{{event}}-small.png"></a><br>
 <br>
-<!-- <iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe> -->
+<iframe src="http://www.eventbrite.com/countdown-widget?eid=7440401441" frameborder="0" height="480" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true" kwframeid="1"></iframe>
 {%include "sponsorlist.html"%}
 </div>
 </div>

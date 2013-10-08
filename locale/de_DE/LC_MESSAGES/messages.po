@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-22 16:22+0000\n"
+"POT-Creation-Date: 2013-10-05 08:18+0000\n"
 "PO-Revision-Date: 2012-09-02 12:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de_DE <LL@li.org>\n"
@@ -149,8 +149,8 @@ msgid "Tentative Agenda"
 msgstr "Vorläufige Agenda"
 
 #: static/templates/agenda.html:26 static/templates/agenda.html:160
-#: static/templates/session.html:26 static/templates/session.html:102
-#: static/templates/sessions.html:25 static/templates/sessions.html:57
+#: static/templates/session.html:26 static/templates/session.html:106
+#: static/templates/sessions.html:25 static/templates/sessions.html:65
 #: static/templates/speakers.html:43
 msgid "en"
 msgstr "de"
@@ -173,7 +173,6 @@ msgid "jQuery Mobile"
 msgstr "jQuery Mobile"
 
 #: static/templates/agenda.html:40 static/templates/agenda.html:45
-#: static/templates/agenda.html:50
 msgid "OSGi - all you need to know"
 msgstr "OSGi - alles was man dazu wissen muss"
 
@@ -184,6 +183,10 @@ msgstr "Google+ Hangouts Entwicklung"
 #: static/templates/agenda.html:46
 msgid "Payments for Droids"
 msgstr "Bezahlen für Droiden"
+
+#: static/templates/agenda.html:50
+msgid "Why WebDevs should care about Polymer"
+msgstr ""
 
 #: static/templates/agenda.html:51
 msgid "From Java to Scala"
@@ -202,8 +205,8 @@ msgid "Welcome &amp; Introduction"
 msgstr "Willkommen &amp; Einführung"
 
 #: static/templates/agenda.html:69
-msgid "RAD for mobile with Codiqa and jQuery Mobile"
-msgstr "RAD für Mobile mit Codiqa und jQuery Mobile"
+msgid "Image processing with OpenCV, JavaFX and Scala"
+msgstr "Bildverarbeitung mit OpenCV, JavaFX und Scala"
 
 #: static/templates/agenda.html:70
 msgid "Google+ Platform - A Year Later"
@@ -218,8 +221,8 @@ msgid "Introduction to MVP with GWT"
 msgstr "Eintauchen in MVP mit GWT"
 
 #: static/templates/agenda.html:79
-msgid "Surviving the environment disasters"
-msgstr "Die Umgebungs-Katastrophen überleben"
+msgid "Flying Sharks"
+msgstr "Fliegende Haie"
 
 #: static/templates/agenda.html:80
 msgid "indoo.rs location based services"
@@ -231,16 +234,16 @@ msgid "Lunch"
 msgstr "Mittagessen"
 
 #: static/templates/agenda.html:88
-msgid "Going Reactive - High Performance JVM code with Reactor"
-msgstr "Going Reactive - Hochperformanter JVM-Code mit Reactor"
+msgid "RAD for mobile with Codiqa and jQuery Mobile"
+msgstr "RAD für Mobile mit Codiqa und jQuery Mobile"
 
 #: static/templates/agenda.html:89
 msgid "Gradle Build System"
 msgstr "Gradle Build-System"
 
 #: static/templates/agenda.html:93
-msgid "Flying Sharks"
-msgstr "Fliegende Haie"
+msgid "Surviving the environment disasters"
+msgstr "Die Umgebungs-Katastrophen überleben"
 
 #: static/templates/agenda.html:94
 msgid "Hybrid App development with Phonegap"
@@ -271,8 +274,8 @@ msgid "Thinking Beyond RDBMS : Building Polyglot Persistence Java Applications"
 msgstr "Über RDBMs hinaus: Mehrsprachige Persistenz in Java-Anwendungen"
 
 #: static/templates/agenda.html:112
-msgid "Image processing with OpenCV, JavaFX and Scala"
-msgstr "Bildverarbeitung mit OpenCV, JavaFX und Scala"
+msgid "Going Reactive - High Performance JVM code with Reactor"
+msgstr "Going Reactive - Hochperformanter JVM-Code mit Reactor"
 
 #: static/templates/agenda.html:113
 msgid "IT security - a never ending saga"
@@ -732,7 +735,11 @@ msgstr ""
 msgid "Step Up"
 msgstr "Aufstieg"
 
-#: static/templates/index2.html:33 static/templates/index2.html:55
+#: static/templates/index2.html:33
+msgid "Sixteen tech talks, five workshops, and an OpenHack-style hackathon"
+msgstr "Sechszehn Vorträge, fünf Workshops und ein OpenHack-style Hackathon"
+
+#: static/templates/index2.html:55
 msgid ""
 "Accelerate your skills with the sixteen tech talks and five workshops "
 "this DevFest is offering"
@@ -791,6 +798,10 @@ msgstr ""
 "Für die Verwendung mancher APIs und Werkzeug-Sets vergeben unsere "
 "Sponsoren Spezialpreise!"
 
+#: static/templates/index2.html:107
+msgid "Platinum Sponsors"
+msgstr ""
+
 #: static/templates/index2.html:114
 msgid "Better Software for a Better World!"
 msgstr "Bessere Software für eine bessere Welt!"
@@ -832,7 +843,7 @@ msgid "Sessions"
 msgstr "Vorträge"
 
 #: static/templates/layout.html:53 static/templates/layout.html:60
-#: static/templates/session.html:75 static/templates/speakers.html:15
+#: static/templates/session.html:79 static/templates/speakers.html:15
 msgid "Speakers"
 msgstr "Vortragende"
 
@@ -1026,14 +1037,18 @@ msgid "Talk / Presentation"
 msgstr "Vortrag / Präsentation"
 
 #: static/templates/session.html:37
+msgid "Level"
+msgstr ""
+
+#: static/templates/session.html:41
 msgid "Requirements"
 msgstr "Teilnahmevoraussetzungen"
 
-#: static/templates/session.html:69
+#: static/templates/session.html:73
 msgid "Documents, Links, Slides"
 msgstr "Dokumente, Links, Folien"
 
-#: static/templates/session.html:77
+#: static/templates/session.html:81
 msgid "Speaker"
 msgstr "Vortragende"
 

@@ -5,6 +5,10 @@ from google.appengine.ext import ndb
 from core import model
 from webapp2_extras import i18n
 
+# list of level texts
+leveltext_de = { '101':'101 - f&uuml;r Anf&auml;ngerInnen geeignet', '201':'201 - m&auml;ssig Fortgeschrittene', '301':'301 - ExpertInnenniveau' }
+leveltext_en = { '101':'101 - suited for beginners', '201':'201 - intermediate experience', '301':'301 - expert level' }
+
 class Index(common.BaseHandler):
   def get(self):
     # get the images...
@@ -35,16 +39,22 @@ class Sessions(common.BaseHandler):
     if self.request.get('locale'):
       locale = self.request.get('locale')
       i18n.get_i18n().set_locale(locale)
+    for session in sessions:
+      session.speakers = [ sp.get() for sp in session.speaker ]
     if locale[0:2] == "de":
       for session in sessions:
         session.title = session.title_de
         session.abstract = session.abstract_de
         session.requirements = session.requirements_de
+        if session.level:
+          session.leveltext = leveltext_de[session.level]
     else:
       for session in sessions:
         session.title = session.title_en
         session.abstract = session.abstract_en
         session.requirements = session.requirements_en
+        if session.level:
+          session.leveltext = leveltext_en[session.level]
     self.prep_html_response('sessions.html', {'event':event,'sessions':sessions})
 
 class Agenda2(common.BaseHandler):
@@ -81,6 +91,8 @@ class Session(common.BaseHandler):
         sp.bio = sp.bio_de
       for link in session.link:
         link.text = link.text_de
+      if session.level:
+        session.leveltext = leveltext_de[session.level]
     else:
       session.title = session.title_en
       session.abstract = session.abstract_en
@@ -89,6 +101,8 @@ class Session(common.BaseHandler):
         sp.bio = sp.bio_en
       for link in session.link:
         link.text = link.text_en
+      if session.level:
+        session.leveltext = leveltext_en[session.level]
     self.prep_html_response('session.html', {'event':event, 'session':session, 'speakers':speakers})
 
 class Speakers(common.BaseHandler):
