@@ -37,6 +37,10 @@ DevFest Vienna - {{ session.title|e }}
 <h4>{% trans %}Level{% endtrans %}</h4>
 <p>{{ session.leveltext }}</p>
 {% endif %}
+{% if session.language %}
+<h4>{% trans %}Language{% endtrans %}</h4>
+<p>{{ session.languagetext }}</p>
+{% endif %}  
 {% if not session.finished and session.type == 'workshop' %}
 <h4>{% trans %}Requirements{% endtrans %}</h4>
 <p>{{ session.requirements }}</p>

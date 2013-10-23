@@ -1822,9 +1822,8 @@ tr.slot-nosession td{font-style:italic;}
 	-moz-background-clip: padding-box;
 	background-clip: padding-box;
 }
-
 .sessionPage {
-    padding: 14px;
+	padding: 14px;
   overflow: auto;
   background: #f1f1f1;
   border-radius: 3px;
@@ -1836,3 +1835,11 @@ tr.slot-nosession td{font-style:italic;}
   background: #E1E4E4;
   cursor: pointer;
 }
+
+.speakerList{
+  padding: 5px 5px 5px 14px;
+  overflow: auto;
+  background: #E1E4E4;
+  border-radius: 3px;
+}
+

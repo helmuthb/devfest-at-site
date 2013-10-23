@@ -12,7 +12,8 @@
 <div class="span9">
 <p>
 <a href="/"><img class="visible-phone" src="/img/banner2-{{event}}-small.png"></a><br>
-<h2>{% trans %}Speakers Page{% endtrans %}</h3>
+<h2>{% trans %}Speakers{% endtrans %}</h2>
+
 {% set first = true %}
 {% for sp in speakers %}
 {% if not first %}
@@ -20,6 +21,7 @@
 {% else %}
 {% set first = false %}
 {% endif %}
+  <div class="speakerList">
 {% if sp.image %}
 <img src="/image/{{ sp.key.urlsafe() }}" class="leftimage" style="width:128px; height:128px;">
 {% endif %}
@@ -27,15 +29,17 @@
 {% if sp.company_link %}<a href="{{ sp.company_link }}" target="_blank">{% endif %}{% if sp.company %}<em>{{ sp.company }}</em><br>{% endif %}{% if sp.company_link %}</a>{% endif %}
 <br>
 <p>{{ sp.bio }}</p>
+  </div>
 <div style="clear:both;"></div>
 {% endfor %}
+  
 <br>
 <p>
 </div>
 <div class="span3">
 <a href="/"><img class="hidden-phone" src="/img/banner2-{{event}}-small.png"></a><br>
 <br>
-<!-- <iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe> -->
+<iframe src="http://www.eventbrite.com/countdown-widget?eid=7440401441" frameborder="0" height="480" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true" kwframeid="1"></iframe>
 {%include "sponsorlist.html"%}
 </div>
 </div>

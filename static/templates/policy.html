@@ -1,0 +1,96 @@
+{% set area = 'policy' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% trans %}DevFest Vienna - Conduct Policy{% endtrans %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<img class="visible-phone" src="/img/banner2-small.png"><br>
+<h2>{% trans %}Conduct Policy{% endtrans %}</h2>
+<p>
+{% trans %}
+DevFest Vienna is dedicated to being open to everyone and making the conference
+a safe place for all.
+We do not discriminate based on ethnic background, religion, gender, sexuality,
+body shape, or disability.
+We do not tolerate harassment based on discrimination.
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+We insist that all participants and attendees adhere to a civil demeanor at all times.
+This includes refraining from inappropriate language, comments and behaviour.
+This includes, but is not limited to: sexually oriented language and images,
+unwanted attention, threatening behaviour, physical assault, theft.
+{% endtrans %}
+</p>
+<p>
+<em>
+{% trans %}
+Participants, sponsors, speakers or attendees who are being harassed, intimidated,
+or are dealing with otherwise improper behaviour are encouraged to report it
+immediately to an official DevFest organizer team member.
+Organizer team members are identified by the red highlighted badges.
+{% endtrans %}
+</em>
+</p>
+<p style="margin-bottom:0;">
+{% trans %}
+Alternate methods of reporting issues include:
+{% endtrans %}
+</p>
+<ul>
+<li>{% trans %}email <a href="mailto:team@devfest.at">team@devfest.at</a>{% endtrans %}</li>
+<li>{% trans %}call the Vienna police department at 112{% endtrans %}</li>
+</ul>
+<p style="margin-bottom:0;">
+{% trans %}
+Anyone who is found to be in violation of this policy may be handled in any
+one or more of these methods, depending on the offense:
+{% endtrans %}
+</p>
+<ul>
+<li>{% trans %}warning{% endtrans %}</li>
+<li>{% trans %}expulsion (see below){% endtrans %}</li>
+<li>{% trans %}contacting of the police{% endtrans %}</li>
+</ul>
+<p>
+{% trans %}
+Actions stronger than a warning will be taken at the discretion of two or more members of
+the DevFest organizer team.
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+False reports will be treated harshly.
+Personal disputes should be handled privately, unless actual harassment occurs.
+{% endtrans %}
+</p>
+<p>
+<em>
+{% trans %}
+DevFest Vienna reserves the right to remove any participant, sponsor or attendee at any time for any reason.
+{% endtrans %}
+</em>
+</p>
+<p>
+{% trans %}
+This policy covers all organized events for the DevFest Vienna, including social events.
+{% endtrans %}
+</p>
+
+</div>
+<div class="span3" style="text-align:center;">
+<img class="hidden-phone" src="/img/banner2-2013-small.png"><br>
+<br>
+<iframe src="http://www.eventbrite.com/countdown-widget?eid=7440401441" frameborder="0" height="480" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+{%include "sponsorlist.html"%}
+</div>
+</div>
+</div>
+{% endblock %}

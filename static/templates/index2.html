@@ -30,7 +30,7 @@
 <p>
   <img src="/img/gdg-devfest-2013.png" style="border:0;"><br>
   <!-- <b>{% trans %}Step Up{% endtrans %}</b><br> -->
-  <em>{% trans %}Sixteen tech talks, five workshops, and an OpenHack-style hackathon{% endtrans %}</em>
+  <em>{% trans %}Sixteen tech talks, five workshops, and an open hackathon{% endtrans %}</em>
 </p>
   <a href="http://devfestvienna2013.eventbrite.com" target="_blank" class="btn btn-success">{% trans %}Register Now!{% endtrans %}</a>
 <!--
@@ -52,7 +52,7 @@
   <p>
     <!-- <b>{% trans %}Step Up{% endtrans %}</b><br> -->
   <img src="/img/gdg-devfest-2013.png" style="border:0;"><br>
-  <em>{% trans %}Accelerate your skills with the sixteen tech talks and five workshops this DevFest is offering{% endtrans %}</em>
+  <em>{% trans %}Sixteen tech talks, five workshops, and an open hackathon{% endtrans %}</em>
 </p>
     <a href="http://devfestvienna2013.eventbrite.com" target="_blank" class="btn btn-success">{% trans %}Register Now!{% endtrans %}</a>
 </div>
@@ -73,9 +73,6 @@ the tradition of Google DevFests and organized by local user groups.
 <img src="/img/pics/image_58.jpg">
 <img src="/img/pics/image_37.jpg">
 </center>
-  <h3>{% trans %}Tech Talks - Day 1{% endtrans %}</h3>
-  {% trans %}On Saturday we will have sessions about various topics:{% endtrans %}
-  <a href="/agenda">jQuery Mobile, phonegap, Scala, Codiqa, NoSQL, Reactor, ...</a>
   <h3>{% trans %}Workshops - Day 0{% endtrans %}</h3>
   {% trans %}With Saturday offering presentations and tech talks, the Friday afternoon
   will have workshops dedicated to current IT topics.{% endtrans %}
@@ -83,28 +80,47 @@ the tradition of Google DevFests and organized by local user groups.
   <a href="/agenda">JEE6 &amp; NoSQL, jQuery Mobile, Hangout Development, Scala, ...</a>
   {% trans %}The level of the workshops varies - some of them are ready for novices,
   other require intermediate knowledge and experience.{% endtrans %}
-  <h3>{% trans %}OpenHack-Style Hackathon - Day 10{% endtrans %}</h3>
-<!-- <center style="height:160px; overflow:hidden;">
-<img src="/img/pics3/image_5.jpg">
-<img src="/img/pics3/image_13.jpg">
-<img src="/img/pics3/image_6.jpg">
-<img src="/img/pics3/image_1.jpg">
-<img src="/img/pics3/image_7.jpg">
-<img src="/img/pics3/image_2.jpg">
-<img src="/img/pics3/image_0.jpg">
-<img src="/img/pics3/image_3.jpg">
-<img src="/img/pics3/image_4.jpg">
-<img src="/img/pics3/image_8.jpg">
-<img src="/img/pics3/image_9.jpg">
-<img src="/img/pics3/image_10.jpg">
-<img src="/img/pics3/image_11.jpg">
-<img src="/img/pics3/image_12.jpg">
-</center>
--->
-  {% trans %}And on Sunday we will have a OpenHack-style Hackathon.{% endtrans %}
+  <br/>
+  {% trans %}We start on day 0 at the University of Technology:{% endtrans %}
+  <a target="_blank" href="https://www.google.com/maps?t=m&amp;q=Wiedner+Hauptstra%C3%9Fe+8-10,+Vienna,+Austria&amp;ie=UTF8&amp;hq=&amp;hnear=Wiedner+Hauptstra%C3%9Fe+8-10,+Wieden+1040+Wien,+Austria&amp;ll=48.198706,16.367569&amp;spn=0.01373,0.02738&amp;z=14&amp;iwloc=A&amp;source=embed&amp;{% trans %}hl=en{% endtrans %}">Wiedner Hauptstraße 8-10</a> (Freihaus),
+  <a target="_blank" href="http://www.wegweiser.ac.at/tuwien/hoersaal/F3.html">FH HS3</a>,
+  <a target="_blank" href="http://www.wegweiser.ac.at/tuwien/hoersaal/F4.html">FH HS4</a>.
+  <h3>{% trans %}Tech Talks - Day 1{% endtrans %}</h3>
+  {% trans %}On Saturday we will have sessions about various topics:{% endtrans %}
+  <a href="/agenda">jQuery Mobile, phonegap, Scala, Codiqa, NoSQL, Reactor, ...</a>
+  <br/>
+  {% trans %}Saturday will take place at the University of Technology: {% endtrans %}
+  <a target="_blank" href="https://maps.google.com/maps?f=q&amp;source=embed&amp;{% trans %}hl=en{% endtrans %}&amp;geocode=&amp;q=Gu%C3%9Fhausstra%C3%9Fe+27-29,+Wieden+1040+Wien,+Austria&amp;aq=&amp;sll=48.197351,16.371794&amp;sspn=0.008467,0.016329&amp;ie=UTF8&amp;hq=&amp;hnear=Gu%C3%9Fhausstra%C3%9Fe+27,+Wieden+1040+Wien,+Austria&amp;t=m&amp;ll=48.197333,16.371775&amp;spn=0.027462,0.054932&amp;z=14&amp;iwloc=A">Gußhausstraße 27-29</a> (Elektrotechnik-Institut),
+  <a target="_blank" href="http://www.wegweiser.ac.at/tuwien/hoersaal/E9.html">EI9</a>,
+  <a target="_blank" href="http://www.wegweiser.ac.at/tuwien/hoersaal/E10.html">EI10</a>.
+  <h3>{% trans %}Open Hackathon - Day 10{% endtrans %}</h3>
+  {% trans %}And on Sunday we will have an open hackathon.{% endtrans %}
   {% trans %}Any software, any technology, any tools are allowed.{% endtrans %}<br>
   {% trans %}For some APIs and toolsets our sponsors will award special prizes!{% endtrans %}
-  <h3>{% trans %}Platinum Sponsors{% endtrans %}</h3>
+  <br/>
+  {% trans %}This Open Hackathon takes place in the coworking space
+  <a target="_blank" href="http://www.sektor5.at/about/contact/">Sektor5</a>.{% endtrans %}
+<h3>{% trans %}Conduct Policy{% endtrans %}</h3>
+  <p>
+{% trans %}
+DevFest Vienna is dedicated to being open to everyone and making the conference
+a safe place for all.
+We do not discriminate based on ethnic background, religion, gender, sexuality,
+body shape, or disability.
+We do not tolerate harassment based on discrimination.
+{% endtrans %}
+  </p>
+  <p>
+  <a href="/policy">{% trans %}See our conduct policy for more details.{% endtrans %}</a>
+  </p>
+  <p>
+  {% trans %}
+  Please report any violation of the conduct policy to a member of the Organizer team
+  (recognizable through a red highlighted badge).
+  {% endtrans %}
+  </p>
+  <hr>
+<h3>{% trans %}Platinum Sponsors{% endtrans %}</h3>
   <div style="text-align:center;">
   <div style="float:left; width:220px;">
   <a href="http://www.cenarion.com">
@@ -130,7 +146,7 @@ the tradition of Google DevFests and organized by local user groups.
   <div style="clear:both;"></div>
   <hr>
   </div>
-<h3>Gold Sponsors</h3>
+<h3>{% trans %}Gold Sponsors{% endtrans %}</h3>
   <div style="text-align:center;">
   <div style="float:left;">
   <a href="http://indoo.rs" target="_blank"><img src="/img/indoors-logo.png" style="border:0;"></a>
@@ -138,11 +154,22 @@ the tradition of Google DevFests and organized by local user groups.
   <div style="float:left;">
   <a href="http://www.tailored-apps.com/" target="_blank"><img src="/img/tailored_apps-logo.png" style="border:0;"></a>
   </div>
+  <div style="float:left;">
+  <a href="http://codiqa.com" target="_blank"><img src="/img/codiqa-logo.png" style="border:0;"></a>
+  </div>
   <div style="clear:both;"></div>
   <hr>
   </div>
-<h3>Silver Sponsors and Media Partners</h3>
+<h3>{% trans %}Silver Sponsors and Media Partners{% endtrans %}</h3>
+  <div style="text-align:center;">
+  <div style="float:left;">
   <a href="http://www.oreilly.de" target="_blank"><img src="/img/oreilly_logo_4c.png" style="border:0;"></a>
+  </div>
+  <div style="float:left;">
+  <a href="http://manning.com" target="_blank"><img src="/img/manning-logo.png" style="border:0;"></a>
+  </div>
+  <div style="clear:both;"></div>
+  </div>
 <!--
 <h3 style="text-align:center;"><a href="/agenda">&gt;&gt;&gt; {% trans %}Videos &amp; Slides from Day 1 are Online!{% endtrans %} &lt;&lt;&lt;</a></h3>
 -->

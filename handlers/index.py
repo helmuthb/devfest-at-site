@@ -2,12 +2,17 @@ import common
 import logging
 import random
 from google.appengine.ext import ndb
+from google.appengine.api import images, memcache
 from core import model
 from webapp2_extras import i18n
 
 # list of level texts
-leveltext_de = { '101':'101 - f&uuml;r Anf&auml;ngerInnen geeignet', '201':'201 - m&auml;ssig Fortgeschrittene', '301':'301 - ExpertInnenniveau' }
+leveltext_de = { '101':'101 - f&uuml;r Anf&auml;ngerInnen geeignet', '201':'201 - m&auml;&szlig;ig Fortgeschrittene', '301':'301 - ExpertInnenniveau' }
 leveltext_en = { '101':'101 - suited for beginners', '201':'201 - intermediate experience', '301':'301 - expert level' }
+
+# list of language texts
+languagetext_de = { 'en':'Englisch', 'de':'Deutsch', 'en-pref':'Englisch, auf Wunsch auch Deutsch', 'de-pref':'Deutsch, auf Wunsch auch Englisch' }
+languagetext_en = { 'en':'English', 'de':'German', 'en-pref':'English, on request also German', 'de-pref':'German, on request also English' }
 
 class Index(common.BaseHandler):
   def get(self):
@@ -46,6 +51,8 @@ class Sessions(common.BaseHandler):
         session.title = session.title_de
         session.abstract = session.abstract_de
         session.requirements = session.requirements_de
+        if session.language:
+          session.languagetext = languagetext_de[session.language]
         if session.level:
           session.leveltext = leveltext_de[session.level]
     else:
@@ -53,6 +60,8 @@ class Sessions(common.BaseHandler):
         session.title = session.title_en
         session.abstract = session.abstract_en
         session.requirements = session.requirements_en
+        if session.language:
+          session.languagetext = languagetext_en[session.language]
         if session.level:
           session.leveltext = leveltext_en[session.level]
     self.prep_html_response('sessions.html', {'event':event,'sessions':sessions})
@@ -64,6 +73,10 @@ class Agenda2(common.BaseHandler):
 class Sponsor(common.BaseHandler):
   def get(self):
     self.prep_html_response('sponsor.html')
+
+class Policy(common.BaseHandler):
+  def get(self):
+    self.prep_html_response('policy.html')
 
 class Call(common.BaseHandler):
   def get(self):
@@ -91,6 +104,8 @@ class Session(common.BaseHandler):
         sp.bio = sp.bio_de
       for link in session.link:
         link.text = link.text_de
+      if session.language:
+        session.languagetext = languagetext_de[session.language]
       if session.level:
         session.leveltext = leveltext_de[session.level]
     else:
@@ -101,6 +116,8 @@ class Session(common.BaseHandler):
         sp.bio = sp.bio_en
       for link in session.link:
         link.text = link.text_en
+      if session.language:
+        session.languagetext = languagetext_en[session.language]
       if session.level:
         session.leveltext = leveltext_en[session.level]
     self.prep_html_response('session.html', {'event':event, 'session':session, 'speakers':speakers})
@@ -134,3 +151,47 @@ class ObjectImage(common.BaseHandler):
     self.response.headers['Content-Type'] = mime
     self.response.out.write(object.image)
 
+class ObjectImageTransform(common.BaseHandler):
+  def get(self, id, w, h):
+    key = "img:%s,%s:%s" % (w, h, id)
+    cImg = memcache.get(key)
+    if cImg is not None:
+      self.response.headers['Content-Type'] = 'image/png'
+      self.response.out.write(cImg)
+      return
+    orig = ndb.Key(urlsafe = id).get()
+    img = images.Image(orig.image)
+    w0 = float(img.width)
+    h0 = float(img.height)
+    w1 = float(w)
+    h1 = float(h)
+    resize = False
+    maxf = max(w0/w1,h0/h1)
+    minf = min(w0/w1,h0/h1)
+    maxf = int(maxf*4.)/4.
+    minf = int(minf*4.)/4.
+    if minf > 1:
+      w1 = minf*w1
+      h1 = minf*h1
+      resize = True
+    if maxf < 1:
+      w1 = maxf*w1
+      h1 = maxf*h1
+      resize = True
+    x0 = w0/2. - w1/2.
+    x1 = w0/2. + w1/2.
+    y0 = h0/2. - h1/2.
+    y1 = h0/2. + h1/2.
+    if w0 < w1:
+      x0 = 0
+      x1 = w0
+    if h0 < h1:
+      y0 = 0
+      y1 = h0
+    img.crop(left_x=x0/w0, top_y=y0/h0, right_x=x1/w0, bottom_y=y1/h0)
+    if resize:
+      img.resize(width=int(w), height=int(h))
+    cImg = img.execute_transforms()
+    memcache.add(key, cImg, 3600) 
+    self.response.headers['Content-Type'] = 'image/png'
+    self.response.out.write(cImg)
