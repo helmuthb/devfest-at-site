@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-16 17:52+0000\n"
+"POT-Creation-Date: 2014-06-16 14:58+0000\n"
 "PO-Revision-Date: 2012-09-02 12:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de_DE <LL@li.org>\n"
@@ -149,9 +149,9 @@ msgid "Tentative Agenda"
 msgstr "Vorläufige Agenda"
 
 #: static/templates/agenda.html:26 static/templates/agenda.html:160
-#: static/templates/session.html:26 static/templates/session.html:110
+#: static/templates/session.html:26 static/templates/session.html:112
 #: static/templates/sessions.html:26 static/templates/sessions.html:69
-#: static/templates/speakers.html:47
+#: static/templates/speakers.html:49
 msgid "en"
 msgstr "de"
 
@@ -380,7 +380,7 @@ msgstr "Beginn des Android Geburtstag-Hackathon"
 msgid "DevFest Vienna - Call for Speakers"
 msgstr "DevFest Vienna - Call for Speakers"
 
-#: static/templates/call.html:14 static/templates/layout.html:54
+#: static/templates/call.html:14 static/templates/layout.html:55
 msgid "Call for Speakers"
 msgstr "Call for Speakers"
 
@@ -392,8 +392,8 @@ msgstr ""
 "Willst du als Vortragende / Vortragender bei diesem Event dabei sein? "
 "Ausgezeichnet! "
 
-#: static/templates/call.html:21 static/templates/call.html:99
-#: static/templates/call.html:105
+#: static/templates/call.html:21 static/templates/call.html:102
+#: static/templates/call.html:108
 msgid "dFd2MzI2RF9aa29uNndxdG90Y0dHTVE6MQ"
 msgstr "dEt2WU9xWF9lT2NSbTZzRHR4NUprTUE6MQ"
 
@@ -411,8 +411,8 @@ msgstr ""
 "freuen wir uns heuer ganz besonders über Einreichungen von Frauen!"
 
 #: static/templates/call.html:29
-msgid "Call for Speakers is open till 30 August!"
-msgstr "Der Call for Speakers ist bis zum 30. August geöffnet!"
+msgid "Call for Speakers is open till 25 July!"
+msgstr "Der Call for Speakers ist bis zum 25. Juli geöffnet!"
 
 #: static/templates/call.html:31
 msgid "Type of Sessions"
@@ -428,13 +428,12 @@ msgstr "Es sind drei Arten geplant: Vorträge, Workshops und Impulsvorträge.\n"
 #: static/templates/call.html:38
 msgid ""
 "\n"
-"A regular <em>talk</em> (e.g. presentation, tech talk, etc) is supposed "
-"to\n"
-"take about 50 minutes with some minutes afterwards for questions and "
+"A regular talk (e.g. presentation, tech talk, etc) is supposed to\n"
+"take about 45 minutes with some minutes afterwards for questions and "
 "answers.\n"
 msgstr ""
-"Ein normaler <em>Vortrag</em> (z.B. eine Präsentation) sollte ca. 50 "
-"Minuten dauern; anschließend sind 5-10 Minuten für Fragen und Antworten "
+"Ein normaler <em>Vortrag</em> (z.B. eine Präsentation) sollte ca. 45 "
+"Minuten dauern; anschließend sind 5 Minuten für Fragen und Antworten "
 "eingeplant."
 
 #: static/templates/call.html:44
@@ -448,18 +447,17 @@ msgstr ""
 "sich für technisch tiefgehende Workshops empfiehlt."
 
 #: static/templates/call.html:50
-#, fuzzy
 msgid ""
 "\n"
 "In addition, there is the opportunity for <em>highlight "
 "presentations</em>\n"
-"of shorter duration (25 minutes and some minutes for questions &amp; "
+"of shorter duration (20 minutes and some minutes for questions &amp; "
 "answers).\n"
 "They are ideal for presenting an idea or a toolset without going too much"
 "\n"
 "into technical details.\n"
 msgstr ""
-"<em>Impulsvorträge</em> sind von k&uuml;rzerer Dauer (25 Minuten plus "
+"<em>Impulsvorträge</em> sind von k&uuml;rzerer Dauer (20 Minuten plus "
 "einige Minuten für Fragen und Antworten).\n"
 "Sie bieten sich an, um eine Idee oder ein Werzkeug kurz vorzustellen, "
 "ohne auf technische Details einzugehen."
@@ -492,7 +490,15 @@ msgstr ""
 "In jedem Vortragsraum sind ein Beamer und Netzwerkanbindung für dein "
 "Notebook vorhanden."
 
-#: static/templates/call.html:72
+#: static/templates/call.html:71
+msgid ""
+"\n"
+"We also have adapters for MacBook / MacBook Air (MiniDP).\n"
+msgstr ""
+"\n"
+"Wir haben auch Adaptoren f&uuml;r MacBook / MacBook Air (MiniDP).\n"
+
+#: static/templates/call.html:75
 msgid ""
 "\n"
 "Please let us know in advance if you need additional equipment.\n"
@@ -500,11 +506,11 @@ msgstr ""
 "Falls du weitere Ausrüstung benötigst, lass es uns bitte rechtzeitig "
 "wissen."
 
-#: static/templates/call.html:76
+#: static/templates/call.html:79
 msgid "Participant requirements"
 msgstr "Voraussetzungen an die Teilnehmenden"
 
-#: static/templates/call.html:78
+#: static/templates/call.html:81
 msgid ""
 "\n"
 "Let us know what requirements participants should satisfy to fully make\n"
@@ -513,7 +519,7 @@ msgstr ""
 "Gibt es spezielle Voraussetzungen, die die Teilnehmenden erfüllen "
 "sollten, um das meiste aus deinem Vortrag oder Workshop herauszuholen?"
 
-#: static/templates/call.html:84
+#: static/templates/call.html:87
 msgid ""
 "\n"
 "General coding knowledge and developing experience can be assumed.\n"
@@ -525,7 +531,7 @@ msgstr ""
 "besonderen APIs oder Frameworks benötigt werden, sollte das aber "
 "angekündigt werden."
 
-#: static/templates/call.html:91
+#: static/templates/call.html:94
 msgid ""
 "\n"
 "For workshops, make sure to let us know what the participants should\n"
@@ -538,7 +544,7 @@ msgstr ""
 "Gleichzeitig rechne bitte ein wenig Zeit ein, um Teilnehmende, die noch "
 "nicht alles richtig vorbereitet haben, zu unterstützen."
 
-#: static/templates/call.html:99 static/templates/call.html:105
+#: static/templates/call.html:102 static/templates/call.html:108
 msgid "Submit your session proposal"
 msgstr "Präsentation einreichen"
 
@@ -563,17 +569,15 @@ msgstr ""
 msgid "DevFest Vienna"
 msgstr "DevFest Vienna"
 
-#: static/templates/index.html:26 static/templates/index2.html:26
-#: static/templates/index2.html:47
+#: static/templates/index.html:26
 msgid "18 - 20 October 2013"
 msgstr "18. - 20. Oktober 2013"
 
-#: static/templates/index.html:27 static/templates/index2.html:27
-#: static/templates/index2.html:48
+#: static/templates/index.html:27 static/templates/layout.html:67
 msgid "DevFest Vienna 2013"
 msgstr "DevFest Vienna 2013"
 
-#: static/templates/index.html:28 static/templates/index2.html:28
+#: static/templates/index.html:28
 msgid "Call for Speakers is open<br>till 30 August 2013!"
 msgstr "Der Call for Speakers ist<br>bis zum 30. August geöffnet!"
 
@@ -616,7 +620,7 @@ msgstr ""
 "Tradition von Google DevFests folgen und von lokalen Entwicklergruppen "
 "organisiert werden."
 
-#: static/templates/index.html:59 static/templates/index2.html:174
+#: static/templates/index.html:59 static/templates/index2.html:181
 msgid "Videos &amp; Slides from Day 1 are Online!"
 msgstr "Videos &amp; Präsentationen vom Tag 1 sind Online!"
 
@@ -735,6 +739,18 @@ msgstr ""
 "Arduino Kits, Bücher und Gadgets. Der Hackathon fand im Metalab statt, "
 "einem Hackerspace in Wien. "
 
+#: static/templates/index2.html:26 static/templates/index2.html:47
+msgid "18 - 19 October 2014"
+msgstr "18. - 19. Oktober 2014"
+
+#: static/templates/index2.html:27 static/templates/index2.html:48
+msgid "DevFest Vienna 2014"
+msgstr "DevFest Vienna 2014"
+
+#: static/templates/index2.html:28
+msgid "Call for Speakers is open<br>till 25 July 2014!"
+msgstr "Der Call for Speakers ist<br>bis zum 25. July geöffnet!"
+
 #: static/templates/index2.html:32 static/templates/index2.html:53
 msgid "Step Up"
 msgstr "Aufstieg"
@@ -743,11 +759,11 @@ msgstr "Aufstieg"
 msgid "Sixteen tech talks, five workshops, and an open hackathon"
 msgstr "Sechszehn Tech-Talks, fünf Workshops, und ein offener Hackathon"
 
-#: static/templates/index2.html:76
+#: static/templates/index2.html:77
 msgid "Workshops - Day 0"
 msgstr "Workshops - Tag 0"
 
-#: static/templates/index2.html:77
+#: static/templates/index2.html:78
 msgid ""
 "With Saturday offering presentations and tech talks, the Friday afternoon"
 "\n"
@@ -756,11 +772,11 @@ msgstr ""
 "Während der Samstag Vorträge und Präsentationen bietet, stehen am Freitag"
 " nachmittag Workshops zu aktuellen IT-Themen im Zentrum."
 
-#: static/templates/index2.html:79
+#: static/templates/index2.html:80
 msgid "You bring your laptop PC and in the team you will explore topics like:"
 msgstr "Bring dein Notebook mit und in Teams werden Themen erarbeitet wie z.B.:"
 
-#: static/templates/index2.html:81
+#: static/templates/index2.html:82
 msgid ""
 "The level of the workshops varies - some of them are ready for novices,\n"
 "  other require intermediate knowledge and experience."
@@ -769,51 +785,56 @@ msgstr ""
 "unterschiedlich - manche sind für Anfänger geeignet, andere erfordern "
 "gewisse Vorkenntnisse und Fertigkeiten."
 
-#: static/templates/index2.html:84
+#: static/templates/index2.html:85
 msgid "We start on day 0 at the University of Technology:"
 msgstr ""
 "\n"
 "Wir starten am Tag 0 an der TU Wien:"
 
-#: static/templates/index2.html:85 static/templates/location.html:56
-#: static/templates/location.html:97 static/templates/location.html:99
-#: static/templates/location.html:116 static/templates/location.html:157
-#: static/templates/location.html:159 static/templates/location.html:175
-#: static/templates/location.html:198 static/templates/location.html:200
+#: static/templates/index2.html:86 static/templates/index2.html:96
+#: static/templates/location.html:56 static/templates/location.html:97
+#: static/templates/location.html:99 static/templates/location.html:116
+#: static/templates/location.html:157 static/templates/location.html:159
+#: static/templates/location.html:175 static/templates/location.html:198
+#: static/templates/location.html:200
 msgid "hl=en"
 msgstr "hl=de"
 
-#: static/templates/index2.html:88
+#: static/templates/index2.html:90
 msgid "Tech Talks - Day 1"
 msgstr "Vorträge - Tag 1"
 
-#: static/templates/index2.html:89
-msgid "On Saturday we will have sessions about various topics:"
-msgstr "Am Samstag stehen Vorträge zu unterschiedlichen Themen am Programm:"
+#: static/templates/index2.html:91
+msgid ""
+"On Saturday we will have sessions about various topics around mobile, "
+"web, social &amp; cloud."
+msgstr ""
+"Am Samstag stehen Vorträge zu unterschiedlichen Themen rund um Mobile, "
+"Web, Social &amp; Cloud am Programm."
 
-#: static/templates/index2.html:92
+#: static/templates/index2.html:95
 msgid "Saturday will take place at the University of Technology: "
 msgstr "Samstag sind wir an der TU Wien:"
 
-#: static/templates/index2.html:96
-msgid "Open Hackathon - Day 10"
-msgstr "Offener Hackathon - Tag 10"
+#: static/templates/index2.html:100
+msgid "Open Hackathon - Day 2"
+msgstr "Offener Hackathon - Tag 2"
 
-#: static/templates/index2.html:97
+#: static/templates/index2.html:101
 msgid "And on Sunday we will have an open hackathon."
 msgstr "Am Sonntag schließlich haben wir einen offenen Hackathon am Programm."
 
-#: static/templates/index2.html:98
+#: static/templates/index2.html:102
 msgid "Any software, any technology, any tools are allowed."
 msgstr "Jede Software, jede Technologie und jedes Werkzeug sind erlaubt."
 
-#: static/templates/index2.html:99
+#: static/templates/index2.html:103
 msgid "For some APIs and toolsets our sponsors will award special prizes!"
 msgstr ""
 "Für die Verwendung mancher APIs und Werkzeug-Sets vergeben unsere "
 "Sponsoren Spezialpreise!"
 
-#: static/templates/index2.html:101
+#: static/templates/index2.html:106
 msgid ""
 "This Open Hackathon takes place in the coworking space\n"
 "  <a target=\"_blank\" "
@@ -823,12 +844,12 @@ msgstr ""
 "  <a target=\"_blank\" "
 "href=\"http://www.sektor5.at/about/contact/\">Sektor5</a> statt."
 
-#: static/templates/index2.html:103 static/templates/layout.html:68
+#: static/templates/index2.html:109 static/templates/layout.html:75
 #: static/templates/policy.html:14
 msgid "Conduct Policy"
 msgstr "Verhaltenskodex"
 
-#: static/templates/index2.html:105 static/templates/policy.html:16
+#: static/templates/index2.html:111 static/templates/policy.html:16
 msgid ""
 "\n"
 "DevFest Vienna is dedicated to being open to everyone and making the "
@@ -845,11 +866,11 @@ msgstr ""
 "Geschlecht, Sexualität, Körperform oder Behinderung.\n"
 "Wir tolerieren keinerlei Belästigung die auf Diskriminierung basiert.\n"
 
-#: static/templates/index2.html:114
+#: static/templates/index2.html:120
 msgid "See our conduct policy for more details."
 msgstr "Hier unser vollständiger Verhaltenskodex für mehr Details."
 
-#: static/templates/index2.html:117
+#: static/templates/index2.html:123
 msgid ""
 "\n"
 "  Please report any violation of the conduct policy to a member of the "
@@ -860,27 +881,31 @@ msgstr ""
 "Jede Verletzung des Verhaltenskodexes ist an ein Mitglied des Organizer-"
 "Teams zu melden (erkennbar an den rot gefärbten Ausweisen)."
 
-#: static/templates/index2.html:123
+#: static/templates/index2.html:129
+msgid "DevFest Vienna 2013 Sponsors"
+msgstr "DevFest Vienna 2013 Sponsoren"
+
+#: static/templates/index2.html:130
 msgid "Platinum Sponsors"
 msgstr "Platin-Sponsoren"
 
-#: static/templates/index2.html:130
+#: static/templates/index2.html:137
 msgid "Better Software for a Better World!"
 msgstr "Bessere Software für eine bessere Welt!"
 
-#: static/templates/index2.html:137
+#: static/templates/index2.html:144
 msgid "Austrian Largest Online Advertisment Portal"
 msgstr "Österreichs größtes Online Anzeigenportal"
 
-#: static/templates/index2.html:144
+#: static/templates/index2.html:151
 msgid "The faster, saver way to send and receive money"
 msgstr "Der schnellere, sicherere Weg Geld zu senden und zu empfangen"
 
-#: static/templates/index2.html:149
+#: static/templates/index2.html:156
 msgid "Gold Sponsors"
 msgstr "Gold-Sponsoren"
 
-#: static/templates/index2.html:163
+#: static/templates/index2.html:170
 msgid "Silver Sponsors and Media Partners"
 msgstr "Silber-Sponsoren und Medienpartner"
 
@@ -907,113 +932,108 @@ msgstr ""
 msgid "Location"
 msgstr "Veranstaltungsort"
 
-#: static/templates/layout.html:51 static/templates/layout.html:62
-#: static/templates/sessions.html:30
+#: static/templates/layout.html:52 static/templates/layout.html:63
+#: static/templates/layout.html:70 static/templates/sessions.html:30
 msgid "Sessions"
 msgstr "Vorträge"
 
-#: static/templates/layout.html:52 static/templates/layout.html:61
-#: static/templates/session.html:83 static/templates/speakers.html:15
+#: static/templates/layout.html:53 static/templates/layout.html:62
+#: static/templates/layout.html:69 static/templates/session.html:83
+#: static/templates/speakers.html:15
 msgid "Speakers"
 msgstr "Vortragende"
 
-#: static/templates/layout.html:55 static/templates/sponsor.html:14
+#: static/templates/layout.html:57 static/templates/sponsor.html:14
 msgid "Sponsorship"
 msgstr "Sponsoren"
 
-#: static/templates/layout.html:59
+#: static/templates/layout.html:60
 msgid "DevFest Vienna 2012"
 msgstr "DevFest Vienna 2012"
 
-#: static/templates/layout.html:70 static/templates/session.html:41
+#: static/templates/layout.html:77 static/templates/session.html:41
 msgid "Language"
 msgstr "Sprache"
 
-#: static/templates/layout.html:72
+#: static/templates/layout.html:79
 msgid "class-active-if-english"
 msgstr "class"
 
-#: static/templates/layout.html:72
+#: static/templates/layout.html:79
 msgid "English"
 msgstr "Englisch"
 
-#: static/templates/layout.html:73
+#: static/templates/layout.html:80
 msgid "class-active-if-german"
 msgstr "class=\"active\""
 
-#: static/templates/layout.html:73
+#: static/templates/layout.html:80
 msgid "German"
 msgstr "Deutsch"
 
-#: static/templates/layout.html:82
+#: static/templates/layout.html:89
 msgid "Sign out"
 msgstr "Abmelden"
 
-#: static/templates/layout.html:89
+#: static/templates/layout.html:96
 msgid "Sign in via:"
 msgstr "Anmelden"
 
-#: static/templates/layout.html:92
+#: static/templates/layout.html:99
 msgid "Email and password"
 msgstr "Email und Passwort"
 
-#: static/templates/layout.html:93
+#: static/templates/layout.html:100
 msgid "New user"
 msgstr "Neue Benutzer"
 
-#: static/templates/layout.html:111
+#: static/templates/layout.html:118
 msgid "Sign up with your email address"
 msgstr "Mit E-Mail-Adresse registrieren"
 
-#: static/templates/layout.html:119
+#: static/templates/layout.html:126
 msgid "Name"
 msgstr "Benutzername"
 
-#: static/templates/layout.html:125 static/templates/layout.html:158
+#: static/templates/layout.html:132 static/templates/layout.html:165
 msgid "Email address"
 msgstr "E-Mail Adresse"
 
-#: static/templates/layout.html:131 static/templates/layout.html:164
+#: static/templates/layout.html:138 static/templates/layout.html:171
 msgid "Password"
 msgstr "Passwort"
 
-#: static/templates/layout.html:143
+#: static/templates/layout.html:150
 msgid "Sign Up"
 msgstr "Registrieren"
 
-#: static/templates/layout.html:151
+#: static/templates/layout.html:158
 msgid "Sign in"
 msgstr "Anmelden"
 
-#: static/templates/layout.html:176
+#: static/templates/layout.html:183
 msgid "Sign In"
 msgstr "Anmelden"
 
-#: static/templates/layout.html:190
+#: static/templates/layout.html:197
 msgid ""
 "DevFest Vienna is jointly organized by\n"
 "<a href=\"http://jsug.at\" target=\"_blank\">JSUG@TU-Wien</a>,\n"
 "<a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a> and\n"
 "<a href=\"www.meetup.com/AndroidHeads\" target=\"_blank\">AndroidHeads "
-"Vienna</a>\n"
-"as part of the global\n"
-"<a href=\"https://developers.google.com/events/devfest/\" "
-"target=\"_blank\">GDG DevFest Season 2013.</a>"
+"Vienna</a>."
 msgstr ""
 "DevFest Vienna wird von\n"
 "<a href=\"http://jsug.at\" target=\"_blank\">JSUG@TU-Wien</a>,\n"
 "<a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a> und\n"
 "<a href=\"www.meetup.com/AndroidHeads\" target=\"_blank\">AndroidHeads "
-"Vienna</a>\n"
-"gemeinsam veranstaltet als Teil der weltweiten\n"
-"<a href=\"https://developers.google.com/events/devfest/\" "
-"target=\"_blank\">GDG DevFest Season 2013.</a>"
+"Vienna</a> gemeinsam organisiert."
 
-#: static/templates/layout.html:196
+#: static/templates/layout.html:205
 msgid "Find us on Google+"
 msgstr "Wir sind auf Google+"
 
-#: static/templates/layout.html:196
+#: static/templates/layout.html:205
 msgid " and on "
 msgstr " und auf "
 
@@ -1515,52 +1535,4 @@ msgstr "Organisiert durch"
 
 #~ msgid "TU Vienna - FH HS3 and FH HS4"
 #~ msgstr "TU Wien - FH HS3 und FH HS4"
-
-#~ msgid ""
-#~ "We start on day 0 at the University of Technology,\n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"https://www.google.com/maps?t=m&amp;q=Wiedner+Hauptstra%C3%9Fe+8-10,+Vienna,+Austria&amp;ie=UTF8&amp;hq=&amp;hnear=Wiedner+Hauptstra%C3%9Fe+8-10,+Wieden+1040+Wien,+Austria&amp;ll=48.198706,16.367569&amp;spn=0.01373,0.02738&amp;z=14&amp;iwloc=A&amp;source=embed&amp;hl=en\">Wiedner"
-#~ " Hauptstraße 8-10</a> (Freihaus)\n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"http://www.wegweiser.ac.at/tuwien/hoersaal/F3.html\">FH "
-#~ "HS3</a>\n"
-#~ "  and\n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"http://www.wegweiser.ac.at/tuwien/hoersaal/F4.html\">FH "
-#~ "HS4</a>."
-#~ msgstr ""
-#~ "Am Tag 0 starten wir an der TU Wien,\n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"https://www.google.com/maps?t=m&amp;q=Wiedner+Hauptstra%C3%9Fe+8-10,+Vienna,+Austria&amp;ie=UTF8&amp;hq=&amp;hnear=Wiedner+Hauptstra%C3%9Fe+8-10,+Wieden+1040+Wien,+Austria&amp;ll=48.198706,16.367569&amp;spn=0.01373,0.02738&amp;z=14&amp;iwloc=A&amp;source=embed&amp;hl=de\">Wiedner"
-#~ " Hauptstraße 8-10</a> (Freihaus)\n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"http://www.wegweiser.ac.at/tuwien/hoersaal/F3.html\">FH "
-#~ "HS3</a>\n"
-#~ "  und\n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"http://www.wegweiser.ac.at/tuwien/hoersaal/F4.html\">FH "
-#~ "HS4</a>."
-
-#~ msgid ""
-#~ "Saturday will take place at the University of Technology,\n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Gu%C3%9Fhausstra%C3%9Fe+27-29,+Wieden+1040+Wien,+Austria&amp;aq=&amp;sll=48.197351,16.371794&amp;sspn=0.008467,0.016329&amp;ie=UTF8&amp;hq=&amp;hnear=Gu%C3%9Fhausstra%C3%9Fe+27,+Wieden+1040+Wien,+Austria&amp;t=m&amp;ll=48.197333,16.371775&amp;spn=0.027462,0.054932&amp;z=14&amp;iwloc=A\">Gußhausstraße"
-#~ " 27-29</a> (Elektrotechnik-Institut),\n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"http://www.wegweiser.ac.at/tuwien/hoersaal/E9.html\">EI9</a>"
-#~ "\n"
-#~ "  and\n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"http://www.wegweiser.ac.at/tuwien/hoersaal/E10.html\">EI10</a>."
-#~ msgstr ""
-#~ "Samstag wird an der TU Wien stattfinden, genauer in der \n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=de&amp;geocode=&amp;q=Gu%C3%9Fhausstra%C3%9Fe+27-29,+Wieden+1040+Wien,+Austria&amp;aq=&amp;sll=48.197351,16.371794&amp;sspn=0.008467,0.016329&amp;ie=UTF8&amp;hq=&amp;hnear=Gu%C3%9Fhausstra%C3%9Fe+27,+Wieden+1040+Wien,+Austria&amp;t=m&amp;ll=48.197333,16.371775&amp;spn=0.027462,0.054932&amp;z=14&amp;iwloc=A\">Gußhausstraße"
-#~ " 27-29</a> (Elektrotechnik-Institut),\n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"http://www.wegweiser.ac.at/tuwien/hoersaal/E9.html\">EI9</a>"
-#~ "\n"
-#~ "  und\n"
-#~ "  <a target=\"_blank\" "
-#~ "href=\"http://www.wegweiser.ac.at/tuwien/hoersaal/E10.html\">EI10</a>."
 

@@ -48,10 +48,12 @@
 <!--
               <li{% if area == 'location' %} class="active"{% endif %}><a href="/location">{% trans %}Location{% endtrans %}</a></li>
 -->
+              <!--
               <li{% if area == 'agenda' and event != '2012' %} class="active"{% endif %}><a href="/2013/sessions">{% trans %}Sessions{% endtrans %}</a></li>
               <li{% if area == 'speakers' and event != '2012' %} class="active"{% endif %}><a href="/2013/speakers">{% trans %}Speakers{% endtrans %}</a></li>
-<!--
+              -->
               <li{% if area == 'call' %} class="active"{% endif %}><a href="/call">{% trans %}Call for Speakers{% endtrans %}</a></li>
+<!--
               <li{% if area == 'sponsor' %} class="active"{% endif %}><a href="/sponsor">{% trans %}Sponsorship{% endtrans %}</a></li>
 -->
               <li class="{% if event == '2012' %}active{% endif %} dropdown">
@@ -59,6 +61,13 @@
                 <ul class="dropdown-menu">
                   <li {% if area == 'speakers' and event == '2012' %}class="active"{% endif %}><a href="/2012/speakers">{% trans %}Speakers{% endtrans %}</a></li>
                   <li {% if area == 'agenda' and event == '2012' %}class="active"{% endif %}><a href="/2012/sessions">{% trans %}Sessions{% endtrans %}</a></li>
+                </ul>
+              </li>
+              <li class="{% if event == '2013' %}active{% endif %} dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans %}DevFest Vienna 2013{% endtrans %} <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li {% if area == 'speakers' and event == '2013' %}class="active"{% endif %}><a href="/2013/speakers">{% trans %}Speakers{% endtrans %}</a></li>
+                  <li {% if area == 'agenda' and event == '2013' %}class="active"{% endif %}><a href="/2013/sessions">{% trans %}Sessions{% endtrans %}</a></li>
                 </ul>
               </li>
             </ul>
@@ -188,9 +197,11 @@
         {% trans %}DevFest Vienna is jointly organized by
 <a href="http://jsug.at" target="_blank">JSUG@TU-Wien</a>,
 <a href="http://gdg-vienna.at" target="_blank">GDG Vienna</a> and
-<a href="www.meetup.com/AndroidHeads" target="_blank">AndroidHeads Vienna</a>
-as part of the global
-<a href="https://developers.google.com/events/devfest/" target="_blank">GDG DevFest Season 2013.</a>{% endtrans %}<br>
+<a href="www.meetup.com/AndroidHeads" target="_blank">AndroidHeads Vienna</a>.{% endtrans %}
+<!-- as part of the global
+<a href="https://developers.google.com/events/devfest/" target="_blank">GDG DevFest Season 2013.</a>
+-->
+<br>
         <a target="_blank" href="https://plus.google.com/101425359997480386030" rel="publisher">{% trans %}Find us on Google+{% endtrans %}</a>, <a href="https://twitter.com/DevFestVienna" target="_blank">Twitter</a> {% trans %} and on {% endtrans %}<a target="_blank" href="https://www.facebook.com/DevFestVienna">Facebook</a>
       </div>
       <div class="span2">
