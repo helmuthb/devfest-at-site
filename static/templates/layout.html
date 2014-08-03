@@ -52,10 +52,11 @@
               <li{% if area == 'agenda' and event != '2012' %} class="active"{% endif %}><a href="/2013/sessions">{% trans %}Sessions{% endtrans %}</a></li>
               <li{% if area == 'speakers' and event != '2012' %} class="active"{% endif %}><a href="/2013/speakers">{% trans %}Speakers{% endtrans %}</a></li>
               -->
+              <!--
               <li{% if area == 'call' %} class="active"{% endif %}><a href="/call">{% trans %}Call for Speakers{% endtrans %}</a></li>
-<!--
+              -->
               <li{% if area == 'sponsor' %} class="active"{% endif %}><a href="/sponsor">{% trans %}Sponsorship{% endtrans %}</a></li>
--->
+
               <li class="{% if event == '2012' %}active{% endif %} dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans %}DevFest Vienna 2012{% endtrans %} <b class="caret"></b></a>
                 <ul class="dropdown-menu">

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-06-16 14:58+0000\n"
+"POT-Creation-Date: 2014-07-30 07:27+0000\n"
 "PO-Revision-Date: 2012-09-02 12:15+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de_DE <LL@li.org>\n"
@@ -411,8 +411,8 @@ msgstr ""
 "freuen wir uns heuer ganz besonders über Einreichungen von Frauen!"
 
 #: static/templates/call.html:29
-msgid "Call for Speakers is open till 25 July!"
-msgstr "Der Call for Speakers ist bis zum 25. Juli geöffnet!"
+msgid "Call for Speakers is open till 1 August!"
+msgstr "Der Call for Speakers ist bis zum 1. August geöffnet!"
 
 #: static/templates/call.html:31
 msgid "Type of Sessions"
@@ -620,7 +620,7 @@ msgstr ""
 "Tradition von Google DevFests folgen und von lokalen Entwicklergruppen "
 "organisiert werden."
 
-#: static/templates/index.html:59 static/templates/index2.html:181
+#: static/templates/index.html:59 static/templates/index2.html:183
 msgid "Videos &amp; Slides from Day 1 are Online!"
 msgstr "Videos &amp; Präsentationen vom Tag 1 sind Online!"
 
@@ -881,31 +881,31 @@ msgstr ""
 "Jede Verletzung des Verhaltenskodexes ist an ein Mitglied des Organizer-"
 "Teams zu melden (erkennbar an den rot gefärbten Ausweisen)."
 
-#: static/templates/index2.html:129
+#: static/templates/index2.html:130
 msgid "DevFest Vienna 2013 Sponsors"
 msgstr "DevFest Vienna 2013 Sponsoren"
 
-#: static/templates/index2.html:130
+#: static/templates/index2.html:131
 msgid "Platinum Sponsors"
 msgstr "Platin-Sponsoren"
 
-#: static/templates/index2.html:137
+#: static/templates/index2.html:138
 msgid "Better Software for a Better World!"
 msgstr "Bessere Software für eine bessere Welt!"
 
-#: static/templates/index2.html:144
+#: static/templates/index2.html:145
 msgid "Austrian Largest Online Advertisment Portal"
 msgstr "Österreichs größtes Online Anzeigenportal"
 
-#: static/templates/index2.html:151
+#: static/templates/index2.html:152
 msgid "The faster, saver way to send and receive money"
 msgstr "Der schnellere, sicherere Weg Geld zu senden und zu empfangen"
 
-#: static/templates/index2.html:156
+#: static/templates/index2.html:157
 msgid "Gold Sponsors"
 msgstr "Gold-Sponsoren"
 
-#: static/templates/index2.html:170
+#: static/templates/index2.html:171
 msgid "Silver Sponsors and Media Partners"
 msgstr "Silber-Sponsoren und Medienpartner"
 
@@ -1297,7 +1297,7 @@ msgid ""
 "Excellent!\n"
 msgstr "Wollen Sie als Sponsor bei diesem Event dabei sein? Ausgezeichnet! "
 
-#: static/templates/sponsor.html:21 static/templates/sponsor.html:93
+#: static/templates/sponsor.html:21 static/templates/sponsor.html:79
 msgid "1pl7yLjoJ1fG7qwrkEnMlCKC5R2XFyLSbbXFE4sr-G6k"
 msgstr "1XoZNIYtfIUM6Fu3adzXf2W5Gwao0Vn9FqOm0cQLGjNE"
 
@@ -1364,22 +1364,11 @@ msgstr ""
 " können Sie ein Poster aufhängen, und Sie können Ihre Produkte oder Ihre "
 "Firma in einer fünfminutigen Ansprache vorstellen. "
 
-#: static/templates/sponsor.html:55
-msgid ""
-"\n"
-"Especially if your products are APIs and can be used within the\n"
-"birthday hackathon, you will like that you can define a special\n"
-"winner category on the hackathon as a gold sponsor.\n"
-msgstr ""
-"Speziell wenn Ihre Produkte APIs darstellen und im Rahmen des Hackathon "
-"verwendet werden können, wird es Sie freuen, dass Sie dafür eine eigene "
-"Gewinner-Kategorie definieren dürfen."
-
-#: static/templates/sponsor.html:61
+#: static/templates/sponsor.html:54
 msgid "Platinum"
 msgstr "Platin"
 
-#: static/templates/sponsor.html:63
+#: static/templates/sponsor.html:56
 msgid ""
 "\n"
 "As platinum sponsor, you get the most comprehensive presence online and\n"
@@ -1402,32 +1391,22 @@ msgstr ""
 "und <a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a>)\n"
 " für ein volles Jahr eingeblendet."
 
-#: static/templates/sponsor.html:75
+#: static/templates/sponsor.html:68
 msgid ""
 "\n"
 "Just the same, your presence at the location is at platinum level as "
 "well.\n"
-"Stickers, flyers, poster and a table are part of the package, and you\n"
-"can present your products or company in a full-time pitch.\n"
+"Stickers, flyers, poster and a table are part of the package.\n"
 "Two attendees from your company are allowed to represent you on-site.\n"
 msgstr ""
 "Auch Ihre Vor-Ort-Präsenz ist auf Platinlevel: Sticker, Flyer, Poster und"
-" ein Tisch mit <em>zwei</em> Mitarbeitenden sind Teil des Pakets, und Sie"
-" können Ihre Produkte oder Ihre Firma in einem <em>25minütigen</em> "
-"Vortrag vorstellen."
+" ein Tisch mit <em>zwei</em> Mitarbeitenden sind Teil des Pakets."
 
-#: static/templates/sponsor.html:83
-msgid ""
-"\n"
-"And for the hackathon you are allowed to define two special winner\n"
-"categories as a platinum sponsor.\n"
-msgstr "Für den Hackatahon dürfen Sie gleich zwei Sonderkategorien definieren."
-
-#: static/templates/sponsor.html:93 static/templates/sponsor.html:97
+#: static/templates/sponsor.html:79 static/templates/sponsor.html:83
 msgid "Sponsorship feedback form"
 msgstr "Sponsorship Formular"
 
-#: static/templates/sponsor.html:98
+#: static/templates/sponsor.html:84
 msgid "Sponsorship information package"
 msgstr "Sponsorship Informations-Paket (in Englisch)"
 
@@ -1535,4 +1514,22 @@ msgstr "Organisiert durch"
 
 #~ msgid "TU Vienna - FH HS3 and FH HS4"
 #~ msgstr "TU Wien - FH HS3 und FH HS4"
+
+#~ msgid ""
+#~ "\n"
+#~ "Especially if your products are APIs and can be used within the\n"
+#~ "birthday hackathon, you will like that you can define a special\n"
+#~ "winner category on the hackathon as a gold sponsor.\n"
+#~ msgstr ""
+#~ "Speziell wenn Ihre Produkte APIs "
+#~ "darstellen und im Rahmen des Hackathon"
+#~ " verwendet werden können, wird es Sie"
+#~ " freuen, dass Sie dafür eine eigene"
+#~ " Gewinner-Kategorie definieren dürfen."
+
+#~ msgid ""
+#~ "\n"
+#~ "And for the hackathon you are allowed to define two special winner\n"
+#~ "categories as a platinum sponsor.\n"
+#~ msgstr "Für den Hackatahon dürfen Sie gleich zwei Sonderkategorien definieren."
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-06-16 14:58+0000\n"
+"POT-Creation-Date: 2014-07-30 07:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -392,7 +392,7 @@ msgid ""
 msgstr ""
 
 #: static/templates/call.html:29
-msgid "Call for Speakers is open till 25 July!"
+msgid "Call for Speakers is open till 1 August!"
 msgstr ""
 
 #: static/templates/call.html:31
@@ -567,7 +567,7 @@ msgid ""
 "the tradition of Google DevFests and organized by local user groups.\n"
 msgstr ""
 
-#: static/templates/index.html:59 static/templates/index2.html:181
+#: static/templates/index.html:59 static/templates/index2.html:183
 msgid "Videos &amp; Slides from Day 1 are Online!"
 msgstr ""
 
@@ -775,31 +775,31 @@ msgid ""
 "  "
 msgstr ""
 
-#: static/templates/index2.html:129
+#: static/templates/index2.html:130
 msgid "DevFest Vienna 2013 Sponsors"
 msgstr ""
 
-#: static/templates/index2.html:130
+#: static/templates/index2.html:131
 msgid "Platinum Sponsors"
 msgstr ""
 
-#: static/templates/index2.html:137
+#: static/templates/index2.html:138
 msgid "Better Software for a Better World!"
 msgstr ""
 
-#: static/templates/index2.html:144
+#: static/templates/index2.html:145
 msgid "Austrian Largest Online Advertisment Portal"
 msgstr ""
 
-#: static/templates/index2.html:151
+#: static/templates/index2.html:152
 msgid "The faster, saver way to send and receive money"
 msgstr ""
 
-#: static/templates/index2.html:156
+#: static/templates/index2.html:157
 msgid "Gold Sponsors"
 msgstr ""
 
-#: static/templates/index2.html:170
+#: static/templates/index2.html:171
 msgid "Silver Sponsors and Media Partners"
 msgstr ""
 
@@ -1147,7 +1147,7 @@ msgid ""
 "Excellent!\n"
 msgstr ""
 
-#: static/templates/sponsor.html:21 static/templates/sponsor.html:93
+#: static/templates/sponsor.html:21 static/templates/sponsor.html:79
 msgid "1pl7yLjoJ1fG7qwrkEnMlCKC5R2XFyLSbbXFE4sr-G6k"
 msgstr ""
 
@@ -1197,19 +1197,11 @@ msgid ""
 "One attendee from your company is allowed to represent you on-site.\n"
 msgstr ""
 
-#: static/templates/sponsor.html:55
-msgid ""
-"\n"
-"Especially if your products are APIs and can be used within the\n"
-"birthday hackathon, you will like that you can define a special\n"
-"winner category on the hackathon as a gold sponsor.\n"
-msgstr ""
-
-#: static/templates/sponsor.html:61
+#: static/templates/sponsor.html:54
 msgid "Platinum"
 msgstr ""
 
-#: static/templates/sponsor.html:63
+#: static/templates/sponsor.html:56
 msgid ""
 "\n"
 "As platinum sponsor, you get the most comprehensive presence online and\n"
@@ -1223,28 +1215,20 @@ msgid ""
 "and your logo will be present on their websites for a full year.\n"
 msgstr ""
 
-#: static/templates/sponsor.html:75
+#: static/templates/sponsor.html:68
 msgid ""
 "\n"
 "Just the same, your presence at the location is at platinum level as "
 "well.\n"
-"Stickers, flyers, poster and a table are part of the package, and you\n"
-"can present your products or company in a full-time pitch.\n"
+"Stickers, flyers, poster and a table are part of the package.\n"
 "Two attendees from your company are allowed to represent you on-site.\n"
 msgstr ""
 
-#: static/templates/sponsor.html:83
-msgid ""
-"\n"
-"And for the hackathon you are allowed to define two special winner\n"
-"categories as a platinum sponsor.\n"
-msgstr ""
-
-#: static/templates/sponsor.html:93 static/templates/sponsor.html:97
+#: static/templates/sponsor.html:79 static/templates/sponsor.html:83
 msgid "Sponsorship feedback form"
 msgstr ""
 
-#: static/templates/sponsor.html:98
+#: static/templates/sponsor.html:84
 msgid "Sponsorship information package"
 msgstr ""
 
