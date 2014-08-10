@@ -1,0 +1,221 @@
+{% set area = 'admin' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% if is_edit %}
+DevFest Vienna - Edit Session
+{% else %}
+DevFest Vienna - Create Session
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{% for s in sessions %}
+<a href="/editsession/{{ s.key.urlsafe() }}">{{ s.title_en|e }}</a><br>
+{% endfor %}
+{% if is_edit %}
+<a href="/editsession">Create ...</a><br>
+{% endif %}
+{% if is_edit %}
+<h2>Edit Session</h2>
+{% else %}
+<h2>Create Session</h2>
+{% endif %}
+<form class="form-horizontal" method="post" enctype="multipart/form-data">
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-event">Event</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge" name="event" id="session-event" value="{{ session.event|e}}"/>
+  </div>
+</div>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-url">Session URL</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge" name="url" id="session-url" value="{{ session.url|e}}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-finished">Finished</label>
+  <div class="controls">
+    <input type="checkbox" class="input-xlarge" name="finished" id="session-finished" value="1" {% if session.finished %} checked="checked" {% endif %}/>
+  </div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-room">Room</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge" name="room" id="session-room" value="{{ session.room|e}}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-slot">Time Slot</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge" name="slot" id="session-slot" value="{{ session.slot|e }}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-type">Session Type</label>
+  <div class="controls">
+    <select class="input-xlarge" name="type" id="session-type">
+      <option value="">--Please choose--</option>
+      <option value="workshop" {% if session.type == 'workshop' %}selected{% endif %}>Hands-on Workshop</option>
+      <option value="talk" {% if session.type == 'talk' %}selected{% endif %}>Talk / Presentation</option>
+    </select>
+  </div>
+</div>
+</fieldset>
+  <fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-level">Level</label>
+  <div class="controls">
+    <select class="input-xlarge" name="level" id="session-level">
+      <option value="">--Please choose--</option>
+      <option value="101" {% if session.level == '101' %}selected{% endif %}>101 - starters</option>
+      <option value="201" {% if session.level == '201' %}selected{% endif %}>201 - intermediate</option>
+      <option value="301" {% if session.level == '301' %}selected{% endif %}>301 - advanced</option>
+    </select>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-title-en">Title (english)</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge required" name="title-en" id="session-title-en" value="{{ session.title_en|e }}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-title-de">Title (deutsch)</label>
+  <div class="controls">
+    <input type="text" class="input-xlarge required" name="title-de" id="session-title-de" value="{{ session.title_de|e }}"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-requirements-en">Requirements (english)</label>
+  <div class="controls">
+    <textarea class="input-xlarge required" name="requirements-en" id="session-requirements-en">{{ session.requirements_en|e }}</textarea>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-requirements-de">Requirements (deutsch)</label>
+  <div class="controls">
+    <textarea class="input-xlarge required" name="requirements-de" id="session-requirements-de">{{ session.requirements_de|e }}</textarea>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-abstract-en">Abstract (english)</label>
+  <div class="controls">
+    <textarea class="input-xlarge required" name="abstract-en" id="session-abstract-en">{{ session.abstract_en|e }}</textarea>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-abstract-de">Abstract (deutsch)</label>
+  <div class="controls">
+    <textarea class="input-xlarge required" name="abstract-de" id="session-abstract-de">{{ session.abstract_de|e }}</textarea>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-image">Image</label>
+  <div class="controls">
+    <input type="file" class="input-xlarge" name="image" id="session-image"/>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<div class="control-group">
+  <label class="control-label" for="session-language">Language</label>
+  <div class="controls">
+    <select class="input-xlarge required" name="language" id="session-language">
+      <option value="">--Please choose--</option>
+      <option value="en" {% if session.language == 'en' %}selected{% endif %}>English</option>
+      <option value="en-pref" {% if session.language == 'en-pref' %}selected{% endif %}>Prefered English</option>
+      <option value="de" {% if session.language == 'de' %}selected{% endif %}>German</option>
+      <option value="de-pref" {% if session.language == 'de-pref' %}selected{% endif %}>Prefered German</option>
+    </select>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<label class="control-label">Track</label>
+{% for track in tracks %}
+  <div class="controls">
+  <input type="checkbox" name="track" value="{{ track }}"
+    id="track_{{ track }}"
+    {% if track in session.track %}
+    checked="checked"
+    {% endif %} />
+  <label for="track_{{ track }}">{{ track }}</label>
+  </div>
+{% endfor %}
+</fieldset>
+<fieldset>
+<label class="control-label" for="video">Youtube ID</label>
+<div class="controls">
+<input type="text" id="video" name="video" value="{{ session.video }}" />
+</div>
+</fieldset>
+<fieldset>
+<label class="control-label" for="slides">Slides HTML</label>
+<div class="controls">
+<textarea name="slides" id="slides">{{ session.slides|e }}</textarea>
+</div>
+</fieldset>
+<fieldset>
+<label class="control-label">Link</label>
+{% for link in session.link %}
+  <div class="controls">
+  <input type="text" name="link-text-en" value="{{ link.text_en }}"
+     placeholder="Title (English)" />
+  <input type="text" name="link-text-de" value="{{ link.text_de }}"
+     placeholder="Title (German)" />
+  <input type="text" name="link-link" value="{{ link.link }}"
+     placeholder="Link URL" />
+  </div>
+{% endfor %}
+  <div class="controls">
+  <input type="text" name="link-text-en" value=""
+     placeholder="Title (English)" />
+  <input type="text" name="link-text-de" value=""
+     placeholder="Title (German)" />
+  <input type="text" name="link-link" value=""
+     placeholder="Link URL" />
+</fieldset>
+<fieldset>
+<label class="control-label">Speaker</label>
+{% for speaker in speakers %}
+  <div class="controls">
+  <input type="checkbox" name="speaker" value="{{ speaker.key.urlsafe() }}"
+    id="speaker_{{ speaker.key.urlsafe() }}"
+    {% if speaker.key in session.speaker %}
+    checked="checked"
+    {% endif %} />
+  <label for="speaker_{{ speaker.key.urlsafe() }}">{{ speaker.name }}</label>
+  </div>
+{% endfor %}
+</fieldset>
+<div class="form-actions">
+  <input type="submit" class="btn btn-primary" value="Submit"/>
+</div>
+</form>
+{% endblock %}

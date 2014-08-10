@@ -1,0 +1,1535 @@
+# German (Germany) translations for PROJECT.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2014-07-30 07:27+0000\n"
+"PO-Revision-Date: 2012-09-02 12:15+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: de_DE <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+
+#: settings.py:41
+msgid "Success"
+msgstr "Erfolgreich"
+
+#: settings.py:42
+msgid "Invalid email address"
+msgstr "Ungültige E-Mail-Adresse"
+
+#: settings.py:43
+msgid "Invalid password"
+msgstr "Ungültiges Passwort"
+
+#: settings.py:44
+msgid "Invalid email or password"
+msgstr "Ungültige E-Mail-Adresse oder Passwort"
+
+#: settings.py:45
+msgid "Unsupported API"
+msgstr "Nicht-unterstütztes API"
+
+#: settings.py:46
+msgid "Not all parameter present"
+msgstr "Nicht alle Parameter wurden übergeben"
+
+#: settings.py:47
+msgid "Email not valid"
+msgstr "E-Mail-Adresse ist nicht gültig"
+
+#: settings.py:48
+msgid "Unauthorized"
+msgstr "Nicht berechtigt"
+
+#: settings.py:49
+msgid "Email has not been confirmed."
+msgstr "E-Mail-Adresse wurde nicht bestätigt."
+
+#: settings.py:50
+msgid "User already exists."
+msgstr "Benutzer existiert bereits."
+
+#: settings.py:51
+msgid "Does not exist"
+msgstr "Existiert nicht"
+
+#: settings.py:52
+msgid "Server error"
+msgstr "Server-Fehler"
+
+#: settings.py:53
+msgid "Please contact application administrator for support"
+msgstr "Bitte benachtrichtigen Sie den Administrator für Unterstützung"
+
+#: settings.py:65
+msgid "yyyy-mm-dd"
+msgstr "yyyy-mm-dd"
+
+#: settings.py:66
+#, python-format
+msgid "%Y-%m-%d"
+msgstr "%Y-%m-%d"
+
+#: settings.py:69
+#, python-format
+msgid ""
+"\n"
+"Hello, %s!\n"
+"\n"
+"Please click the link below to confirm your email address: \n"
+"\n"
+"%s\n"
+"\n"
+"Thank you.\n"
+msgstr ""
+"\n"
+"Hallo, %s!\n"
+"\n"
+"Bitte bestätige deine E-Mail Adresse mit folgendem Link: \n"
+"\n"
+"%s\n"
+"\n"
+"Danke!\n"
+
+#: handlers/api.py:26
+msgid "Thanks for signing up!"
+msgstr "Danke für die Registrierung!"
+
+#: handlers/api.py:36
+msgid "Email updated!"
+msgstr "E-Mail-Adresse wurde aktualisiert!"
+
+#: libs/httplib2/__init__.py:394
+#, python-format
+msgid "Content purported to be compressed with %s but failed to decompress."
+msgstr ""
+"Der Inhalt ist angeblich mit %s komprimiert, konnte aber nicht entpackt "
+"werden."
+
+#: libs/httplib2/__init__.py:504
+#, python-format
+msgid "Unsupported value for qop: %s."
+msgstr "Wert %s ist für qop nicht unterstützt."
+
+#: libs/httplib2/__init__.py:507 libs/httplib2/__init__.py:570
+#, python-format
+msgid "Unsupported value for algorithm: %s.algorithm"
+msgstr "Wert %s.algorithm ist für algorithm nicht unterstützt."
+
+#: libs/httplib2/__init__.py:567
+msgid "The challenge doesn't contain a server nonce, or this one is empty."
+msgstr ""
+"Die Challenge enthält kein Server-generiertes Nonce, oder die Nonce ist "
+"leer."
+
+#: libs/httplib2/__init__.py:573
+#, python-format
+msgid "Unsupported value for pw-algorithm: %s.pw-algorithm"
+msgstr "Wert %s.pw-algorithm ist nicht unterstützt für pw-algorithm."
+
+#: libs/httplib2/__init__.py:1220
+msgid "Redirected but the response is missing a Location: header."
+msgstr "Redirect, wobei aber ein Location: header fehlt."
+
+#: static/templates/agenda.html:6 static/templates/agenda2.html:6
+msgid "DevFest Vienna - Agenda"
+msgstr "DevFest Vienna - Agenda"
+
+#: static/templates/agenda.html:23
+msgid "Tentative Agenda"
+msgstr "Vorläufige Agenda"
+
+#: static/templates/agenda.html:26 static/templates/agenda.html:160
+#: static/templates/session.html:26 static/templates/session.html:112
+#: static/templates/sessions.html:26 static/templates/sessions.html:69
+#: static/templates/speakers.html:49
+msgid "en"
+msgstr "de"
+
+#: static/templates/agenda.html:26 static/templates/session.html:26
+#: static/templates/sessions.html:26
+msgid "Tweet"
+msgstr "Twittern"
+
+#: static/templates/agenda.html:30
+msgid "Day 0, 18 October 2013: <em>Hands-On Workshops</em>"
+msgstr "Tag 0, 18. Oktober 2013: <em>Hands-On Workshops</em>"
+
+#: static/templates/agenda.html:35 static/templates/agenda.html:40
+msgid "OSGi - all you need to know"
+msgstr "OSGi - alles was man dazu wissen muss"
+
+#: static/templates/agenda.html:36
+msgid "jQuery Mobile"
+msgstr "jQuery Mobile"
+
+#: static/templates/agenda.html:41
+msgid "Hangout Development"
+msgstr "Google+ Hangouts Entwicklung"
+
+#: static/templates/agenda.html:45
+msgid "JEE6 and NoSQL in the Cloud"
+msgstr "JEE6 und NoSQL in der Cloud"
+
+#: static/templates/agenda.html:46
+msgid "Payments for Droids"
+msgstr "Bezahlen für Droiden"
+
+#: static/templates/agenda.html:50
+msgid "From Java to Scala"
+msgstr "Von Java zu Scala"
+
+#: static/templates/agenda.html:51
+msgid "Why WebDevs should care about Polymer"
+msgstr ""
+
+#: static/templates/agenda.html:51
+msgid "cancelled due to sickness"
+msgstr "aufgrund von Erkrankung abgesagt"
+
+#: static/templates/agenda.html:56
+msgid "Day 1, 19 October 2013: <em>Talks and Presentations</em>"
+msgstr "Tag 1, 19. Oktober 2013: <em>Vorträge und Präsentationen</em>"
+
+#: static/templates/agenda.html:61 static/templates/agenda2.html:20
+msgid "Registration"
+msgstr "Registrierung"
+
+#: static/templates/agenda.html:65 static/templates/agenda2.html:24
+msgid "Welcome &amp; Introduction"
+msgstr "Willkommen &amp; Einführung"
+
+#: static/templates/agenda.html:69
+msgid "Gradle Build System"
+msgstr "Gradle Build-System"
+
+#: static/templates/agenda.html:70
+msgid "Google+ Platform - A Year Later"
+msgstr "Google+ Plattform - ein Jahr später"
+
+#: static/templates/agenda.html:74
+msgid "Functional Domain Modeling"
+msgstr "Funktionales Domänen-Modell"
+
+#: static/templates/agenda.html:75
+msgid "Introduction to MVP with GWT"
+msgstr "Eintauchen in MVP mit GWT"
+
+#: static/templates/agenda.html:79
+msgid "Flying Sharks"
+msgstr "Fliegende Haie"
+
+#: static/templates/agenda.html:80
+msgid "indoo.rs location based services"
+msgstr "indoo.rs Lokalisierungsdienste"
+
+#: static/templates/agenda.html:84 static/templates/agenda.html:134
+#: static/templates/agenda2.html:43 static/templates/agenda2.html:83
+msgid "Lunch"
+msgstr "Mittagessen"
+
+#: static/templates/agenda.html:88
+msgid "Image processing with OpenCV, JavaFX and Scala"
+msgstr "Bildverarbeitung mit OpenCV, JavaFX und Scala"
+
+#: static/templates/agenda.html:89
+msgid "IT security - a never ending saga"
+msgstr "IT Sicherheit - eine unendliche Geschichte"
+
+#: static/templates/agenda.html:93
+msgid "Surviving the environment disasters"
+msgstr "Die Umgebungs-Katastrophen überleben"
+
+#: static/templates/agenda.html:94
+msgid "Hybrid App development with Phonegap"
+msgstr "Hybride Anwendungs-Entwicklung mit Phonegap"
+
+#: static/templates/agenda.html:98 static/templates/agenda2.html:52
+msgid "Coffee break"
+msgstr "Kaffeepause"
+
+#: static/templates/agenda.html:102
+msgid ""
+"How to survive a successful App Launch (<a "
+"href=\"http://www.willhaben.at\" target=\"_blank\">willhaben.at</a>)"
+msgstr ""
+"Wie man einen erfolgreichen App Launch überlebt (<a "
+"href=\"http://www.willhaben.at\" target=\"_blank\">willhaben.at</a>)"
+
+#: static/templates/agenda.html:103
+msgid "Smart TV and Google TV"
+msgstr "Smart-TV und Google-TV"
+
+#: static/templates/agenda.html:107
+msgid "Bad Tests, Good Tests"
+msgstr "Schlechte Tests, gute Tests"
+
+#: static/templates/agenda.html:108
+msgid "Thinking Beyond RDBMS : Building Polyglot Persistence Java Applications"
+msgstr "Über RDBMs hinaus: Mehrsprachige Persistenz in Java-Anwendungen"
+
+#: static/templates/agenda.html:112
+msgid "Going Reactive - High Performance JVM code with Reactor"
+msgstr "Going Reactive - Hochperformanter JVM-Code mit Reactor"
+
+#: static/templates/agenda.html:113
+msgid "RAD for mobile with Codiqa and jQuery Mobile"
+msgstr "RAD für Mobile mit Codiqa und jQuery Mobile"
+
+#: static/templates/agenda.html:117 static/templates/agenda2.html:66
+msgid ""
+"Afterparty - <a href=\"http://www.cenarion.com\" "
+"target=\"_blank\">powered by Cenarion!</a>"
+msgstr ""
+
+#: static/templates/agenda.html:121
+msgid "Day 10, 20 October 2013: <em>Open Hackathon</em>"
+msgstr "Tag 10, 20. Oktober 2013: <em>Offener Hackathon</em>"
+
+#: static/templates/agenda.html:126
+msgid "Start of Hackathon"
+msgstr "Beginn des Hackathon"
+
+#: static/templates/agenda.html:130 static/templates/agenda.html:138
+#: static/templates/agenda2.html:79 static/templates/agenda2.html:87
+msgid "Time for developing"
+msgstr "Zeit zum Entwickeln"
+
+#: static/templates/agenda.html:142 static/templates/agenda2.html:91
+msgid "Presentation of results"
+msgstr "Vorstellung der Ergebnisse"
+
+#: static/templates/agenda.html:146 static/templates/agenda2.html:95
+msgid "Award ceremony"
+msgstr "Preisverleihung"
+
+#: static/templates/agenda2.html:14
+msgid "Agenda"
+msgstr "Agenda"
+
+#: static/templates/agenda2.html:15 static/templates/index.html:80
+msgid "Day 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>"
+msgstr "Tag 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>"
+
+#: static/templates/agenda2.html:28
+msgid "Apps Script: Google-hosted Javascript"
+msgstr "Apps Script: Google-hosted Javascript"
+
+#: static/templates/agenda2.html:29
+msgid "Introduction to BitcoinJ"
+msgstr "Einführung in BitcoinJ"
+
+#: static/templates/agenda2.html:33
+msgid "The Google+ Platform"
+msgstr "Die Google+-Plattform"
+
+#: static/templates/agenda2.html:34
+msgid "Pay &amp; Identify with PayPal"
+msgstr "Bezahlen &amp; identifizieren mit PayPal"
+
+#: static/templates/agenda2.html:38
+msgid "Google+ Hangouts Development"
+msgstr "Google+ Hangouts Entwicklung"
+
+#: static/templates/agenda2.html:39
+msgid "Introducing Activiti"
+msgstr "Vorstellung von Activiti"
+
+#: static/templates/agenda2.html:47
+msgid "The go-start Web Framework"
+msgstr "Das Web-Framework go-start"
+
+#: static/templates/agenda2.html:48
+msgid "Android Development 101"
+msgstr "Android Entwicklung 101"
+
+#: static/templates/agenda2.html:56
+msgid "Google Web Toolkit in practice"
+msgstr "Google Web Toolkit in der Praxis"
+
+#: static/templates/agenda2.html:57
+msgid "TBA"
+msgstr "TBA"
+
+#: static/templates/agenda2.html:61
+msgid "JavaScript testing"
+msgstr "JavaScript testing"
+
+#: static/templates/agenda2.html:62
+msgid "Hackathon-Pitch"
+msgstr "Hackathon-Pitch"
+
+#: static/templates/agenda2.html:70
+msgid "Day 2: <em>Happy Birthday Android!</em>"
+msgstr "Tag 2: <em>Alles Gute zum Geburtstag, Android!</em>"
+
+#: static/templates/agenda2.html:75
+msgid "Start of Android Birthday Hackathon"
+msgstr "Beginn des Android Geburtstag-Hackathon"
+
+#: static/templates/call.html:6
+msgid "DevFest Vienna - Call for Speakers"
+msgstr "DevFest Vienna - Call for Speakers"
+
+#: static/templates/call.html:14 static/templates/layout.html:55
+msgid "Call for Speakers"
+msgstr "Call for Speakers"
+
+#: static/templates/call.html:17
+msgid ""
+"\n"
+"Interested in being part of the event as a speaker?\n"
+msgstr ""
+"Willst du als Vortragende / Vortragender bei diesem Event dabei sein? "
+"Ausgezeichnet! "
+
+#: static/templates/call.html:21 static/templates/call.html:102
+#: static/templates/call.html:108
+msgid "dFd2MzI2RF9aa29uNndxdG90Y0dHTVE6MQ"
+msgstr "dEt2WU9xWF9lT2NSbTZzRHR4NUprTUE6MQ"
+
+#: static/templates/call.html:21
+msgid "Please let us know more about it!"
+msgstr "Bitte erzähl uns davon!"
+
+#: static/templates/call.html:24
+msgid ""
+"\n"
+"We encourage submissions from female speakers to enhance the gender "
+"balance.\n"
+msgstr ""
+"Da wir am DevFest 2012 ausschließlich männliche Vortragende hatten, "
+"freuen wir uns heuer ganz besonders über Einreichungen von Frauen!"
+
+#: static/templates/call.html:29
+msgid "Call for Speakers is open till 1 August!"
+msgstr "Der Call for Speakers ist bis zum 1. August geöffnet!"
+
+#: static/templates/call.html:31
+msgid "Type of Sessions"
+msgstr "Arten von Workshops oder Vorträgen"
+
+#: static/templates/call.html:33
+msgid ""
+"\n"
+"We are planning three type of sessions: talks, workshops, and lightning "
+"talks.\n"
+msgstr "Es sind drei Arten geplant: Vorträge, Workshops und Impulsvorträge.\n"
+
+#: static/templates/call.html:38
+msgid ""
+"\n"
+"A regular talk (e.g. presentation, tech talk, etc) is supposed to\n"
+"take about 45 minutes with some minutes afterwards for questions and "
+"answers.\n"
+msgstr ""
+"Ein normaler <em>Vortrag</em> (z.B. eine Präsentation) sollte ca. 45 "
+"Minuten dauern; anschließend sind 5 Minuten für Fragen und Antworten "
+"eingeplant."
+
+#: static/templates/call.html:44
+msgid ""
+"\n"
+"A <em>workshop</em> can either take about 50 minutes, and it can take a\n"
+"total of 110 minutes, ideally for more in-depth hands-on sessions.\n"
+msgstr ""
+"Ein <em>Workshop</em> kann entweder wie ein Vortrag 50 Minuten dauern; es"
+" ist aber auch möglich, einen Workshop über 110 Minuten anzubieten, was "
+"sich für technisch tiefgehende Workshops empfiehlt."
+
+#: static/templates/call.html:50
+msgid ""
+"\n"
+"In addition, there is the opportunity for <em>highlight "
+"presentations</em>\n"
+"of shorter duration (20 minutes and some minutes for questions &amp; "
+"answers).\n"
+"They are ideal for presenting an idea or a toolset without going too much"
+"\n"
+"into technical details.\n"
+msgstr ""
+"<em>Impulsvorträge</em> sind von k&uuml;rzerer Dauer (20 Minuten plus "
+"einige Minuten für Fragen und Antworten).\n"
+"Sie bieten sich an, um eine Idee oder ein Werzkeug kurz vorzustellen, "
+"ohne auf technische Details einzugehen."
+
+#: static/templates/call.html:57
+msgid "Language of the sessions"
+msgstr "Sprache"
+
+#: static/templates/call.html:59
+msgid ""
+"\n"
+"DevFest Vienna will have sessions in both German and English.\n"
+"Please let us know your preference and the sessions will be annouced\n"
+"accordingly.\n"
+msgstr ""
+"DevFest Vienna wird Vorträge und Workshops in Deutsch und Englisch "
+"anbieten. Bitte lass uns wissen, in welcher Sprache dein Workshop oder "
+"Vortrag gehalten wird, damit wir ihn entsprechend ankündigen können."
+
+#: static/templates/call.html:65
+msgid "Equipment"
+msgstr "Ausrüstung"
+
+#: static/templates/call.html:67
+msgid ""
+"\n"
+"Each room is equiped with a beamer and network connecivity for your\n"
+"notebook PC.\n"
+msgstr ""
+"In jedem Vortragsraum sind ein Beamer und Netzwerkanbindung für dein "
+"Notebook vorhanden."
+
+#: static/templates/call.html:71
+msgid ""
+"\n"
+"We also have adapters for MacBook / MacBook Air (MiniDP).\n"
+msgstr ""
+"\n"
+"Wir haben auch Adaptoren f&uuml;r MacBook / MacBook Air (MiniDP).\n"
+
+#: static/templates/call.html:75
+msgid ""
+"\n"
+"Please let us know in advance if you need additional equipment.\n"
+msgstr ""
+"Falls du weitere Ausrüstung benötigst, lass es uns bitte rechtzeitig "
+"wissen."
+
+#: static/templates/call.html:79
+msgid "Participant requirements"
+msgstr "Voraussetzungen an die Teilnehmenden"
+
+#: static/templates/call.html:81
+msgid ""
+"\n"
+"Let us know what requirements participants should satisfy to fully make\n"
+"use of your talk or workshop.\n"
+msgstr ""
+"Gibt es spezielle Voraussetzungen, die die Teilnehmenden erfüllen "
+"sollten, um das meiste aus deinem Vortrag oder Workshop herauszuholen?"
+
+#: static/templates/call.html:87
+msgid ""
+"\n"
+"General coding knowledge and developing experience can be assumed.\n"
+"Special language knowledge, experience with specific APIs or\n"
+"frameworks should however be announced in advance.\n"
+msgstr ""
+"Allgemeine Programmierkenntnisse und Entwicklungserfahrung können "
+"vorausgesetzt werden. Falls spezielle Sprachkenntnisse, Erfahrungen mit "
+"besonderen APIs oder Frameworks benötigt werden, sollte das aber "
+"angekündigt werden."
+
+#: static/templates/call.html:94
+msgid ""
+"\n"
+"For workshops, make sure to let us know what the participants should\n"
+"have installed on their notebook PCs before attending.\n"
+"At the same time, expect some time at the beginning of the workshop\n"
+"to accomodate participants not fully prepared.\n"
+msgstr ""
+"Speziell für Workshops ist es wichtig zu wissen, was die Teilnehmenden "
+"vorab z.B. an Software auf ihren Notebooks installiert haben sollten. "
+"Gleichzeitig rechne bitte ein wenig Zeit ein, um Teilnehmende, die noch "
+"nicht alles richtig vorbereitet haben, zu unterstützen."
+
+#: static/templates/call.html:102 static/templates/call.html:108
+msgid "Submit your session proposal"
+msgstr "Präsentation einreichen"
+
+#: static/templates/generic_error.html:8
+msgid "Page Not Found"
+msgstr "Seite nicht gefunden"
+
+#: static/templates/generic_error.html:18
+msgid "Sorry. A serious error has occured."
+msgstr "Es tut mir leid. Ein schwerwiegender Fehler ist aufgetreten."
+
+#: static/templates/generic_error.html:19
+msgid "Return home."
+msgstr "Zurück zur Startseite."
+
+#: static/templates/generic_error.html:21
+#, python-format
+msgid "Code: %(code)s"
+msgstr ""
+
+#: static/templates/index.html:6 static/templates/index2.html:6
+msgid "DevFest Vienna"
+msgstr "DevFest Vienna"
+
+#: static/templates/index.html:26
+msgid "18 - 20 October 2013"
+msgstr "18. - 20. Oktober 2013"
+
+#: static/templates/index.html:27 static/templates/layout.html:67
+msgid "DevFest Vienna 2013"
+msgstr "DevFest Vienna 2013"
+
+#: static/templates/index.html:28
+msgid "Call for Speakers is open<br>till 30 August 2013!"
+msgstr "Der Call for Speakers ist<br>bis zum 30. August geöffnet!"
+
+#: static/templates/index.html:31 static/templates/index.html:46
+#: static/templates/index2.html:37 static/templates/index2.html:51
+msgid "https://docs.google.com/spreadsheet/viewform?formkey=dG5DQXU0V1FaREtMM0J5X3ZwY1ItRVE6MA"
+msgstr "https://docs.google.com/spreadsheet/viewform?formkey=dDhrOXVpeHFFQVllUWFEMFdXWmdYdXc6MA"
+
+#: static/templates/index.html:31 static/templates/index.html:46
+#: static/templates/index2.html:37 static/templates/index2.html:51
+msgid "DevFest 2013"
+msgstr "DevFest 2013"
+
+#: static/templates/index.html:33 static/templates/index.html:44
+#: static/templates/index2.html:35 static/templates/index2.html:39
+#: static/templates/index2.html:49 static/templates/index2.html:57
+msgid "Register Now!"
+msgstr "Jetzt anmelden!"
+
+#: static/templates/index.html:41
+msgid "Coming this fall to Vienna!"
+msgstr "Diesen Herbst in Wien!"
+
+#: static/templates/index.html:42
+msgid ""
+"Again we will have a DevFest in Vienna.\n"
+"We are in full steam for the planning - stay tuned!"
+msgstr ""
+"Auch dieses Jahr werden wir ein DevFest in Wien haben.\n"
+"Wir sind inmitten der Planung - mehr in K&uuml;rze!"
+
+#: static/templates/index.html:53 static/templates/index2.html:64
+msgid ""
+"\n"
+"DevFests are large-scale community events throughout the world, following"
+"\n"
+"the tradition of Google DevFests and organized by local user groups.\n"
+msgstr ""
+"DevFests sind größere Community-Events überall auf der Welt, die der "
+"Tradition von Google DevFests folgen und von lokalen Entwicklergruppen "
+"organisiert werden."
+
+#: static/templates/index.html:59 static/templates/index2.html:183
+msgid "Videos &amp; Slides from Day 1 are Online!"
+msgstr "Videos &amp; Präsentationen vom Tag 1 sind Online!"
+
+#: static/templates/index.html:62
+msgid ""
+"\n"
+"In 2012 there was for the first time a DevFest in Vienna, jointly\n"
+"organized by the <a href=\"http://jsug.at\" target=\"_blank\">Java "
+"Student\n"
+"User Group</a> and the <a href=\"http://gdg-vienna.at\" "
+"target=\"_blank\">Google\n"
+"Developer Group Vienna.</a>\n"
+msgstr ""
+"Im Jahr 2012 gab es nun zum ersten Mal ein DevFest in Wien, gemeinsam "
+"veranstaltet von der <a href=\"http://jsug.at\" target=\"_blank\">Java "
+"Student\n"
+"User Group</a> und der <a href=\"http://gdg-vienna.at\" "
+"target=\"_blank\">Google\n"
+"Developer Group Vienna</a>. "
+
+#: static/templates/index.html:68
+msgid ""
+"\n"
+"A total of 145 participants enjoyed a weekend around development for "
+"mobile and web.\n"
+msgstr ""
+"\n"
+"Insgesamt 145 Teilnehmerinnen und Teilnehmer erfreuten sich am 10. und "
+"11. November 2012 eines Wochenendes rund um die Entwicklung für mobile "
+"Plattformen und das Web.\n"
+
+#: static/templates/index.html:81
+msgid ""
+"\n"
+"The first day was full of workshops and sessions given\n"
+"by members of the local developer community.\n"
+msgstr ""
+"Der erste Tag war Workshops und Vorträgen gewidmet, geleitet von "
+"Mitgliedern der lokalen Entwicklergemeinschaft in Wien."
+
+#: static/templates/index.html:85
+msgid ""
+"\n"
+"In two rooms at the University of Technology\n"
+"in Vienna sessions were held in parallel.\n"
+"Some of the <a href=\"/2012/sessions\">sessions</a> include:\n"
+msgstr ""
+"In zwei Hörsälen an der <a href=\"/location#tu-wien\">TU Wien</a> wurden "
+"zeitgleich unter anderem folgende Vorträge und Workshops gehalten: "
+
+#: static/templates/index.html:91
+msgid ""
+"\n"
+"<a href= \"/2012/session/the-google-plus-platform\">Google+ API "
+"family</a>, <a href=\"/2012/session/pay-identify-with-paypal\">mobile "
+"payment APIs</a>, <a href=\"/2012/session/the-go-start-web-framework"
+"\">Go-start web framework</a>,\n"
+"<a href=\"/2012/session/introduction-to-bitcoinj\">Bitcoin Java API</a>,\n"
+"<a href=\"/2012/session/apps-script-google-hosted-javascript\">Google App"
+" Scripts</a>, ...\n"
+msgstr ""
+"<a href= \"/2012/session/the-google-plus-platform\">Google+ API-"
+"Familie</a>, <a href=\"/2012/session/pay-identify-with-paypal\">mobile "
+"Bezahl-APIs</a>, <a href=\"/2012/session/the-go-start-web-framework\">das"
+" Go-start Web Framework</a>,\n"
+"<a href=\"/2012/session/introduction-to-bitcoinj\">Bitcoin Java API</a>,\n"
+"<a href=\"/2012/session/apps-script-google-hosted-javascript\">Google App"
+" Scripts</a>, ...\n"
+
+#: static/templates/index.html:98
+msgid ""
+"\n"
+"Additionally there was enough time to meet and exchange with fellow "
+"developers;\n"
+"<em>and when developers come together amazing things can happen.</em>\n"
+msgstr "Zusätzlich war genug Zeit zum gegenseitigen Kennenlernen vorhanden.</em>"
+
+#: static/templates/index.html:104
+msgid ""
+"\n"
+"Day 1 endet with an awesome afterparty <em>powered by <a "
+"href=\"http://www.cenarion.com\" target=\"_blank\">Cenarion.</a></em>\n"
+msgstr ""
+"\n"
+"Am Ende des ersten Tages stand eine Afterparty am Programm, <em>powered "
+"by <a href=\"http://www.cenarion.com\" "
+"target=\"_blank\">Cenarion</a></em>."
+
+#: static/templates/index.html:121
+msgid "Day 2: <em>Happy Birthday, Android!</em>"
+msgstr "Tag 2: <em>Alles Gute zum Geburtstag, Android!</em>"
+
+#: static/templates/index.html:123
+msgid ""
+"\n"
+"It was on 5 November 2007 that Google launched Android as part of the\n"
+"Open Handset Alliance.\n"
+"Now, five years later, we were celebrating its success with a\n"
+"special birthday hackathon!\n"
+msgstr ""
+"Am 5. November 2007 hat Google das Betriebssystem Android als Teil der "
+"Open Handset Alliance gestartet. Nun, fünf Jahre später, feierten wir "
+"dessen Erfolg mit einem speziellen Geburtstagshackathon! "
+
+#: static/templates/index.html:130
+msgid ""
+"\n"
+"In teams we were developing applications for Android and\n"
+"the winners took home valuable prizes: Nexus 7 tablets, Raspberry Pi's,\n"
+"Arduino Kits, books and gadgets.\n"
+"The hackathon took place in the Metalab,\n"
+"a hacker space in Vienna.\n"
+msgstr ""
+"Wir erstellten Anwendungen für Android in kleinen Teams, und die Besten "
+"nahmen wertvolle Preise nach hause: Nexus 7 Tablets, Raspberry Pi's,\n"
+"Arduino Kits, Bücher und Gadgets. Der Hackathon fand im Metalab statt, "
+"einem Hackerspace in Wien. "
+
+#: static/templates/index2.html:26 static/templates/index2.html:47
+msgid "18 - 19 October 2014"
+msgstr "18. - 19. Oktober 2014"
+
+#: static/templates/index2.html:27 static/templates/index2.html:48
+msgid "DevFest Vienna 2014"
+msgstr "DevFest Vienna 2014"
+
+#: static/templates/index2.html:28
+msgid "Call for Speakers is open<br>till 25 July 2014!"
+msgstr "Der Call for Speakers ist<br>bis zum 25. July geöffnet!"
+
+#: static/templates/index2.html:32 static/templates/index2.html:53
+msgid "Step Up"
+msgstr "Aufstieg"
+
+#: static/templates/index2.html:33 static/templates/index2.html:55
+msgid "Sixteen tech talks, five workshops, and an open hackathon"
+msgstr "Sechszehn Tech-Talks, fünf Workshops, und ein offener Hackathon"
+
+#: static/templates/index2.html:77
+msgid "Workshops - Day 0"
+msgstr "Workshops - Tag 0"
+
+#: static/templates/index2.html:78
+msgid ""
+"With Saturday offering presentations and tech talks, the Friday afternoon"
+"\n"
+"  will have workshops dedicated to current IT topics."
+msgstr ""
+"Während der Samstag Vorträge und Präsentationen bietet, stehen am Freitag"
+" nachmittag Workshops zu aktuellen IT-Themen im Zentrum."
+
+#: static/templates/index2.html:80
+msgid "You bring your laptop PC and in the team you will explore topics like:"
+msgstr "Bring dein Notebook mit und in Teams werden Themen erarbeitet wie z.B.:"
+
+#: static/templates/index2.html:82
+msgid ""
+"The level of the workshops varies - some of them are ready for novices,\n"
+"  other require intermediate knowledge and experience."
+msgstr ""
+"Die Anforderungen und Schwierigkeitsgrade der Workshops sind "
+"unterschiedlich - manche sind für Anfänger geeignet, andere erfordern "
+"gewisse Vorkenntnisse und Fertigkeiten."
+
+#: static/templates/index2.html:85
+msgid "We start on day 0 at the University of Technology:"
+msgstr ""
+"\n"
+"Wir starten am Tag 0 an der TU Wien:"
+
+#: static/templates/index2.html:86 static/templates/index2.html:96
+#: static/templates/location.html:56 static/templates/location.html:97
+#: static/templates/location.html:99 static/templates/location.html:116
+#: static/templates/location.html:157 static/templates/location.html:159
+#: static/templates/location.html:175 static/templates/location.html:198
+#: static/templates/location.html:200
+msgid "hl=en"
+msgstr "hl=de"
+
+#: static/templates/index2.html:90
+msgid "Tech Talks - Day 1"
+msgstr "Vorträge - Tag 1"
+
+#: static/templates/index2.html:91
+msgid ""
+"On Saturday we will have sessions about various topics around mobile, "
+"web, social &amp; cloud."
+msgstr ""
+"Am Samstag stehen Vorträge zu unterschiedlichen Themen rund um Mobile, "
+"Web, Social &amp; Cloud am Programm."
+
+#: static/templates/index2.html:95
+msgid "Saturday will take place at the University of Technology: "
+msgstr "Samstag sind wir an der TU Wien:"
+
+#: static/templates/index2.html:100
+msgid "Open Hackathon - Day 2"
+msgstr "Offener Hackathon - Tag 2"
+
+#: static/templates/index2.html:101
+msgid "And on Sunday we will have an open hackathon."
+msgstr "Am Sonntag schließlich haben wir einen offenen Hackathon am Programm."
+
+#: static/templates/index2.html:102
+msgid "Any software, any technology, any tools are allowed."
+msgstr "Jede Software, jede Technologie und jedes Werkzeug sind erlaubt."
+
+#: static/templates/index2.html:103
+msgid "For some APIs and toolsets our sponsors will award special prizes!"
+msgstr ""
+"Für die Verwendung mancher APIs und Werkzeug-Sets vergeben unsere "
+"Sponsoren Spezialpreise!"
+
+#: static/templates/index2.html:106
+msgid ""
+"This Open Hackathon takes place in the coworking space\n"
+"  <a target=\"_blank\" "
+"href=\"http://www.sektor5.at/about/contact/\">Sektor5</a>."
+msgstr ""
+"Dieser offene Hackathon findet im Coworking-Space\n"
+"  <a target=\"_blank\" "
+"href=\"http://www.sektor5.at/about/contact/\">Sektor5</a> statt."
+
+#: static/templates/index2.html:109 static/templates/layout.html:75
+#: static/templates/policy.html:14
+msgid "Conduct Policy"
+msgstr "Verhaltenskodex"
+
+#: static/templates/index2.html:111 static/templates/policy.html:16
+msgid ""
+"\n"
+"DevFest Vienna is dedicated to being open to everyone and making the "
+"conference\n"
+"a safe place for all.\n"
+"We do not discriminate based on ethnic background, religion, gender, "
+"sexuality,\n"
+"body shape, or disability.\n"
+"We do not tolerate harassment based on discrimination.\n"
+msgstr ""
+"DevFest Vienna setzt sich zum Ziel, für jede und jeden offen zu sein und "
+"die Konferenz zu einem sicheren Platz für alle zu machen.\n"
+"Wir diskriminieren nicht aufgrund von ethnischem Hintergrund, Religion, "
+"Geschlecht, Sexualität, Körperform oder Behinderung.\n"
+"Wir tolerieren keinerlei Belästigung die auf Diskriminierung basiert.\n"
+
+#: static/templates/index2.html:120
+msgid "See our conduct policy for more details."
+msgstr "Hier unser vollständiger Verhaltenskodex für mehr Details."
+
+#: static/templates/index2.html:123
+msgid ""
+"\n"
+"  Please report any violation of the conduct policy to a member of the "
+"Organizer team\n"
+"  (recognizable through a red highlighted badge).\n"
+"  "
+msgstr ""
+"Jede Verletzung des Verhaltenskodexes ist an ein Mitglied des Organizer-"
+"Teams zu melden (erkennbar an den rot gefärbten Ausweisen)."
+
+#: static/templates/index2.html:130
+msgid "DevFest Vienna 2013 Sponsors"
+msgstr "DevFest Vienna 2013 Sponsoren"
+
+#: static/templates/index2.html:131
+msgid "Platinum Sponsors"
+msgstr "Platin-Sponsoren"
+
+#: static/templates/index2.html:138
+msgid "Better Software for a Better World!"
+msgstr "Bessere Software für eine bessere Welt!"
+
+#: static/templates/index2.html:145
+msgid "Austrian Largest Online Advertisment Portal"
+msgstr "Österreichs größtes Online Anzeigenportal"
+
+#: static/templates/index2.html:152
+msgid "The faster, saver way to send and receive money"
+msgstr "Der schnellere, sicherere Weg Geld zu senden und zu empfangen"
+
+#: static/templates/index2.html:157
+msgid "Gold Sponsors"
+msgstr "Gold-Sponsoren"
+
+#: static/templates/index2.html:171
+msgid "Silver Sponsors and Media Partners"
+msgstr "Silber-Sponsoren und Medienpartner"
+
+#: static/templates/layout.html:34
+msgid "Your browser is <em>ancient!</em>"
+msgstr "Ihr Browser ist <em>steinalt!</em>"
+
+#: static/templates/layout.html:34
+msgid ""
+"<a href=\"http://browsehappy.com/\">Upgrade to a different browser</a> or"
+" <a href=\"http://www.google.com/chromeframe/?redirect=true\">install "
+"Google Chrome Frame</a> to experience this site."
+msgstr ""
+"<a href=\"http://browsehappy.com/\">Aktualisieren Sie auf einen anderen "
+"Browser, oder <a "
+"href=\"http://www.google.com/chromeframe/?redirect=true\">installieren "
+"Sie Google Chrome Frame</a> um diese Seite anzusehen."
+
+#: static/templates/layout.html:47
+msgid "Home"
+msgstr ""
+
+#: static/templates/layout.html:49
+msgid "Location"
+msgstr "Veranstaltungsort"
+
+#: static/templates/layout.html:52 static/templates/layout.html:63
+#: static/templates/layout.html:70 static/templates/sessions.html:30
+msgid "Sessions"
+msgstr "Vorträge"
+
+#: static/templates/layout.html:53 static/templates/layout.html:62
+#: static/templates/layout.html:69 static/templates/session.html:83
+#: static/templates/speakers.html:15
+msgid "Speakers"
+msgstr "Vortragende"
+
+#: static/templates/layout.html:57 static/templates/sponsor.html:14
+msgid "Sponsorship"
+msgstr "Sponsoren"
+
+#: static/templates/layout.html:60
+msgid "DevFest Vienna 2012"
+msgstr "DevFest Vienna 2012"
+
+#: static/templates/layout.html:77 static/templates/session.html:41
+msgid "Language"
+msgstr "Sprache"
+
+#: static/templates/layout.html:79
+msgid "class-active-if-english"
+msgstr "class"
+
+#: static/templates/layout.html:79
+msgid "English"
+msgstr "Englisch"
+
+#: static/templates/layout.html:80
+msgid "class-active-if-german"
+msgstr "class=\"active\""
+
+#: static/templates/layout.html:80
+msgid "German"
+msgstr "Deutsch"
+
+#: static/templates/layout.html:89
+msgid "Sign out"
+msgstr "Abmelden"
+
+#: static/templates/layout.html:96
+msgid "Sign in via:"
+msgstr "Anmelden"
+
+#: static/templates/layout.html:99
+msgid "Email and password"
+msgstr "Email und Passwort"
+
+#: static/templates/layout.html:100
+msgid "New user"
+msgstr "Neue Benutzer"
+
+#: static/templates/layout.html:118
+msgid "Sign up with your email address"
+msgstr "Mit E-Mail-Adresse registrieren"
+
+#: static/templates/layout.html:126
+msgid "Name"
+msgstr "Benutzername"
+
+#: static/templates/layout.html:132 static/templates/layout.html:165
+msgid "Email address"
+msgstr "E-Mail Adresse"
+
+#: static/templates/layout.html:138 static/templates/layout.html:171
+msgid "Password"
+msgstr "Passwort"
+
+#: static/templates/layout.html:150
+msgid "Sign Up"
+msgstr "Registrieren"
+
+#: static/templates/layout.html:158
+msgid "Sign in"
+msgstr "Anmelden"
+
+#: static/templates/layout.html:183
+msgid "Sign In"
+msgstr "Anmelden"
+
+#: static/templates/layout.html:197
+msgid ""
+"DevFest Vienna is jointly organized by\n"
+"<a href=\"http://jsug.at\" target=\"_blank\">JSUG@TU-Wien</a>,\n"
+"<a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a> and\n"
+"<a href=\"www.meetup.com/AndroidHeads\" target=\"_blank\">AndroidHeads "
+"Vienna</a>."
+msgstr ""
+"DevFest Vienna wird von\n"
+"<a href=\"http://jsug.at\" target=\"_blank\">JSUG@TU-Wien</a>,\n"
+"<a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a> und\n"
+"<a href=\"www.meetup.com/AndroidHeads\" target=\"_blank\">AndroidHeads "
+"Vienna</a> gemeinsam organisiert."
+
+#: static/templates/layout.html:205
+msgid "Find us on Google+"
+msgstr "Wir sind auf Google+"
+
+#: static/templates/layout.html:205
+msgid " and on "
+msgstr " und auf "
+
+#: static/templates/location.html:6
+msgid "DevFest Vienna - the locations"
+msgstr "DevFest Vienna - die Veranstaltungsorte"
+
+#: static/templates/location.html:14
+msgid "The Locations"
+msgstr "Die Veranstaltungsorte"
+
+#: static/templates/location.html:16
+msgid ""
+"\n"
+"DevFest Vienna takes place in two different different locations,\n"
+"each of them with its unique advantage and atmosphere.\n"
+msgstr ""
+"DevFest Vienna wird an zwei verschiedenen Orten veranstaltet, die beide "
+"ihre einzigarten Vorzüge und Ambiente bieten. "
+
+#: static/templates/location.html:22
+msgid ""
+"\n"
+"We start on day 0 with workshops on the <a href=\"#tu-wien-0\">University"
+" of Technology</a>,\n"
+"FH HS3 and FH HS4.\n"
+msgstr ""
+"\n"
+"Wir starten in Tag 0 mit Workshops an der <a href=\"#tu-wien-0\">TU "
+"Wien</a>,Freihaus Hörsäle FH HS3 und FH HS4."
+
+#: static/templates/location.html:26
+msgid ""
+"\n"
+"On day 1, the <a href=\"#tu-wien\">University of Technology</a>\n"
+"is again host for sessions around mobile &amp; web,\n"
+"cloud &amp; social, this time in EI9 and EI10.\n"
+msgstr ""
+"Für den ersten Tag ist die <a href=\"#tu-wien\">TU Wien</a> Gastgeber für"
+" Vorträge und um Mobile &amp; Web, Cloud &amp; Social, diesmal in EI9 und"
+" EI10. "
+
+#: static/templates/location.html:33
+msgid ""
+"\n"
+"And on day 10, it is the <a href=\"#sektor5\">Sektor5</a> where we are "
+"having\n"
+"an open hackathon.\n"
+msgstr ""
+"Und am Tag 10 sind wir im <a href=\"#sektor5\">Sektor5</a> für einen "
+"offenen Hackathon.\n"
+
+#: static/templates/location.html:51
+msgid "TU Vienna - FH HS1 and FH HS2"
+msgstr ""
+
+#: static/templates/location.html:53
+msgid ""
+"\n"
+"We start with workshops on Friday afternoon at the University of "
+"Technology,\n"
+msgstr ""
+"\n"
+"Wir starten mit Workshops in den Freitag Nachmittag an der TU Wien, "
+
+#: static/templates/location.html:56
+msgid "Wiedner Hauptstra&szlig;e 8-10"
+msgstr "Wiedner Hauptstra&szlig;e 8-10"
+
+#: static/templates/location.html:97
+msgid "TU Vienna (18 October 2013)"
+msgstr "TU Wien (18. Oktober 2013)"
+
+#: static/templates/location.html:110
+msgid "TU Vienna"
+msgstr "TU Wien"
+
+#: static/templates/location.html:112
+msgid ""
+"\n"
+"Day #1 takes place on the University of Technology in Vienna\n"
+"at\n"
+msgstr "Der erste Tag findet an der TU Wien statt, in der "
+
+#: static/templates/location.html:116
+msgid "Gußhausstraße 27-29, 1040 Vienna"
+msgstr "Gußhausstraße 27-29, 1040 Wien"
+
+#: static/templates/location.html:157
+msgid "TU Vienna (19 October 2013)"
+msgstr "TU Wien (19. Oktober 2013)"
+
+#: static/templates/location.html:170 static/templates/location.html:175
+msgid "Sektor5"
+msgstr ""
+
+#: static/templates/location.html:172
+msgid ""
+"\n"
+"DevFest Vienna closes with an open hackathon at\n"
+msgstr ""
+
+#: static/templates/location.html:198
+msgid "Sektor5 (20 October 2013)"
+msgstr "Sekto5 (20. Oktober 2013)"
+
+#: static/templates/policy.html:6
+msgid "DevFest Vienna - Conduct Policy"
+msgstr "DevFest Vienna - Verhaltenskodex"
+
+#: static/templates/policy.html:25
+msgid ""
+"\n"
+"We insist that all participants and attendees adhere to a civil demeanor "
+"at all times.\n"
+"This includes refraining from inappropriate language, comments and "
+"behaviour.\n"
+"This includes, but is not limited to: sexually oriented language and "
+"images,\n"
+"unwanted attention, threatening behaviour, physical assault, theft.\n"
+msgstr ""
+"Wir bestehen darauf, dass alle TeilnehmerInnen und Anwesenden sich zu "
+"jeder Zeit zivilisiert verhalten.\n"
+"Dazu gehört, von unangemessener Sprache, Kommentaren oder Benehmen "
+"Abstand zu nehmen.\n"
+"Dies umfasst, ist aber nicht beschränkt auf: sexistische Sprache und "
+"Bilder, unerwünschte Annäherungen, bedrohendes Verhalten, physische "
+"Gewalt und Diebstahl.\n"
+
+#: static/templates/policy.html:34
+msgid ""
+"\n"
+"Participants, sponsors, speakers or attendees who are being harassed, "
+"intimidated,\n"
+"or are dealing with otherwise improper behaviour are encouraged to report"
+" it\n"
+"immediately to an official DevFest organizer team member.\n"
+"Organizer team members are identified by the red highlighted badges.\n"
+msgstr ""
+"TeilnehmerInnen, SponsorInnen, Vortragende oder Anwesende die belästigt "
+"oder eingeschüchtert werden oder sonstwie mit unangebrachtem Verhalten "
+"konfrontiert sind, werden gebeten dies unverzüglich einem Mitglied des "
+"DevFest Organizer-Teams zu melden.\n"
+"Diese sind durch einen rot hervorgehobenen Ausweis erkennbar.\n"
+
+#: static/templates/policy.html:43
+msgid ""
+"\n"
+"Alternate methods of reporting issues include:\n"
+msgstr "Vorfälle können auch auf folgende Art und Weise gemeldet werden:\n"
+
+#: static/templates/policy.html:48
+msgid "email <a href=\"mailto:team@devfest.at\">team@devfest.at</a>"
+msgstr "E-Mail an <a href=\"mailto:team@devfest.at\">team@devfest.at</a>"
+
+#: static/templates/policy.html:49
+msgid "call the Vienna police department at 112"
+msgstr "Polizeinotruf unter 112"
+
+#: static/templates/policy.html:52
+msgid ""
+"\n"
+"Anyone who is found to be in violation of this policy may be handled in "
+"any\n"
+"one or more of these methods, depending on the offense:\n"
+msgstr ""
+"Jeder und jede, der/die diesen Verhaltenskodex verletzt kann, abhängig "
+"von der Tragweite des Vorfalls:"
+
+#: static/templates/policy.html:58
+msgid "warning"
+msgstr "verwarnt werden,"
+
+#: static/templates/policy.html:59
+msgid "expulsion (see below)"
+msgstr "ausgewiesen werden (siehe unten),"
+
+#: static/templates/policy.html:60
+msgid "contacting of the police"
+msgstr "der Polizei übergeben werden."
+
+#: static/templates/policy.html:63
+msgid ""
+"\n"
+"Actions stronger than a warning will be taken at the discretion of two or"
+" more members of\n"
+"the DevFest organizer team.\n"
+msgstr ""
+"Schritte, die über eine Verwarnung hinausgehen, werden durch zwei oder "
+"mehr Mitglieder des Organizer-Teams verhängt.\n"
+
+#: static/templates/policy.html:69
+msgid ""
+"\n"
+"False reports will be treated harshly.\n"
+"Personal disputes should be handled privately, unless actual harassment "
+"occurs.\n"
+msgstr ""
+"Falschmeldungen werden bestraft.\n"
+"Persönliche Streitigkeiten sollen prinzipiell privat gelöst werden, wenn "
+"es sich nicht um einen Fall von Belästigung handelt."
+
+#: static/templates/policy.html:76
+msgid ""
+"\n"
+"DevFest Vienna reserves the right to remove any participant, sponsor or "
+"attendee at any time for any reason.\n"
+msgstr ""
+"DevFest Vienna behält sich das Recht vor, jederzeit TeilnehmerInnen, "
+"SponsorInnen oder Anwesende aus welchem Grund auch immer zu entfernen.\n"
+
+#: static/templates/policy.html:82
+msgid ""
+"\n"
+"This policy covers all organized events for the DevFest Vienna, including"
+" social events.\n"
+msgstr ""
+"Dieser Verhaltenskodex gilt für alle Veranstaltungen von DevFest Vienna, "
+"einschließlich der Afterparty.\n"
+
+#: static/templates/session.html:23
+msgid "Hands-on workshop"
+msgstr "Workshop"
+
+#: static/templates/session.html:23
+msgid "Talk / Presentation"
+msgstr "Vortrag / Präsentation"
+
+#: static/templates/session.html:37
+msgid "Level"
+msgstr ""
+
+#: static/templates/session.html:45
+msgid "Requirements"
+msgstr "Teilnahmevoraussetzungen"
+
+#: static/templates/session.html:77
+msgid "Documents, Links, Slides"
+msgstr "Dokumente, Links, Folien"
+
+#: static/templates/session.html:85
+msgid "Speaker"
+msgstr "Vortragende"
+
+#: static/templates/sessions.html:6
+msgid "DevFest Vienna - Sessions"
+msgstr "DevFest Vienna - Vortr&auml;ge"
+
+#: static/templates/speakers.html:6
+msgid "DevFest Vienna - Speakers"
+msgstr "DevFest Vienna - Vortragende"
+
+#: static/templates/sponsor.html:6
+msgid "DevFest Vienna - Sponsorship"
+msgstr "DevFest Vienna - Sponsoren"
+
+#: static/templates/sponsor.html:17
+msgid ""
+"\n"
+"Interested in being part of the event as a sponsor?\n"
+"Excellent!\n"
+msgstr "Wollen Sie als Sponsor bei diesem Event dabei sein? Ausgezeichnet! "
+
+#: static/templates/sponsor.html:21 static/templates/sponsor.html:79
+msgid "1pl7yLjoJ1fG7qwrkEnMlCKC5R2XFyLSbbXFE4sr-G6k"
+msgstr "1XoZNIYtfIUM6Fu3adzXf2W5Gwao0Vn9FqOm0cQLGjNE"
+
+#: static/templates/sponsor.html:21
+msgid "Let us know about it!"
+msgstr "Bitte erzählen Sie uns davon!"
+
+#: static/templates/sponsor.html:24
+msgid "Silver"
+msgstr "Silber"
+
+#: static/templates/sponsor.html:26
+msgid ""
+"\n"
+"As a silver sponsor, your logo is present on the local web site\n"
+"as well as in social media mentions (Google+ and Twitter).\n"
+msgstr ""
+"Das Logo von Ihnen als Silber-Sponsor wird auf der Website <a "
+"href='/'>www.devfest.at</a> angezeigt, und Sie werden in Social Media "
+"Erwähnung finden (Google+ und Twitter)."
+
+#: static/templates/sponsor.html:31
+msgid ""
+"\n"
+"You can provide stickers and / or flyers for the participants.\n"
+msgstr ""
+"Für die Teilnehmenden können Sie gerne Sticker und Flyer zur Verfügung "
+"stellen."
+
+#: static/templates/sponsor.html:35
+msgid "Gold"
+msgstr "Gold"
+
+#: static/templates/sponsor.html:37
+msgid ""
+"\n"
+"As gold sponsor, you get the same coverage as a silver sponsor,\n"
+"so your logo is present on the local web site as well as in\n"
+"social media mentions (Google+ and Twitter).<br>\n"
+"In addition, you will get mentioned on the web sites of the\n"
+"host organizations (<a href=\"http://jsug.at\" target=\"_blank\">JSUG</a>"
+"\n"
+"and <a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a>).\n"
+msgstr ""
+"Als Gold-Sponsor erhalten Sie natürlich alle Vorzüge des Silber-Pakets, "
+"also Anzeige Ihres Logo auf der Website <a href='/'>www.devfest.at</a> "
+"sowie Erwähnung in Social Media (Google+ und Twitter).<br>Außerdem werden"
+" Sie als Sponsor auf den Websites der beiden veranstaltenden "
+"Organisationen (<a href=\"http://jsug.at\" target=\"_blank\">JSUG</a>\n"
+"und <a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a>) "
+"genannt."
+
+#: static/templates/sponsor.html:47
+msgid ""
+"\n"
+"In addition to providing stickers and flyers to participants, you can\n"
+"attend the event with your own table, mount a poster at the location\n"
+"and present your products or company in a short pitch.\n"
+"One attendee from your company is allowed to represent you on-site.\n"
+msgstr ""
+"Zusätzlich zu Stickern und Flyern für die Teilnehmenden können Sie am "
+"Event selbst mit einem eigenen Tisch präsent sein, ein/e MitarbeiterIn "
+"Ihrer Organisation kann Ihre Firma dort direkt repräsentieren. Im Vorraum"
+" können Sie ein Poster aufhängen, und Sie können Ihre Produkte oder Ihre "
+"Firma in einer fünfminutigen Ansprache vorstellen. "
+
+#: static/templates/sponsor.html:54
+msgid "Platinum"
+msgstr "Platin"
+
+#: static/templates/sponsor.html:56
+msgid ""
+"\n"
+"As platinum sponsor, you get the most comprehensive presence online and\n"
+"at the event.\n"
+"Your logo (bigger size) is present on the local web site, you are\n"
+"getting mentions in social media interactions (Google+, Facebook and "
+"Twitter),\n"
+"you are mentioned on the web sites of the host organizations\n"
+"(<a href=\"http://jsug.at\" target=\"_blank\">JSUG</a>\n"
+"and <a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a>),\n"
+"and your logo will be present on their websites for a full year.\n"
+msgstr ""
+"Als Platin-Sponsor erhalten Sie das umfassendste Paket, sowohl was Ihre "
+"Online-Präsenz als auch Ihre Vor-Ort-Möglichkeiten betrifft. Ihr Logo (in"
+" größerer Form) wird auf der Website <a href='/'>www.devfest.at</a> "
+"präsentiert, Sie erhalten die Erw&auml;hnungen in Social Media (Google+, "
+"Twitter <em>und Facebook</em>), und Ihr Logo bleibt auf den Seiten der "
+"beiden Organisatoren (<a href=\"http://jsug.at\" "
+"target=\"_blank\">JSUG</a>\n"
+"und <a href=\"http://gdg-vienna.at\" target=\"_blank\">GDG Vienna</a>)\n"
+" für ein volles Jahr eingeblendet."
+
+#: static/templates/sponsor.html:68
+msgid ""
+"\n"
+"Just the same, your presence at the location is at platinum level as "
+"well.\n"
+"Stickers, flyers, poster and a table are part of the package.\n"
+"Two attendees from your company are allowed to represent you on-site.\n"
+msgstr ""
+"Auch Ihre Vor-Ort-Präsenz ist auf Platinlevel: Sticker, Flyer, Poster und"
+" ein Tisch mit <em>zwei</em> Mitarbeitenden sind Teil des Pakets."
+
+#: static/templates/sponsor.html:79 static/templates/sponsor.html:83
+msgid "Sponsorship feedback form"
+msgstr "Sponsorship Formular"
+
+#: static/templates/sponsor.html:84
+msgid "Sponsorship information package"
+msgstr "Sponsorship Informations-Paket (in Englisch)"
+
+#: static/templates/sponsorlist.html:1
+msgid "Sponsored by"
+msgstr ""
+
+#: static/templates/sponsorlist.html:11
+msgid "DevFest Vienna is part of"
+msgstr "DevFest Vienna ist ein Teil von"
+
+#: static/templates/sponsorlist.html:14
+msgid "Organized by"
+msgstr "Organisiert durch"
+
+#~ msgid "dG5DQXU0V1FaREtMM0J5X3ZwY1ItRVE6MA"
+#~ msgstr "dDhrOXVpeHFFQVllUWFEMFdXWmdYdXc6MA"
+
+#~ msgid "Feedback form"
+#~ msgstr "Feedback-Formular"
+
+#~ msgid "Save the date!"
+#~ msgstr "Datum freihalten!"
+
+#~ msgid "DevFest Vienna 2013 - more details coming soon"
+#~ msgstr "DevFest Vienna 2013 - Details folgen in K&uuml;rze"
+
+#~ msgid "18<sup>th</sup> - 20<sup>th</sup> October 2013"
+#~ msgstr "18. - 20. Oktober 2013"
+
+#~ msgid "Reverse Engineering"
+#~ msgstr ""
+
+#~ msgid "PageObject Pattern - Selenium Codelab"
+#~ msgstr ""
+
+#~ msgid "Schemas for the real world"
+#~ msgstr "Schemata für die reale Welt"
+
+#~ msgid ""
+#~ msgstr ""
+
+#~ msgid "Metalab Vienna"
+#~ msgstr "Metalab Wien"
+
+#~ msgid "Rathausstraße 6, 1010 Vienna"
+#~ msgstr "Rathausstraße 6, 1010 Wien"
+
+#~ msgid "Metalab (11. November 2012)"
+#~ msgstr "Metalab (11. November 2012)"
+
+#~ msgid "Why WebDevs should care about Polymer"
+#~ msgstr ""
+
+#~ msgid "Step Up"
+#~ msgstr "Aufstieg"
+
+#~ msgid "Sixteen tech talks, five workshops, and an open hackathon"
+#~ msgstr "Sechszehn Vorträge, fünf Workshops und ein offener Hackathon"
+
+#~ msgid "Tech Talks - Day 1"
+#~ msgstr "Vorträge - Tag 1"
+
+#~ msgid "On Saturday we will have sessions about various topics:"
+#~ msgstr "Am Samstag haben wir Vorträge über unterschiedliche Themen:"
+
+#~ msgid "Workshops - Day 0"
+#~ msgstr "Workshops - Tag 0"
+
+#~ msgid "You bring your laptop PC and in the team you will explore topics like:"
+#~ msgstr "Bring dein Notebook und im Team wirst du Themen erforschen wie z.B.:"
+
+#~ msgid "Open Hackathon - Day 10"
+#~ msgstr "Offener Hackathon - Tag 10"
+
+#~ msgid "And on Sunday we will have an open hackathon."
+#~ msgstr "Und am Sonntag haben wir einen offenen Hackathon."
+
+#~ msgid "Any software, any technology, any tools are allowed."
+#~ msgstr "Jede Software, jede Technologie und jedes Werkzeug sind erlaubt."
+
+#~ msgid "For some APIs and toolsets our sponsors will award special prizes!"
+#~ msgstr ""
+
+#~ msgid "See our conduct policy for more details."
+#~ msgstr "Hier unser vollständiger Verhaltenskodex für mehr Details."
+
+#~ msgid "Platinum Sponsors"
+#~ msgstr "Platin-Sponsoren"
+
+#~ msgid "Better Software for a Better World!"
+#~ msgstr "Bessere Software für eine bessere Welt!"
+
+#~ msgid "Austrian Largest Online Advertisment Portal"
+#~ msgstr "Österreichs größtes Online Anzeigenportal"
+
+#~ msgid "The faster, saver way to send and receive money"
+#~ msgstr "Der schnellere, sicherere Weg Geld zu senden und zu empfangen"
+
+#~ msgid "Gold Sponsors"
+#~ msgstr "Gold-Sponsoren"
+
+#~ msgid "Silver Sponsors and Media Partners"
+#~ msgstr "Silber-Sponsoren und Medienpartner"
+
+#~ msgid "TU Vienna - FH HS3 and FH HS4"
+#~ msgstr "TU Wien - FH HS3 und FH HS4"
+
+#~ msgid ""
+#~ "\n"
+#~ "Especially if your products are APIs and can be used within the\n"
+#~ "birthday hackathon, you will like that you can define a special\n"
+#~ "winner category on the hackathon as a gold sponsor.\n"
+#~ msgstr ""
+#~ "Speziell wenn Ihre Produkte APIs "
+#~ "darstellen und im Rahmen des Hackathon"
+#~ " verwendet werden können, wird es Sie"
+#~ " freuen, dass Sie dafür eine eigene"
+#~ " Gewinner-Kategorie definieren dürfen."
+
+#~ msgid ""
+#~ "\n"
+#~ "And for the hackathon you are allowed to define two special winner\n"
+#~ "categories as a platinum sponsor.\n"
+#~ msgstr "Für den Hackatahon dürfen Sie gleich zwei Sonderkategorien definieren."
+

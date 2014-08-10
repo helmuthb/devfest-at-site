@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+
+{% endblock %}
+
+{% block title %}
+Page Not Found
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+
+{% block content %}
+	<hr class="soften">
+    
+    <p>Sorry, but the page you were trying to view does not exist.</p>
+    <p>It looks like this was the result of either:</p>
+    <ul>
+        <li>a mistyped address</li>
+        <li>an out-of-date link</li>
+    </ul>
+
+   	<p><a href="/">Return home.</a></p>
+
+   	<p>Code: {{code}}</p>
+{% endblock %}

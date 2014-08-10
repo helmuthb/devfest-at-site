@@ -1,0 +1,77 @@
+{% set area = 'agenda' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% trans %}DevFest Vienna - Sessions{% endtrans %}
+{% endblock %}
+
+{% block content %}
+<!-- facebook integration -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=267479033283422";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<a href="/"><img class="visible-phone" src="/img/banner2-{{event}}-small.png"></a><br>
+<div style="float:right;">
+<div class="g-plusone" data-annotation="none" data-size="medium"></div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="{% trans %}en{% endtrans %}" data-size="medium" data-related="DevFestVienna" data-count="none" data-hashtags="jsug,gdg,devfest,vienna" data-dnt="true">{% trans %}Tweet{% endtrans %}</a>
+<fb:like send="false" style="top:0px;" layout="button_count" width="90" show_faces="false"></fb:like>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+<h2>{% trans %}Sessions{% endtrans %}</h2>
+{% set first = true %}
+{% for s in sessions %}
+{% if not first %}
+<hr>
+{% else %}
+{% set first = false %}
+{% endif %}
+<a href="/{{event}}/session/{{ s.url }}" class= "sessionPage">
+{% if s.finished %}
+  
+<img src="/img/vids/{{ s.url }}.jpg"  style="float:left; display:block; height:90px; margin-top: 30px;">
+{% else %}
+{% for sp in s.speakers %}
+  {% if sp.image %}
+<img src="/image/{{ sp.key.urlsafe() }}" style="float:left; display:inline-block; height:120px; margin-top:30px;">
+  {% endif %}
+{% endfor %}
+{% endif %}
+<div style="float:left; position:absolute;">
+<h4>{% if s.level %}<img title="{{ s.leveltext }}" src="/img/bullet_{{ s.level }}.png">{% endif %}  &nbsp;{{ s.title|e }} </h4>
+</div>
+{% if s.image %}
+  <img src="/image/150x150/{{ s.key.urlsafe() }}" style="float:right; height:150px; width:150px; margin-right:100px; -webkit-border-radius:150px;
+	-moz-border-radius:150px;
+	border-radius:150px; ">
+{% endif %}
+</a>
+{% endfor %}
+</div>
+<div class="span3">
+<a href="/"><img class="hidden-phone" src="/img/banner2-{{event}}-small.png"></a><br>
+<br>
+<!-- <iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe> -->
+{%include "sponsorlist.html"%}
+</div>
+</div>
+</div>
+<script type="text/javascript">
+  window.___gcfg = {lang: '{% trans %}en{% endtrans %}'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+{% endblock %}

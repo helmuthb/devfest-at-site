@@ -1,0 +1,108 @@
+{% set area = 'agenda' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% trans %}DevFest Vienna - Agenda{% endtrans %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<img class="visible-phone" src="/img/banner2-small.png"><br>
+<h2>{% trans %}Agenda{% endtrans %}</h2>
+<h3>{% trans %}Day 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>{% endtrans %}</h3>
+<p>
+<table border="0" class="table table-hover">
+  <tr class="slot-nosession">
+    <td class="slot-time">09:00 - 09:15</td>
+    <td class="slot-content" colspan="2">{% trans %}Registration{% endtrans %}</td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">09:15 - 09:30</td>
+    <td class="slot-content" colspan="2">{% trans %}Welcome &amp; Introduction{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">09:30 - 10:30</td>
+    <td class="slot-content"><a href="/session/apps-script-google-hosted-javascript">{% trans %}Apps Script: Google-hosted Javascript{% endtrans %}</a></td>
+    <td class="slot-content"><a href="/session/introduction-to-bitcoinj">{% trans %}Introduction to BitcoinJ{% endtrans %}</a></td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">10:40 - 11:40</td>
+    <td class="slot-content"><a href="/session/the-google-plus-platform">{% trans %}The Google+ Platform{% endtrans %}</a></td>
+    <td class="slot-content"><a href="/session/pay-identify-with-paypal">{% trans %}Pay &amp; Identify with PayPal{% endtrans %}</a></td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">11:50 - 12:50</td>
+    <td class="slot-content"><a href="/session/google-plus-hangouts-development">{% trans %}Google+ Hangouts Development{% endtrans %}</a></td>
+    <td class="slot-content"><a href="/session/introducing-activiti">{% trans %}Introducing Activiti{% endtrans %}</a></td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">12:50 - 13:50</td>
+    <td class="slot-content" colspan="2">{% trans %}Lunch{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">13:50 - 15:35</td>
+    <td class="slot-content"><a href="/session/the-go-start-web-framework">{% trans %}The go-start Web Framework{% endtrans %}</a></td>
+    <td class="slot-content"><a href="/session/android-development-101">{% trans %}Android Development 101{% endtrans %}</a></td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">15:35 - 15:50</td>
+    <td class="slot-content" colspan="2">{% trans %}Coffee break{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">15:50 - 16:50</td>
+    <td class="slot-content"><a href="/session/google-web-toolkit">{% trans %}Google Web Toolkit in practice{% endtrans %}</a></td>
+    <td class="slot-content"><em>{% trans %}TBA{% endtrans %}</em></td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">17:00 - 18:00</td>
+    <td class="slot-content"><em>{% trans %}JavaScript testing{% endtrans %}</em></td>
+    <td class="slot-content"><a href="/session/hackathon-pitch">{% trans %}Hackathon-Pitch{% endtrans %}</a></td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">18:00 - open end</td>
+    <td class="slot-content" colspan="2">{% trans %}Afterparty - <a href="http://www.cenarion.com" target="_blank">powered by Cenarion!</a>{% endtrans %}</td>
+  </tr>
+</table>
+</p>
+<h3>{% trans %}Day 2: <em>Happy Birthday Android!</em>{% endtrans %}</h3>
+<p>
+<table border="0" class="table table-hover">
+  <tr class="slot-nosession">
+    <td class="slot-time">10:00</td>
+    <td class="slot-content">{% trans %}Start of Android Birthday Hackathon{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">10:00 - 12:30</td>
+    <td class="slot-content">{% trans %}Time for developing{% endtrans %}</td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">12:30 - 13:30</td>
+    <td class="slot-content">{% trans %}Lunch{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">13:30 - 17:30</td>
+    <td class="slot-content">{% trans %}Time for developing{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">17:30 - 18:30</td>
+    <td class="slot-content">{% trans %}Presentation of results{% endtrans %}</td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">18:30 - 19:00</td>
+    <td class="slot-content">{% trans %}Award ceremony{% endtrans %}</td>
+  </tr>
+</table>
+</p>
+</div>
+<div class="span3">
+<a href="/"><img class="hidden-phone" src="/img/banner2-small.png"></a><br>
+<br>
+<iframe  src="http://www.eventbrite.com/countdown-widget?eid=4444668122" frameborder="0" height="459" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+{%include "sponsorlist.html"%}
+</div>
+</div>
+</div>
+{% endblock %}

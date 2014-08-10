@@ -1,0 +1,168 @@
+{% set area = 'agenda' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% trans %}DevFest Vienna - Agenda{% endtrans %}
+{% endblock %}
+
+{% block content %}
+<!-- facebook integration -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=267479033283422";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<a href="/"><img class="visible-phone" src="/img/banner2-small.png"></a><br>
+<h2>{% trans %}Tentative Agenda{% endtrans %}</h2>
+<div style="float:right;">
+<div class="g-plusone" data-annotation="none" data-size="medium"></div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="{% trans %}en{% endtrans %}" data-size="medium" data-related="DevFestVienna" data-count="none" data-hashtags="jsug,gdg,devfest,vienna" data-dnt="true">{% trans %}Tweet{% endtrans %}</a>
+<fb:like send="false" style="top:0px;" layout="button_count" width="90" show_faces="false"></fb:like>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+<h3>{% trans %}Day 0, 18 October 2013: <em>Hands-On Workshops</em>{% endtrans %}</h3>
+<p>
+<table border="0" class="table table-hover">
+  <tr class="slot-session">
+    <td class="slot-time">13:30 - 15:15</td>
+    <td class="slot-content"><a href="/2013/session/osgi-all-you-need-to-know">{% trans %}OSGi - all you need to know{% endtrans %}</a> <em>(Florian Pirchner)</em></td>
+    <td class="slot-content"><a href="/2013/session/jquery-mobile">{% trans %}jQuery Mobile{% endtrans %}</a> <em>(Claudia Breitenfellner)</em></td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">15:25 - 17:10</td>
+    <td class="slot-content"><a href="/2013/session/osgi-all-you-need-to-know">{% trans %}OSGi - all you need to know{% endtrans %}</a> <em>(Florian Pirchner)</em></td>
+    <td class="slot-content"><a href="/2013/session/hangout-app-development-basics">{% trans %}Hangout Development{% endtrans %}</a> <em>(Gerwin Sturm)</em></td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">17:20 - 19:05</td>
+    <td class="slot-content"><a href="/2013/session/jee6-nosql-cloud">{% trans %}JEE6 and NoSQL in the Cloud{% endtrans %}</a> <em>(Shekhar Gulati)</em></td>
+    <td class="slot-content"><a href="/2013/session/payments-for-droids">{% trans %}Payments for Droids{% endtrans %}</a> <em>(Tim Messerschmidt)</em></td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">19:15 - 21:00</td>
+    <td class="slot-content"><a href="/2013/session/from-java-to-scala">{% trans %}From Java to Scala{% endtrans %}</a> <em>(Radim Pavlicek)</em></td>
+    <td class="slot-content"><span style="text-decoration:line-through;">{% trans %}Why WebDevs should care about Polymer{% endtrans %}</span> <em>{% trans %}cancelled due to sickness{% endtrans %}</em></td>
+  </tr>
+</table>
+</p>
+
+<h3>{% trans %}Day 1, 19 October 2013: <em>Talks and Presentations</em>{% endtrans %}</h3>
+<p>
+<table border="0" class="table table-hover">
+  <tr class="slot-nosession">
+    <td class="slot-time">09:00 - 09:30</td>
+    <td class="slot-content" colspan="2">{% trans %}Registration{% endtrans %}</td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">09:30 - 09:45</td>
+    <td class="slot-content" colspan="2">{% trans %}Welcome &amp; Introduction{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">09:45 - 10:45</td>
+    <td class="slot-content"><a href="/2013/session/gradle-build-system">{% trans %}Gradle Build System{% endtrans %}</a> <em>(Martin Liersch)</em></td>
+    <td class="slot-content"><a href="/2013/session/google-plus-platform-a-year-later">{% trans %}Google+ Platform - A Year Later{% endtrans %}</a> <em>(Gerwin Sturm)</em></td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">10:50 - 11:50</td>
+    <td class="slot-content"><a href="/2013/session/functional-domain-modelling">{% trans %}Functional Domain Modeling{% endtrans %}</a> <em>(Michal Bigos)</em></td>
+    <td class="slot-content"><a href="/2013/session/introduction-to-mvp-with-gwt">{% trans %}Introduction to MVP with GWT{% endtrans %}</a> <em>(Lisi Bl&uuml;melhuber)</em></td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">11:55 - 12:25</td>
+    <td class="slot-content"><a href="/2013/session/flying-sharks">{% trans %}Flying Sharks{% endtrans %}</a> <em>(Florian Pirchner)</em></td>
+    <td class="slot-content"><a href="/2013/session/indoors-android-navigation">{% trans %}indoo.rs location based services{% endtrans %}</a> <em>(Thomas Taschauer)</em></td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">12:25 - 13:25</td>
+    <td class="slot-content" colspan="2">{% trans %}Lunch{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">13:25 - 14:25</td>
+    <td class="slot-content"><a href="/2013/session/image-processing-opencv-javafx-scala">{% trans %}Image processing with OpenCV, JavaFX and Scala{% endtrans %}</a> <em>(Robert Ladst&auml;tter)</em></td>
+    <td class="slot-content"><a href="/2013/session/it-security-never-ending-saga">{% trans %}IT security - a never ending saga{% endtrans %}</a> <em>(Massimiliano Falcinelli)</em></td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">14:30 - 15:00</td>
+    <td class="slot-content"><a href="/2013/session/surviving-environment-disasters">{% trans %}Surviving the environment disasters{% endtrans %}</a> <em>(Anna Bulenkova)</em></td>
+    <td class="slot-content"><a href="/2013/session/hybrid-app-development-phonegap">{% trans %}Hybrid App development with Phonegap{% endtrans %}</a> <em>(Marc Edem)</em></td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">15:00 - 15:30</td>
+    <td class="slot-content" colspan="2">{% trans %}Coffee break{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">15:30 - 16:30</td>
+    <td class="slot-content"><a href="/2013/session/willhaben-app-survive-successful-launch">{% trans %}How to survive a successful App Launch (<a href="http://www.willhaben.at" target="_blank">willhaben.at</a>){% endtrans %}</a> <em>(Siegfried G&ouml;schl, Michael Greifeneder)</em></td>
+    <td class="slot-content"><a href="/2013/session/smart-tv-google-tv">{% trans %}Smart TV and Google TV{% endtrans %}</a> <em>(Petr Mazanec)</em></td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">16:35 - 17:35</td>
+    <td class="slot-content"><a href="/2013/session/bad-tests-good-tests">{% trans %}Bad Tests, Good Tests{% endtrans %}</a> <em>(Tomek Kaczanowski)</em></td>
+    <td class="slot-content"><a href="/2013/session/thinking-beyond-rdbms">{% trans %}Thinking Beyond RDBMS : Building Polyglot Persistence Java Applications{% endtrans %}</a> <em>(Shekhar Gulati)</em></td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">17:40 - 18:40</td>
+    <td class="slot-content"><a href="/2013/session/going-reactive-high-performance-jvm-code-with-reactor">{% trans %}Going Reactive - High Performance JVM code with Reactor{% endtrans %}</a> <em>(Michael Nitschinger)</em></td>
+    <td class="slot-content"><a href="/2013/session/rad-for-mobile-codiqa-jquery-mobile">{% trans %}RAD for mobile with Codiqa and jQuery Mobile{% endtrans %}</a> <em>(Riccardo Rubini)</em></td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">18:45 - open end</td>
+    <td class="slot-content" colspan="2">{% trans %}Afterparty - <a href="http://www.cenarion.com" target="_blank">powered by Cenarion!</a>{% endtrans %}</td>
+  </tr>
+</table>
+</p>
+<h3>{% trans %}Day 10, 20 October 2013: <em>Open Hackathon</em>{% endtrans %}</h3>
+<p>
+<table border="0" class="table table-hover">
+  <tr class="slot-nosession">
+    <td class="slot-time">10:00</td>
+    <td class="slot-content">{% trans %}Start of Hackathon{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">10:00 - 12:30</td>
+    <td class="slot-content">{% trans %}Time for developing{% endtrans %}</td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">12:30 - 13:30</td>
+    <td class="slot-content">{% trans %}Lunch{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">13:30 - 17:30</td>
+    <td class="slot-content">{% trans %}Time for developing{% endtrans %}</td>
+  </tr>
+  <tr class="slot-session">
+    <td class="slot-time">17:30 - 18:30</td>
+    <td class="slot-content">{% trans %}Presentation of results{% endtrans %}</td>
+  </tr>
+  <tr class="slot-nosession">
+    <td class="slot-time">18:30 - 19:00</td>
+    <td class="slot-content">{% trans %}Award ceremony{% endtrans %}</td>
+  </tr>
+</table>
+</p>
+</div>
+<div class="span3">
+<a href="/"><img class="hidden-phone" src="/img/banner2-2013-small.png"></a><br>
+<br>
+<iframe  src="http://www.eventbrite.com/countdown-widget?eid=7440401441" frameborder="0" height="480" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+{%include "sponsorlist.html"%}
+</div>
+</div>
+</div>
+<script type="text/javascript">
+  window.___gcfg = {lang: '{% trans %}en{% endtrans %}'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+{% endblock %}

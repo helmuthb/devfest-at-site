@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DevFest Vienna website based on Project Zeppelin
 
 ### About 
@@ -53,3 +54,6 @@ To minify CSS and JS run `minify_all.bat` or `minify_all.sh` from `/automation/m
 Project is published under the [MIT licence](https://github.com/gdg-x/zeppelin/blob/master/LICENSE.txt). Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
 
 
+=======
+Code for the website http://www.devfest.at
+>>>>>>> 1f35be6476dd9a48c68058522b8380ef090071a9

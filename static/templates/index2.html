@@ -1,0 +1,216 @@
+{% set area = 'home' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% trans %}DevFest Vienna{% endtrans %}
+{% endblock %}
+
+{% block content %}
+<!-- facebook integration -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=267479033283422";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="hero-unit hidden-phone">
+<div style="float:left; width:510px;">
+<img src="/img/banner2-noyear.png">
+</div>
+<div style="float:left; width:300px;">
+<p>
+  {% trans %}18 - 19 October 2014{% endtrans %}<br>
+  {% trans %}DevFest Vienna 2014{% endtrans %}<br>
+  <!-- <a href="/call"><b>{% trans %}Call for Speakers is open<br>till 25 July 2014!{% endtrans %}</b></a> -->
+</p>
+<p>
+  <!-- <img src="/img/gdg-devfest-2013.png" style="border:0;"><br> -->
+  <!-- <b>{% trans %}Step Up{% endtrans %}</b><br> -->
+  <!-- <em>{% trans %}Sixteen tech talks, five workshops, and an open hackathon{% endtrans %}</em> -->
+</p>
+  <!-- <a href="http://devfestvienna2013.eventbrite.com" target="_blank" class="btn btn-success">{% trans %}Register Now!{% endtrans %}</a> -->
+<!--
+<a href="{% trans %}https://docs.google.com/spreadsheet/viewform?formkey=dG5DQXU0V1FaREtMM0J5X3ZwY1ItRVE6MA{% endtrans %}" class="btn btn-success" target="_blank">{% trans %}DevFest 2013{% endtrans %}</a>
+-->
+<!-- <a href="http://devfest-vienna.eventbrite.com" target="_blank" class="btn btn-success">{% trans %}Register Now!{% endtrans %}</a> -->
+<!-- <a href="http://play.google.com/store/apps/details?id=at.devfest.app" target="_blank"><img src="/img/playstore.png" style="border:0; height:30px;"></a> -->
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<div class="hero-unit visible-phone">
+<img src="/img/banner2-small.png">
+<p><b>{% trans %}18 - 19 October 2014{% endtrans %}</b><br>
+  <em>{% trans %}DevFest Vienna 2014{% endtrans %}</em></p>
+<!-- <a href="http://devfest-vienna.eventbrite.com" target="_blank" class="btn btn-success">{% trans %}Register Now!{% endtrans %}</a> -->
+<!-- <a href="http://play.google.com/store/apps/details?id=at.devfest.app" target="_blank"><img src="/img/playstore.png" style="border:0; height:30px;"></a> -->
+<!-- <a href="{% trans %}https://docs.google.com/spreadsheet/viewform?formkey=dG5DQXU0V1FaREtMM0J5X3ZwY1ItRVE6MA{% endtrans %}" class="btn btn-success" target="_blank">{% trans %}DevFest 2013{% endtrans %}</a> -->
+  <p>
+    <!-- <b>{% trans %}Step Up{% endtrans %}</b><br> -->
+  <img src="/img/gdg-devfest-2014.png" style="border:0;"><br>
+  <!-- <em>{% trans %}Sixteen tech talks, five workshops, and an open hackathon{% endtrans %}</em> -->
+</p>
+    <!-- <a href="http://devfestvienna2013.eventbrite.com" target="_blank" class="btn btn-success">{% trans %}Register Now!{% endtrans %}</a> -->
+</div>
+
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<p>
+{% trans %}
+DevFests are large-scale community events throughout the world, following
+the tradition of Google DevFests and organized by local user groups.
+{% endtrans %}
+</p>
+<center style="overflow:hidden; height:160px;">
+<img src="/img/pics/image_32.jpg">
+<img src="/img/pics/image_56.jpg">
+<img src="/img/pics/image_43.jpg">
+<img src="/img/pics/image_58.jpg">
+<img src="/img/pics/image_37.jpg">
+</center>
+  <!--
+  <h3>{% trans %}Workshops - Day 0{% endtrans %}</h3>
+  {% trans %}With Saturday offering presentations and tech talks, the Friday afternoon
+  will have workshops dedicated to current IT topics.{% endtrans %}
+  {% trans %}You bring your laptop PC and in the team you will explore topics like:{% endtrans %}
+  <a href="/agenda">JEE6 &amp; NoSQL, jQuery Mobile, Hangout Development, Scala, ...</a>
+  {% trans %}The level of the workshops varies - some of them are ready for novices,
+  other require intermediate knowledge and experience.{% endtrans %}
+  <br/>
+  {% trans %}We start on day 0 at the University of Technology:{% endtrans %}
+  <a target="_blank" href="https://www.google.com/maps?t=m&amp;q=Wiedner+Hauptstra%C3%9Fe+8-10,+Vienna,+Austria&amp;ie=UTF8&amp;hq=&amp;hnear=Wiedner+Hauptstra%C3%9Fe+8-10,+Wieden+1040+Wien,+Austria&amp;ll=48.198706,16.367569&amp;spn=0.01373,0.02738&amp;z=14&amp;iwloc=A&amp;source=embed&amp;{% trans %}hl=en{% endtrans %}">Wiedner Hauptstraße 8-10</a> (Freihaus),
+  <a target="_blank" href="http://www.wegweiser.ac.at/tuwien/hoersaal/F3.html">FH HS3</a>,
+  <a target="_blank" href="http://www.wegweiser.ac.at/tuwien/hoersaal/F4.html">FH HS4</a>.
+  -->
+  <h3>{% trans %}Tech Talks - Day 1{% endtrans %}</h3>
+  {% trans %}On Saturday we will have sessions about various topics around mobile, web, social &amp; cloud.{% endtrans %}
+  <!-- <a href="/agenda">jQuery Mobile, phonegap, Scala, Codiqa, NoSQL, Reactor, ...</a> -->
+  <br/>
+  <!--
+  {% trans %}Saturday will take place at the University of Technology: {% endtrans %}
+  <a target="_blank" href="https://maps.google.com/maps?f=q&amp;source=embed&amp;{% trans %}hl=en{% endtrans %}&amp;geocode=&amp;q=Gu%C3%9Fhausstra%C3%9Fe+27-29,+Wieden+1040+Wien,+Austria&amp;aq=&amp;sll=48.197351,16.371794&amp;sspn=0.008467,0.016329&amp;ie=UTF8&amp;hq=&amp;hnear=Gu%C3%9Fhausstra%C3%9Fe+27,+Wieden+1040+Wien,+Austria&amp;t=m&amp;ll=48.197333,16.371775&amp;spn=0.027462,0.054932&amp;z=14&amp;iwloc=A">Gußhausstraße 27-29</a> (Elektrotechnik-Institut),
+  <a target="_blank" href="http://www.wegweiser.ac.at/tuwien/hoersaal/E9.html">EI9</a>,
+  <a target="_blank" href="http://www.wegweiser.ac.at/tuwien/hoersaal/E10.html">EI10</a>.
+-->
+  <h3>{% trans %}Open Hackathon - Day 2{% endtrans %}</h3>
+  {% trans %}And on Sunday we will have an open hackathon.{% endtrans %}
+  {% trans %}Any software, any technology, any tools are allowed.{% endtrans %}<br>
+  {% trans %}For some APIs and toolsets our sponsors will award special prizes!{% endtrans %}
+  <br/>
+<!--
+  {% trans %}This Open Hackathon takes place in the coworking space
+  <a target="_blank" href="http://www.sektor5.at/about/contact/">Sektor5</a>.{% endtrans %}
+-->
+<h3>{% trans %}Conduct Policy{% endtrans %}</h3>
+  <p>
+{% trans %}
+DevFest Vienna is dedicated to being open to everyone and making the conference
+a safe place for all.
+We do not discriminate based on ethnic background, religion, gender, sexuality,
+body shape, or disability.
+We do not tolerate harassment based on discrimination.
+{% endtrans %}
+  </p>
+  <p>
+  <a href="/policy">{% trans %}See our conduct policy for more details.{% endtrans %}</a>
+  </p>
+  <p>
+  {% trans %}
+  Please report any violation of the conduct policy to a member of the Organizer team
+  (recognizable through a red highlighted badge).
+  {% endtrans %}
+  </p>
+<!--
+  <hr>
+  <h2>{% trans %}DevFest Vienna 2013 Sponsors{% endtrans %}</h2>
+<h3>{% trans %}Platinum Sponsors{% endtrans %}</h3>
+  <div style="text-align:center;">
+  <div style="float:left; width:220px;">
+  <a href="http://www.cenarion.com">
+  <h4>Cenarion</h4>
+  <img src="/img/cenarion-logo.png" style="border:0;"><br>
+  </a>
+  <em>{% trans %}Better Software for a Better World!{% endtrans %}</em>
+  </div>
+  <div style="float:left; width:220px;">
+    <a href="http://www.willhaben.at">
+  <h4>Willhaben.at</h4>
+  <img src="/img/willhaben-logo.png" style="border:0;"><br>
+  </a>
+  <em>{% trans %}Austrian Largest Online Advertisment Portal{% endtrans %}</em>
+  </div>
+  <div style="float:left; width:220px;">
+    <a href="http://www.paypal.com">
+  <h4>PayPal</h4>
+  <img src="/img/paypal-logo.png" style="border:0;"><br>
+  </a>
+  <em>{% trans %}The faster, saver way to send and receive money{% endtrans %}</em>
+  </div>
+  <div style="clear:both;"></div>
+  <hr>
+  </div>
+<h3>{% trans %}Gold Sponsors{% endtrans %}</h3>
+  <div style="text-align:center;">
+  <div style="float:left;">
+  <a href="http://indoo.rs" target="_blank"><img src="/img/indoors-logo.png" style="border:0;"></a>
+  </div>
+  <div style="float:left;">
+  <a href="http://www.tailored-apps.com/" target="_blank"><img src="/img/tailored_apps-logo.png" style="border:0;"></a>
+  </div>
+  <div style="float:left;">
+  <a href="http://codiqa.com" target="_blank"><img src="/img/codiqa-logo.png" style="border:0;"></a>
+  </div>
+  <div style="clear:both;"></div>
+  <hr>
+  </div>
+<h3>{% trans %}Silver Sponsors and Media Partners{% endtrans %}</h3>
+  <div style="text-align:center;">
+  <div style="float:left;">
+  <a href="http://www.oreilly.de" target="_blank"><img src="/img/oreilly_logo_4c.png" style="border:0;"></a>
+  </div>
+  <div style="float:left;">
+  <a href="http://manning.com" target="_blank"><img src="/img/manning-logo.png" style="border:0;"></a>
+  </div>
+  <div style="clear:both;"></div>
+  </div>
+-->
+<!--
+<h3 style="text-align:center;"><a href="/agenda">&gt;&gt;&gt; {% trans %}Videos &amp; Slides from Day 1 are Online!{% endtrans %} &lt;&lt;&lt;</a></h3>
+-->
+</div>
+<div class="span3">
+<!--
+<a href="https://docs.google.com/spreadsheet/viewform?formkey=dFI4aXFEdzRUTXcyZXluckZBWW1ZTWc6MQ" target="_blank" class="btn">Temporary Registration</a><br/>
+-->
+<!--
+<iframe  src="http://www.eventbrite.com/countdown-widget?eid=7440401441" frameborder="0" height="480" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+-->
+{%include "sponsorlist.html"%}
+<!-- Place this tag where you want the badge to render. -->
+<div class="g-plus" data-href="//plus.google.com/101425359997480386030" data-rel="publisher" data-width="253" data-height="69"></div>
+<br>
+<div class="fb-like-box" data-href="http://www.facebook.com/DevFestVienna" data-width="292" data-show-faces="false" data-stream="false" data-header="false"></div>
+<br>
+<a class="twitter-timeline" data-dnt=true href="https://twitter.com/DevFestVienna" data-widget-id="249973795690004480">Tweets by @DevFestVienna</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!--
+<a class="twitter-timeline" data-dnt=true href="https://twitter.com/search?q=%23devfest+%23vienna" data-widget-id="248567902658240513">Tweets about "#devfest #vienna"</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+-->
+</div>
+</div>
+
+<!-- Place this tag after the last badge tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+{% endblock %}

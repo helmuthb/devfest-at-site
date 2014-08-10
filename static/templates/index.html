@@ -1,0 +1,183 @@
+{% set area = 'home' %}
+{% extends "layout.html" %}
+{% import 'forms.html' as forms %}
+
+{% block title %}
+{% trans %}DevFest Vienna{% endtrans %}
+{% endblock %}
+
+{% block content %}
+<!-- facebook integration -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=267479033283422";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="hero-unit hidden-phone">
+<div style="float:left; width:510px;">
+<img src="/img/banner2-2013.png">
+</div>
+<div style="float:left; width:300px;">
+<p>
+  {% trans %}18 - 20 October 2013{% endtrans %}<br>
+  {% trans %}DevFest Vienna 2013{% endtrans %}<br>
+<!--  <a href="/call"><b>{% trans %}Call for Speakers is open<br>till 30 August 2013!{% endtrans %}</b></a> -->
+</p>
+<!--
+<a href="{% trans %}https://docs.google.com/spreadsheet/viewform?formkey=dG5DQXU0V1FaREtMM0J5X3ZwY1ItRVE6MA{% endtrans %}" class="btn btn-success" target="_blank">{% trans %}DevFest 2013{% endtrans %}</a>
+-->
+<!-- <a href="http://devfest-vienna.eventbrite.com" target="_blank" class="btn btn-success">{% trans %}Register Now!{% endtrans %}</a> -->
+<!-- <a href="http://play.google.com/store/apps/details?id=at.devfest.app" target="_blank"><img src="/img/playstore.png" style="border:0; height:30px;"></a> -->
+</div>
+<div style="clear:both;"></div>
+</div>
+
+<div class="hero-unit visible-phone">
+<img src="/img/banner2-small.png">
+<p><b>{% trans %}Coming this fall to Vienna!{% endtrans %}</b><br>
+  <em>{% trans %}Again we will have a DevFest in Vienna.
+We are in full steam for the planning - stay tuned!{% endtrans %}</em></p>
+<!-- <a href="http://devfest-vienna.eventbrite.com" target="_blank" class="btn btn-success">{% trans %}Register Now!{% endtrans %}</a> -->
+<!-- <a href="http://play.google.com/store/apps/details?id=at.devfest.app" target="_blank"><img src="/img/playstore.png" style="border:0; height:30px;"></a> -->
+<a href="{% trans %}https://docs.google.com/spreadsheet/viewform?formkey=dG5DQXU0V1FaREtMM0J5X3ZwY1ItRVE6MA{% endtrans %}" class="btn btn-success" target="_blank">{% trans %}DevFest 2013{% endtrans %}</a>
+</div>
+
+<div class="container">
+<div class="row-fluid">
+<div class="span9">
+<p>
+{% trans %}
+DevFests are large-scale community events throughout the world, following
+the tradition of Google DevFests and organized by local user groups.
+{% endtrans %}
+</p>
+<!--
+<h3 style="text-align:center;"><a href="/agenda">&gt;&gt;&gt; {% trans %}Videos &amp; Slides from Day 1 are Online!{% endtrans %} &lt;&lt;&lt;</a></h3>
+-->
+<p>
+{% trans %}
+In 2012 there was for the first time a DevFest in Vienna, jointly
+organized by the <a href="http://jsug.at" target="_blank">Java Student
+User Group</a> and the <a href="http://gdg-vienna.at" target="_blank">Google
+Developer Group Vienna.</a>
+{% endtrans %}
+{% trans %}
+A total of 145 participants enjoyed a weekend around development for mobile and web.
+{% endtrans %}
+</p>
+<center style="overflow:hidden; height:160px;">
+<img src="/img/pics/image_32.jpg">
+<img src="/img/pics/image_56.jpg">
+<img src="/img/pics/image_43.jpg">
+<img src="/img/pics/image_58.jpg">
+<img src="/img/pics/image_37.jpg">
+</center>
+<p>
+<h4>DevFest 2012, {% trans %}Day 1: <em>Mobile &amp; Web, Cloud &amp; Social</em>{% endtrans %}</h4>
+{% trans %}
+The first day was full of workshops and sessions given
+by members of the local developer community.
+{% endtrans %}
+{% trans %}
+In two rooms at the University of Technology
+in Vienna sessions were held in parallel.
+Some of the <a href="/2012/sessions">sessions</a> include:
+{% endtrans %}
+<br>
+<em>{% trans %}
+<a href= "/2012/session/the-google-plus-platform">Google+ API family</a>, <a href="/2012/session/pay-identify-with-paypal">mobile payment APIs</a>, <a href="/2012/session/the-go-start-web-framework">Go-start web framework</a>,
+<a href="/2012/session/introduction-to-bitcoinj">Bitcoin Java API</a>,
+<a href="/2012/session/apps-script-google-hosted-javascript">Google App Scripts</a>, ...
+{% endtrans %}
+</em>
+<br>
+{% trans %}
+Additionally there was enough time to meet and exchange with fellow developers;
+<em>and when developers come together amazing things can happen.</em>
+{% endtrans %}
+</p>
+<p>
+{% trans %}
+Day 1 endet with an awesome afterparty <em>powered by <a href="http://www.cenarion.com" target="_blank">Cenarion.</a></em>
+{% endtrans %}
+</p>
+<center style="height:160px; overflow:hidden;">
+<img src="/img/pics2/image_2.jpg">
+<img src="/img/pics2/image_10.jpg">
+<img src="/img/pics2/image_0.jpg">
+<img src="/img/pics2/image_4.jpg">
+<img src="/img/pics2/image_7.jpg">
+<img src="/img/pics2/image_1.jpg">
+<img src="/img/pics2/image_5.jpg">
+<img src="/img/pics2/image_3.jpg">
+<img src="/img/pics2/image_6.jpg">
+<img src="/img/pics2/image_8.jpg">
+<img src="/img/pics2/image_9.jpg">
+</center>
+<h4>DevFest 2012, {% trans %}Day 2: <em>Happy Birthday, Android!</em>{% endtrans %}</h4>
+<p>
+{% trans %}
+It was on 5 November 2007 that Google launched Android as part of the
+Open Handset Alliance.
+Now, five years later, we were celebrating its success with a
+special birthday hackathon!
+{% endtrans %}
+<br>
+{% trans %}
+In teams we were developing applications for Android and
+the winners took home valuable prizes: Nexus 7 tablets, Raspberry Pi's,
+Arduino Kits, books and gadgets.
+The hackathon took place in the Metalab,
+a hacker space in Vienna.
+{% endtrans %}
+</p>
+<center style="height:160px; overflow:hidden;">
+<img src="/img/pics3/image_5.jpg">
+<img src="/img/pics3/image_13.jpg">
+<img src="/img/pics3/image_6.jpg">
+<img src="/img/pics3/image_1.jpg">
+<img src="/img/pics3/image_7.jpg">
+<img src="/img/pics3/image_2.jpg">
+<img src="/img/pics3/image_0.jpg">
+<img src="/img/pics3/image_3.jpg">
+<img src="/img/pics3/image_4.jpg">
+<img src="/img/pics3/image_8.jpg">
+<img src="/img/pics3/image_9.jpg">
+<img src="/img/pics3/image_10.jpg">
+<img src="/img/pics3/image_11.jpg">
+<img src="/img/pics3/image_12.jpg">
+</center>
+</div>
+<div class="span3">
+<!--
+<a href="https://docs.google.com/spreadsheet/viewform?formkey=dFI4aXFEdzRUTXcyZXluckZBWW1ZTWc6MQ" target="_blank" class="btn">Temporary Registration</a><br/>
+-->
+<iframe  src="http://www.eventbrite.com/countdown-widget?eid=7440401441" frameborder="0" height="480" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
+{%include "sponsorlist.html"%}
+<!-- Place this tag where you want the badge to render. -->
+<div class="g-plus" data-href="//plus.google.com/101425359997480386030" data-rel="publisher" data-width="253" data-height="69"></div>
+<br>
+<div class="fb-like-box" data-href="http://www.facebook.com/DevFestVienna" data-width="292" data-show-faces="false" data-stream="false" data-header="false"></div>
+<br>
+<a class="twitter-timeline" data-dnt=true href="https://twitter.com/DevFestVienna" data-widget-id="249973795690004480">Tweets by @DevFestVienna</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!--
+<a class="twitter-timeline" data-dnt=true href="https://twitter.com/search?q=%23devfest+%23vienna" data-widget-id="248567902658240513">Tweets about "#devfest #vienna"</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+-->
+</div>
+</div>
+
+<!-- Place this tag after the last badge tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+{% endblock %}
